@@ -1,3 +1,4 @@
+import os
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 EMAIL_RECEIVER = "rmzgrace@yahoo.com"
 
