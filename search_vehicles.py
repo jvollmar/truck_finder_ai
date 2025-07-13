@@ -1,4 +1,5 @@
 # search_vehicles.py
+from config import VEHICLE_FILTERS
 import requests
 from bs4 import BeautifulSoup
 
