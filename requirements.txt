@@ -1,1 +1,4 @@
-
+requests
+openai
+python-dotenv
+geopy        # if you're doing radius/distance calculations
