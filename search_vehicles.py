@@ -40,7 +40,7 @@ def scrape_cars(make, model, zip_code):
             dealer_name = desc
             dealer_address = f"{zip_code}"
 
-            lat, lon = geocode_address(dealer_address)
+           lat, lon = None, None
 
             listings.append({
                 "title": title,
@@ -53,8 +53,8 @@ def scrape_cars(make, model, zip_code):
                     "phone": "N/A",
                     "website": "https://www.cars.com"
                 },
-                "lat": lat,
-                "lon": lon
+                #"lat": lat,
+                #"lon": lon
             })
         except Exception as e:
             print("Error parsing a car:", e)
