@@ -13,7 +13,7 @@ def main():
         #except Exception as e:
             #print("Geocode error:", e)
 
-    filtered = apply_filters(listings)
+    filtered = listings
     generate_html(filtered)  # create index.html
     send_email_with_link()   # just send the GitHub Pages link
 
