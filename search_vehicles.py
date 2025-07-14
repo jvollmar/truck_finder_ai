@@ -40,7 +40,7 @@ def scrape_cars(make, model, zip_code):
             dealer_name = desc
             dealer_address = f"{zip_code}"
 
-           lat, lon = None, None
+            lat, lon = None, None
 
             listings.append({
                 "title": title,
