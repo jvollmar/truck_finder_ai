@@ -8,10 +8,10 @@ def main():
     listings = search_vehicles()
     for car in listings:
         addr = car["dealer"]["address"]
-        try:
-            car["lat"], car["lon"] = geocode.geocode_address(addr)
-        except Exception as e:
-            print("Geocode error:", e)
+        #try:
+            #car["lat"], car["lon"] = geocode.geocode_address(addr)
+        #except Exception as e:
+            #print("Geocode error:", e)
 
     filtered = apply_filters(listings)
     generate_html(filtered)  # create index.html
