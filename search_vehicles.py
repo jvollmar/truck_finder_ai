@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 from config import VEHICLE_FILTERS
-from geocode import geocode_address
 import time
 
 SEARCH_ZIPS = {
@@ -17,6 +16,25 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 }
 
+BASE_URL = "https://www.cars.com"
+
+def get_vehicle_details(detail_url):
+    try:
+        resp = requests.get(detail_url, headers=HEADERS, timeout=10)
+        resp.raise_for_status()
+        soup = BeautifulSoup(resp.text, "html.parser")
+
+        mileage = soup.find("dl", class_="fancy-description-list").find("dd").text.strip()
+        address = soup.find("div", class_="seller-info__address").text.strip()
+        phone_tag = soup.find("a", class_="seller-info__phone")
+        phone = phone_tag.text.strip() if phone_tag else "N/A"
+        description = soup.find("div", class_="seller-notes").text.strip() if soup.find("div", class_="seller-notes") else "No additional description"
+
+        return mileage, address, phone, description
+    except Exception as e:
+        print("Error fetching vehicle detail:", e)
+        return "N/A", "N/A", "N/A", "N/A"
+
 def scrape_cars(make, model, zip_code):
     listings = []
     search_url = f"https://www.cars.com/shopping/results/?stock_type=certified&makes[]={make.lower()}&models[]={make.lower()}-{model.lower().replace(' ', '_')}&list_price_max=&maximum_distance=500&zip={zip_code}&year_min={VEHICLE_FILTERS['year_min']}&mileage_max={VEHICLE_FILTERS['mileage_max']}&transmission_slugs=automatic&drivetrain_slugs=4wd&only_with_photos=true"
@@ -30,35 +48,36 @@ def scrape_cars(make, model, zip_code):
         return []
 
     cars = soup.select("div.vehicle-card")
-    for car in cars[:10]:  # Limit per zip/make/model
+    for car in cars[:10]:
         try:
             title = car.select_one("h2.title").text.strip()
             price = car.select_one(".primary-price").text.strip()
             image = car.select_one("img")["src"]
-            desc = car.select_one(".dealer-name").text.strip()
+            link_tag = car.select_one("a.vehicle-card-link")
+            if not link_tag:
+                continue
+            detail_url = BASE_URL + link_tag["href"]
 
-            dealer_name = desc
-            dealer_address = f"{zip_code}"
-
-            lat, lon = None, None
+            mileage, full_address, phone, description = get_vehicle_details(detail_url)
 
             listings.append({
                 "title": title,
                 "price": price,
-                "description": desc,
+                "description": description,
+                "mileage": mileage,
                 "image_url": image,
                 "dealer": {
-                    "name": dealer_name,
-                    "address": dealer_address,
-                    "phone": "N/A",
-                    "website": "https://www.cars.com"
+                    "name": "Certified Dealer",
+                    "address": full_address,
+                    "phone": phone,
+                    "website": detail_url
                 },
-                #"lat": lat,
-                #"lon": lon
+                "lat": None,
+                "lon": None
             })
         except Exception as e:
             print("Error parsing a car:", e)
-        time.sleep(0.5)  # Be nice to their servers
+        time.sleep(1)
 
     return listings
 
