@@ -1,5 +1,5 @@
 requests
-openai
+openai==0.28.1
 python-dotenv
 geopy        # if you're doing radius/distance calculations
 beautifulsoup4
