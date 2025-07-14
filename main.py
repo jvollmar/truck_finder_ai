@@ -7,7 +7,7 @@ def main():
     listings = search_vehicles()
     
     # Don't re-geocode — already done in search_vehicles
-    filtered = apply_filters(listings)
+    filtered = listings
     
     print("Filtered truck count:", len(filtered))
 
