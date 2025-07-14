@@ -14,7 +14,9 @@ def main():
             #print("Geocode error:", e)
 
     filtered = listings
+    
     print("Filtered truck count:", len(filtered))
+    
     generate_html(filtered)  # create index.html
     send_email_with_link()   # just send the GitHub Pages link
 
