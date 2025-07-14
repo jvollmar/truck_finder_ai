@@ -9,6 +9,6 @@ def send_email(body):
     msg["To"] = EMAIL_RECEIVER
     msg.set_content(body)
 
-    with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
+    with smtplib.SMTP_SSL("smtp.mail.yahoo.com", 465) as smtp:
         smtp.login(EMAIL_SENDER, EMAIL_PASSWORD)
         smtp.send_message(msg)
