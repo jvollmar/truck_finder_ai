@@ -73,6 +73,7 @@ def scrape_cars(make, model, zip_code):
             detail_url = BASE_URL + link_tag["href"]
 
             mileage, full_address, phone, description, color = get_vehicle_details(detail_url)
+            print("Extracted color:", color)
 
             listings.append({
                 "title": title,
