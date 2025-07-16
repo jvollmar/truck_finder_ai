@@ -28,6 +28,7 @@ VEHICLE_FILTERS = {
     "floor_mats": True,
     "premium_tires": True,
     "interior": "carpet"
+    "color_contains": "blue"
 }
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
