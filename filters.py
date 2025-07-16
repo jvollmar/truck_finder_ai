@@ -20,18 +20,12 @@ def apply_filters(listings):
         if lat and lon and not within_radius(lat, lon):
             continue
 
+        if required_color:
+            color = (car.get("color") or "").lower()
+            if required_color not in color:
+                continue  # Skip if actual color doesn't match
+
         if is_vehicle_match(car["description"]):
-            if required_color:
-                all_text = " ".join([
-                    car.get("title", ""),
-                    car.get("description", ""),
-                    car["dealer"].get("name", ""),
-                    car["dealer"].get("address", "")
-                ]).lower()
-
-                if required_color not in all_text:
-                    continue  # Skip if color not mentioned
-
             results.append(car)
 
     return results
