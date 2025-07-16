@@ -36,15 +36,36 @@ def get_vehicle_details(detail_url):
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
 
-        mileage = soup.find("dl", class_="fancy-description-list").find("dd").text.strip()
-        address = soup.find("div", class_="seller-info__address").text.strip()
+        # Find mileage
+        mileage_tag = soup.find("dl", class_="fancy-description-list")
+        mileage = mileage_tag.find("dd").text.strip() if mileage_tag and mileage_tag.find("dd") else "N/A"
+
+        # Find address
+        addr_tag = soup.find("div", class_="seller-info__address")
+        full_address = addr_tag.text.strip() if addr_tag else "N/A"
+
+        # Find phone
         phone_tag = soup.find("a", class_="seller-info__phone")
         phone = phone_tag.text.strip() if phone_tag else "N/A"
-        description = soup.find("div", class_="seller-notes")
-        description = description.text.strip() if description else "No additional description"
-        color = extract_color_from_detail_page(soup)
 
-        return mileage, address, phone, description, color
+        # Find description
+        desc_tag = soup.find("div", class_="seller-notes")
+        description = desc_tag.text.strip() if desc_tag else "No additional description"
+
+        # Find color
+        color = "Unknown"
+        spec_section = soup.find("dl", class_="fancy-description-list")
+        if spec_section:
+            items = spec_section.find_all("dt")
+            for dt in items:
+                if "exterior color" in dt.text.strip().lower():
+                    dd = dt.find_next_sibling("dd")
+                    if dd:
+                        color = dd.text.strip()
+                    break
+
+        return mileage, full_address, phone, description, color
+
     except Exception as e:
         print("Error fetching vehicle detail:", e)
         return "N/A", "N/A", "N/A", "N/A", "Unknown"
