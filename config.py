@@ -27,7 +27,7 @@ VEHICLE_FILTERS = {
     "bed_shell": True,
     "floor_mats": True,
     "premium_tires": True,
-    "interior": "carpet"
+    "interior": "carpet",
     "color_contains": "blue"
 }
 
