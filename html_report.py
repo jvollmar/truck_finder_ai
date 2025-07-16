@@ -23,6 +23,7 @@ def generate_html(listings):
             <h2>{car['title']}</h2>
             <p><strong>Price:</strong> {car['price']}</p>
             <p><strong>Mileage:</strong> {car.get('mileage', 'N/A')}</p>
+            <p><strong>Exterior Color:</strong> {car.get('color', 'N/A')}</p>
             <p><strong>Description:</strong> {car['description']}</p>
             <img src="{car['image_url']}" alt="Truck Image">
             <p><strong>Dealer:</strong> {car['dealer']['name']}</p>
