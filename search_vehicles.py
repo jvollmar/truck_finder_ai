@@ -18,6 +18,15 @@ HEADERS = {
 
 BASE_URL = "https://www.cars.com"
 
+def extract_color_from_detail_page(soup):
+    try:
+        for li in soup.select("li"):
+            if "Exterior color" in li.text:
+                return li.text.split(":")[-1].strip()
+    except Exception as e:
+        print("Error extracting color:", e)
+    return "Unknown"
+
 def get_vehicle_details(detail_url):
     try:
         resp = requests.get(detail_url, headers=HEADERS, timeout=10)
@@ -28,12 +37,14 @@ def get_vehicle_details(detail_url):
         address = soup.find("div", class_="seller-info__address").text.strip()
         phone_tag = soup.find("a", class_="seller-info__phone")
         phone = phone_tag.text.strip() if phone_tag else "N/A"
-        description = soup.find("div", class_="seller-notes").text.strip() if soup.find("div", class_="seller-notes") else "No additional description"
+        description = soup.find("div", class_="seller-notes")
+        description = description.text.strip() if description else "No additional description"
+        color = extract_color_from_detail_page(soup)
 
-        return mileage, address, phone, description
+        return mileage, address, phone, description, color
     except Exception as e:
         print("Error fetching vehicle detail:", e)
-        return "N/A", "N/A", "N/A", "N/A"
+        return "N/A", "N/A", "N/A", "N/A", "Unknown"
 
 def scrape_cars(make, model, zip_code):
     listings = []
@@ -58,7 +69,7 @@ def scrape_cars(make, model, zip_code):
                 continue
             detail_url = BASE_URL + link_tag["href"]
 
-            mileage, full_address, phone, description = get_vehicle_details(detail_url)
+            mileage, full_address, phone, description, color = get_vehicle_details(detail_url)
 
             listings.append({
                 "title": title,
@@ -66,6 +77,7 @@ def scrape_cars(make, model, zip_code):
                 "description": description,
                 "mileage": mileage,
                 "image_url": image,
+                "color": color,
                 "dealer": {
                     "name": "Certified Dealer",
                     "address": full_address,
