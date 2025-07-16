@@ -94,9 +94,9 @@ def scrape_cars(make, model, zip_code):
             detail_url = BASE_URL + link_tag["href"]
 
            mileage, full_address, phone, description, color = get_vehicle_details(detail_url)
-            print("Extracted color:", color)
+           print("Extracted color:", color)
             
-            listings.append({
+           listings.append({
                 "title": title,
                 "price": price,
                 "description": description,
@@ -111,7 +111,7 @@ def scrape_cars(make, model, zip_code):
                 },
                 "lat": None,
                 "lon": None
-            })
+           })
         except Exception as e:
             print("Error parsing a car:", e)
         time.sleep(1)
