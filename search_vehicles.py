@@ -20,9 +20,10 @@ BASE_URL = "https://www.cars.com"
 
 def extract_color_from_detail_page(soup):
     try:
-        for li in soup.select("li"):
-            if "Exterior color" in li.text:
-                return li.text.split(":")[-1].strip()
+        for li in soup.find_all("li"):
+            text = li.get_text(strip=True)
+            if text.startswith("Ext. color"):
+                return text.split(":", 1)[1].strip()
     except Exception as e:
         print("Error extracting color:", e)
     return "Unknown"
