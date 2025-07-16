@@ -22,10 +22,16 @@ def apply_filters(listings):
 
         if is_vehicle_match(car["description"]):
             if required_color:
-                title = (car.get("title") or "").lower()
-                description = (car.get("description") or "").lower()
-                if required_color not in title and required_color not in description:
-                    continue  # Skip this car, color doesn't match
+                all_text = " ".join([
+                    car.get("title", ""),
+                    car.get("description", ""),
+                    car["dealer"].get("name", ""),
+                    car["dealer"].get("address", "")
+                ]).lower()
+
+                if required_color not in all_text:
+                    continue  # Skip if color not mentioned
+
             results.append(car)
 
     return results
