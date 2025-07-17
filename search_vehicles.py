@@ -36,25 +36,25 @@ def get_vehicle_details(detail_url):
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
 
-        # Initialize fields
+        # Default values
         mileage = "N/A"
         color = "Unknown"
 
-        # Loop over all <dl> description terms
-        specs = soup.find_all("dl", class_="fancy-description-list")
-        for spec in specs:
-            dt_tags = spec.find_all("dt")
+        # Scan all <dl class="fancy-description-list"> for specs
+        spec_section = soup.find("dl", class_="fancy-description-list")
+        if spec_section:
+            dt_tags = spec_section.find_all("dt")
             for dt in dt_tags:
-                dt_text = dt.get_text(strip=True).lower()
-                dd = dt.find_next_sibling("dd")
-                if not dd:
+                label = dt.get_text(strip=True).lower()
+                value_tag = dt.find_next_sibling("dd")
+                if not value_tag:
                     continue
-                dd_text = dd.get_text(strip=True)
+                value = value_tag.get_text(strip=True)
 
-                if "mileage" in dt_text and mileage == "N/A":
-                    mileage = dd_text
-                elif "exterior color" in dt_text and color == "Unknown":
-                    color = dd_text
+                if "mileage" in label:
+                    mileage = value
+                elif "exterior color" in label:
+                    color = value
 
         # Address
         addr_tag = soup.find("div", class_="seller-info__address")
@@ -73,7 +73,6 @@ def get_vehicle_details(detail_url):
     except Exception as e:
         print("Error fetching vehicle detail:", e)
         return "N/A", "N/A", "N/A", "N/A", "Unknown"
-
 
 def scrape_cars(make, model, zip_code, city):
     listings = []
