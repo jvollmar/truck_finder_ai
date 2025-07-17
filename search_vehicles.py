@@ -38,7 +38,8 @@ def get_vehicle_details(detail_url):
 
         # Find mileage
         mileage_tag = soup.find("dl", class_="fancy-description-list")
-        mileage = mileage_tag.find("dd").text.strip() if mileage_tag and mileage_tag.find("dd") else "N/A"
+        mileage = mileage_tag.find("dd").text.strip() if mileage_tag else "N/A"
+
 
         # Find address
         addr_tag = soup.find("div", class_="seller-info__address")
