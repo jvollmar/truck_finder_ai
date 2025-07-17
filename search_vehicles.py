@@ -58,7 +58,7 @@ def get_vehicle_details(detail_url, fallback_city=None):
 
         # Address
         addr_tag = soup.find("div", class_="seller-info__address")
-        full_address = addr_tag.get_text(strip=True) if addr_tag else "N/A"
+        full_address = addr_tag.text.strip() if addr_tag else f"N/A ({fallback_city})"
 
         # Phone
         phone_tag = soup.find("a", class_="seller-info__phone")
