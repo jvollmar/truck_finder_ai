@@ -30,40 +30,50 @@ def extract_color_from_detail_page(soup):
         print("Error extracting color:", e)
     return "Unknown"
 
-def get_vehicle_details(detail_url, fallback_city="Unknown"):
+def get_vehicle_details(detail_url):
     try:
         resp = requests.get(detail_url, headers=HEADERS, timeout=10)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
 
-        mileage_tag = soup.find("dl", class_="fancy-description-list")
-        mileage = mileage_tag.find("dd").text.strip() if mileage_tag else "N/A"
-
-        addr_tag = soup.find("div", class_="seller-info__address")
-        full_address = addr_tag.text.strip() if addr_tag else f"N/A ({fallback_city})"
-
-        phone_tag = soup.find("a", class_="seller-info__phone")
-        phone = phone_tag.text.strip() if phone_tag else "N/A"
-
-        desc_tag = soup.find("div", class_="seller-notes")
-        description = desc_tag.text.strip() if desc_tag else "No additional description"
-
+        # Initialize fields
+        mileage = "N/A"
         color = "Unknown"
-        spec_section = soup.find("dl", class_="fancy-description-list")
-        if spec_section:
-            items = spec_section.find_all("dt")
-            for dt in items:
-                if "exterior color" in dt.text.strip().lower():
-                    dd = dt.find_next_sibling("dd")
-                    if dd:
-                        color = dd.text.strip()
-                    break
+
+        # Loop over all <dl> description terms
+        specs = soup.find_all("dl", class_="fancy-description-list")
+        for spec in specs:
+            dt_tags = spec.find_all("dt")
+            for dt in dt_tags:
+                dt_text = dt.get_text(strip=True).lower()
+                dd = dt.find_next_sibling("dd")
+                if not dd:
+                    continue
+                dd_text = dd.get_text(strip=True)
+
+                if "mileage" in dt_text and mileage == "N/A":
+                    mileage = dd_text
+                elif "exterior color" in dt_text and color == "Unknown":
+                    color = dd_text
+
+        # Address
+        addr_tag = soup.find("div", class_="seller-info__address")
+        full_address = addr_tag.get_text(strip=True) if addr_tag else "N/A"
+
+        # Phone
+        phone_tag = soup.find("a", class_="seller-info__phone")
+        phone = phone_tag.get_text(strip=True) if phone_tag else "N/A"
+
+        # Description
+        desc_tag = soup.find("div", class_="seller-notes")
+        description = desc_tag.get_text(strip=True) if desc_tag else "No additional description"
 
         return mileage, full_address, phone, description, color
 
     except Exception as e:
         print("Error fetching vehicle detail:", e)
-        return "N/A", f"N/A ({fallback_city})", "N/A", "N/A", "Unknown"
+        return "N/A", "N/A", "N/A", "N/A", "Unknown"
+
 
 def scrape_cars(make, model, zip_code, city):
     listings = []
