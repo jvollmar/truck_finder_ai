@@ -16,20 +16,25 @@ def apply_filters(listings):
     required_color = VEHICLE_FILTERS.get("color_contains", "").lower()
 
     for car in listings:
-        # Skip if outside radius
+        # Radius check
         lat, lon = car.get("lat"), car.get("lon")
         if lat and lon and not within_radius(lat, lon):
+            print(f"Skipping {car['title']} - outside radius")
             continue
 
-        # Skip if OpenAI filtering says no
+        # OpenAI semantic match check
         if not is_vehicle_match(car.get("description", "")):
+            print(f"Skipping {car['title']} - OpenAI filter mismatch")
             continue
 
-        # Structured color filtering
+        # Structured color match
         color = car.get("color", "").lower()
-        if required_color and required_color not in color:
-            continue
+        if required_color:
+            if required_color not in color:
+                print(f"Skipping {car['title']} - color '{color}' does not match required '{required_color}'")
+                continue
 
         results.append(car)
 
+    print(f"\n✅ Passed color filter: {len(results)} out of {len(listings)} vehicles\n")
     return results
