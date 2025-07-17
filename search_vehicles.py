@@ -65,7 +65,7 @@ def get_vehicle_details(detail_url, fallback_city="Unknown"):
         print("Error fetching vehicle detail:", e)
         return "N/A", f"N/A ({fallback_city})", "N/A", "N/A", "Unknown"
 
-def scrape_cars(make, model, zip_code):
+def scrape_cars(make, model, zip_code, city):
     listings = []
     search_url = f"https://www.cars.com/shopping/results/?stock_type=certified&makes[]={make.lower()}&models[]={make.lower()}-{model.lower().replace(' ', '_')}&list_price_max=&maximum_distance=500&zip={zip_code}&year_min={VEHICLE_FILTERS['year_min']}&mileage_max={VEHICLE_FILTERS['mileage_max']}&transmission_slugs=automatic&drivetrain_slugs=4wd&only_with_photos=true"
 
@@ -117,8 +117,8 @@ def scrape_cars(make, model, zip_code):
 
 def search_vehicles():
     all_listings = []
-    for city, zip_code in SEARCH_ZIPS.items():
-        for make in VEHICLE_FILTERS["make"]:
-            for model in VEHICLE_FILTERS["model"]:
-                all_listings += scrape_cars(make, model, zip_code)
+   for city, zip_code in SEARCH_ZIPS.items():
+    for make in VEHICLE_FILTERS["make"]:
+        for model in VEHICLE_FILTERS["model"]:
+            all_listings += scrape_cars(make, model, zip_code, city)
     return all_listings
