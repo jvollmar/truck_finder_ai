@@ -36,26 +36,32 @@ def get_vehicle_details(detail_url):
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
 
-        # Find mileage
-        mileage_tag = soup.find("dl", class_="fancy-description-list")
-        mileage = mileage_tag.find("dd").text.strip() if mileage_tag else "N/A"
+        # ✅ Correctly extract mileage
+        mileage = "N/A"
+        spec_section = soup.find("dl", class_="fancy-description-list")
+        if spec_section:
+            items = spec_section.find_all("dt")
+            for dt in items:
+                if "mileage" in dt.text.strip().lower():
+                    dd = dt.find_next_sibling("dd")
+                    if dd:
+                        mileage = dd.text.strip()
+                    break
 
-
-        # Find address
+        # ✅ Extract full address
         addr_tag = soup.find("div", class_="seller-info__address")
         full_address = addr_tag.text.strip() if addr_tag else "N/A"
 
-        # Find phone
+        # ✅ Extract phone
         phone_tag = soup.find("a", class_="seller-info__phone")
         phone = phone_tag.text.strip() if phone_tag else "N/A"
 
-        # Find description
+        # ✅ Extract description
         desc_tag = soup.find("div", class_="seller-notes")
         description = desc_tag.text.strip() if desc_tag else "No additional description"
 
-        # Find color
+        # ✅ Extract exterior color
         color = "Unknown"
-        spec_section = soup.find("dl", class_="fancy-description-list")
         if spec_section:
             items = spec_section.find_all("dt")
             for dt in items:
