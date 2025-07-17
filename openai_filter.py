@@ -1,8 +1,7 @@
-import os
 import openai
 from config import OPENAI_API_KEY
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = OPENAI_API_KEY
 
 def is_vehicle_match(description: str) -> bool:
     prompt = f"""
