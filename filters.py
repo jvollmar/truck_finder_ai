@@ -29,6 +29,7 @@ def apply_filters(listings):
 
         # Structured color match
         color = car.get("color", "").lower()
+        print(f"[FILTER DEBUG] Checking {car['title']} - color: '{color}', required: '{required_color}'")
         if required_color and required_color not in color:
             print(f"Skipping: {car['title']} because color '{color}' does not match filter '{required_color}'")
             continue
