@@ -1,6 +1,8 @@
 # filters.py
 from math import radians, sin, cos, sqrt, atan2
-from openai_filter import is_vehicle_match
+# from openai_filter import is_vehicle_match
+def is_vehicle_match(_description):
+    return True
 from config import CENTER_LAT, CENTER_LON, SEARCH_RADIUS_MILES, VEHICLE_FILTERS
 
 def within_radius(lat, lon):
