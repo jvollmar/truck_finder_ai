@@ -39,9 +39,13 @@ def get_vehicle_details(detail_url, fallback_city=None):
 
                 if "mileage" in label:
                     mileage = value
-                elif "exterior color" in label:
+               elif "exterior color" in label:
                     color = value
                     print(f"[DEBUG] Extracted raw color value: '{color}' from label: '{label}'") 
+                    if "blue" in color.lower():
+                        color = "blue"
+                    else:
+                        color = color.lower()
                     
 
         addr_tag = soup.find("div", class_="seller-info__address")
