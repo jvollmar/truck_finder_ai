@@ -18,29 +18,15 @@ HEADERS = {
 
 BASE_URL = "https://www.cars.com"
 
-def extract_color_from_detail_page(soup):
-    try:
-        # Look through all definition lists (used for vehicle details)
-        for dt in soup.find_all("dt"):
-            if "Ext. color" in dt.text:
-                dd = dt.find_next_sibling("dd")
-                if dd:
-                    return dd.text.strip()
-    except Exception as e:
-        print("Error extracting color:", e)
-    return "Unknown"
-
 def get_vehicle_details(detail_url, fallback_city=None):
     try:
         resp = requests.get(detail_url, headers=HEADERS, timeout=10)
         resp.raise_for_status()
         soup = BeautifulSoup(resp.text, "html.parser")
 
-        # Default values
         mileage = "N/A"
         color = "Unknown"
 
-        # Scan all <dl class="fancy-description-list"> for specs
         spec_section = soup.find("dl", class_="fancy-description-list")
         if spec_section:
             dt_tags = spec_section.find_all("dt")
@@ -56,15 +42,12 @@ def get_vehicle_details(detail_url, fallback_city=None):
                 elif "exterior color" in label:
                     color = value
 
-        # Address
         addr_tag = soup.find("div", class_="seller-info__address")
         full_address = addr_tag.text.strip() if addr_tag else f"N/A ({fallback_city})"
 
-        # Phone
         phone_tag = soup.find("a", class_="seller-info__phone")
         phone = phone_tag.get_text(strip=True) if phone_tag else "N/A"
 
-        # Description
         desc_tag = soup.find("div", class_="seller-notes")
         description = desc_tag.get_text(strip=True) if desc_tag else "No additional description"
 
