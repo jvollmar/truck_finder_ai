@@ -16,25 +16,32 @@ def apply_filters(listings):
     required_color = VEHICLE_FILTERS.get("color_contains", "").lower()
 
     for car in listings:
+        title = car.get("title", "UNKNOWN TITLE")
+
         # Radius check
         lat, lon = car.get("lat"), car.get("lon")
         if lat and lon and not within_radius(lat, lon):
-            print(f"Skipping {car['title']} - outside radius")
+            print(f"Skipping {title} - outside radius")
             continue
 
-        # OpenAI semantic match check
+        # OpenAI match check
         if not is_vehicle_match(car.get("description", "")):
-            print(f"Skipping {car['title']} - OpenAI filter mismatch")
+            print(f"Skipping {title} - OpenAI filter mismatch")
             continue
 
-        # Structured color match
-        color = car.get("color", "").lower()
-        print(f"[FILTER DEBUG] Checking {car['title']} - color: '{color}', required: '{required_color}'")
-        if required_color and required_color not in color:
-            print(f"Skipping: {car['title']} because color '{color}' does not match filter '{required_color}'")
+        # Strong color match check
+        raw_color = car.get("color", "")
+        normalized_color = raw_color.strip().lower()
+
+        print(f"[FILTER DEBUG] Checking {title} - raw_color: '{raw_color}', normalized: '{normalized_color}', required: '{required_color}'")
+
+        if required_color not in normalized_color:
+            print(f"❌ Skipping {title} - color '{raw_color}' does not match required '{required_color}'")
             continue
 
+        # Passed all filters
+        print(f"✅ Including {title}")
         results.append(car)
 
-    print(f"\n✅ Passed color filter: {len(results)} out of {len(listings)} vehicles\n")
+    print(f"\n✅ Final filtered truck count: {len(results)} out of {len(listings)}\n")
     return results
