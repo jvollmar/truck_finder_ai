@@ -42,8 +42,7 @@ def get_vehicle_details(detail_url, fallback_city=None):
                 elif "exterior color" in label:
                     color = value
                     print(f"[DEBUG] Extracted raw color value: '{color}' from label: '{label}'") 
-                    if "blue" in color.lower():
-                        color = "Blue"
+                    
 
         addr_tag = soup.find("div", class_="seller-info__address")
         full_address = addr_tag.text.strip() if addr_tag else f"N/A ({fallback_city})"
