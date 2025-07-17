@@ -9,6 +9,7 @@ def main():
 
     # Step 2: Apply filters (this includes OpenAI and color filtering)
     filtered = apply_filters(listings)
+    print("✅ Passed all filters:", len(filtered), "of", len(listings), "vehicles")
 
     # Step 3: Display count of vehicles that passed filters
     print("Filtered truck count:", len(filtered))
