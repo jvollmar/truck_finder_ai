@@ -30,7 +30,7 @@ def extract_color_from_detail_page(soup):
         print("Error extracting color:", e)
     return "Unknown"
 
-def get_vehicle_details(detail_url):
+def get_vehicle_details(detail_url, fallback_city=None):
     try:
         resp = requests.get(detail_url, headers=HEADERS, timeout=10)
         resp.raise_for_status()
