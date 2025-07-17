@@ -41,6 +41,7 @@ def get_vehicle_details(detail_url, fallback_city=None):
                     mileage = value
                 elif "exterior color" in label:
                     color = value
+                    print(f"[DEBUG] Extracted raw color value: '{color}' from label: '{label}'") 
                     if "blue" in color.lower():
                         color = "Blue"
 
