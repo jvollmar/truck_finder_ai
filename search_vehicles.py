@@ -117,8 +117,8 @@ def scrape_cars(make, model, zip_code, city):
 
 def search_vehicles():
     all_listings = []
-   for city, zip_code in SEARCH_ZIPS.items():
-    for make in VEHICLE_FILTERS["make"]:
-        for model in VEHICLE_FILTERS["model"]:
-            all_listings += scrape_cars(make, model, zip_code, city)
+    for city, zip_code in SEARCH_ZIPS.items():
+        for make in VEHICLE_FILTERS["make"]:
+            for model in VEHICLE_FILTERS["model"]:
+                all_listings += scrape_cars(make, model, zip_code, city)
     return all_listings
