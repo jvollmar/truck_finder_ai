@@ -59,5 +59,5 @@ PREFERRED_FEATURES = [
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 print(f"[CONFIG DEBUG] OpenAI key loaded: {bool(OPENAI_API_KEY)}")
 
-USE_OPENAI_FILTER = True  # Toggle to True to enable OpenAI filtering
+USE_OPENAI_FILTER = False  # Toggle to True to enable OpenAI filtering
 
