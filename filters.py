@@ -10,6 +10,12 @@ def within_radius(lat, lon):
     c = 2 * atan2(sqrt(a), sqrt(1 - a))
     return R * c <= SEARCH_RADIUS_MILES
 
+def passes_color_filter(vehicle: dict) -> bool:
+    color = vehicle.get("exterior_color_normalized", "").lower()
+    result = "blue" in color
+    print(f"[DEBUG] Filtering color: '{color}' -> {'PASS' if result else 'FAIL'}")
+    return result
+
 def apply_filters(listings):
     results = []
     required_filters = VEHICLE_FILTERS.get("required", {})
