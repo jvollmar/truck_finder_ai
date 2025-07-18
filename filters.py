@@ -13,7 +13,7 @@ def within_radius(lat, lon):
 def apply_filters(listings):
     results = []
     required_filters = VEHICLE_FILTERS.get("required", {})
-    suggested_filters = VEHICLE_FILTERS.get("suggested", {})
+    preferred_filters = VEHICLE_FILTERS.get("suggested", {})
     required_color = required_filters.get("color_contains", "").lower()
 
     for car in listings:
