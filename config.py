@@ -32,3 +32,6 @@ VEHICLE_FILTERS = {
 }
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+# ✅ Debug line: confirm whether the key was found
+print(f"[CONFIG DEBUG] OpenAI key loaded: {bool(OPENAI_API_KEY)}")
+
