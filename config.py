@@ -46,7 +46,7 @@ REQUIRED_FEATURES = [
 ]
 
 # For OpenAI prompt - optional suggestions
-SUGGESTED_FEATURES = [
+PREFERRED_FEATURES = [
     "No GPS system",
     "No DVD system",
     "Hard shell truck bed cover",
