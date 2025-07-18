@@ -21,18 +21,15 @@ You are a strict filter for a vehicle buyer. Determine if the following vehicle 
 - Leather seats
 - Heated and cooled seats
 - Electrically adjustable seats
-- Physical key start (no push-button start)
 - No eco or hybrid features
-- No GPS system
-- No DVD system
-- Hard shell truck bed cover
-- Carpet interior
 - Premium tires
 - Full-length running boards
 
 💡 Preferred features (you may ignore if missing):
-- Any infotainment options
-- Sunroof
+- No GPS system
+- No DVD system
+- Hard shell truck bed cover
+- Carpet interior
 - Towing package
 - Color (already filtered elsewhere)
 
