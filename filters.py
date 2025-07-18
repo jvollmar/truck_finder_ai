@@ -1,7 +1,6 @@
-# filters.py
 from math import radians, sin, cos, sqrt, atan2
+from config import CENTER_LAT, CENTER_LON, SEARCH_RADIUS_MILES, VEHICLE_FILTERS, USE_OPENAI_FILTER
 from openai_filter import is_vehicle_match
-from config import CENTER_LAT, CENTER_LON, SEARCH_RADIUS_MILES, VEHICLE_FILTERS
 
 def within_radius(lat, lon):
     R = 3958.8
@@ -13,7 +12,9 @@ def within_radius(lat, lon):
 
 def apply_filters(listings):
     results = []
-    required_color = VEHICLE_FILTERS.get("color_contains", "").lower()
+    required_filters = VEHICLE_FILTERS.get("required", {})
+    suggested_filters = VEHICLE_FILTERS.get("suggested", {})
+    required_color = required_filters.get("color_contains", "").lower()
 
     for car in listings:
         title = car.get("title", "Unknown Title")
@@ -25,9 +26,11 @@ def apply_filters(listings):
             continue
 
         # OpenAI semantic match check
-        if not is_vehicle_match(car.get("description", "")):
-            print(f"Skipping {title} - OpenAI filter mismatch")
-            continue
+        if USE_OPENAI_FILTER:
+            description = car.get("description", "")
+            if not is_vehicle_match(description):
+                print(f"Skipping {title} - OpenAI filter mismatch")
+                continue
 
         # Structured color match
         raw_color = car.get("color", "")
