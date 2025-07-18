@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 from config import VEHICLE_FILTERS
+from filters import passes_color_filter
+from openai_filter import is_vehicle_match
 import time
 
 SEARCH_ZIPS = {
@@ -46,7 +48,6 @@ def get_vehicle_details(detail_url, fallback_city=None):
                         color = "blue"
                     else:
                         color = color.lower()
-                    
 
         addr_tag = soup.find("div", class_="seller-info__address")
         full_address = addr_tag.text.strip() if addr_tag else f"N/A ({fallback_city})"
@@ -89,7 +90,7 @@ def scrape_cars(make, model, zip_code, city):
             mileage, full_address, phone, description, color = get_vehicle_details(detail_url, fallback_city=city)
             print("Extracted color:", color)
 
-            listings.append({
+            vehicle = {
                 "title": title,
                 "price": price,
                 "description": description,
@@ -104,7 +105,19 @@ def scrape_cars(make, model, zip_code, city):
                 },
                 "lat": None,
                 "lon": None
-            })
+            }
+
+            # ✅ Color filter check BEFORE OpenAI
+            if not passes_color_filter(vehicle):
+                print(f"[DEBUG] Skipping {title} - color '{color}' rejected")
+                continue
+
+            # ✅ OpenAI filter
+            if not is_vehicle_match(description):
+                print(f"[DEBUG] Skipping {title} - OpenAI filter mismatch")
+                continue
+
+            listings.append(vehicle)
 
         except Exception as e:
             print("Error parsing a car:", e)
