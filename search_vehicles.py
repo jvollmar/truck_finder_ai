@@ -3,22 +3,32 @@ from bs4 import BeautifulSoup
 from config import VEHICLE_FILTERS, USE_OPENAI_FILTER
 from filters import passes_color_filter
 from openai_filter import is_vehicle_match
+from geocode import geocode_address  # ✅ NEW: Geocoding zip codes
+from math import radians, sin, cos, sqrt, atan2  # ✅ NEW: For distance check
 import time
-
-SEARCH_ZIPS = {
-    "Fayetteville, AR": "72701",
-    "Chicago, IL": "60601",
-    "Denver, CO": "80202",
-    "Dallas, TX": "75201",
-    "Charlotte, NC": "28202",
-    "Jacksonville, FL": "32202"
-}
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 }
 
 BASE_URL = "https://www.cars.com"
+CENTER_LAT = 36.0626  # ✅ Fayetteville, AR
+CENTER_LON = -94.1574
+SEARCH_RADIUS_MILES = 850
+
+# ✅ EXPANDED ZIP list (add more as needed)
+ZIP_LIST = [
+    "72701", "60601", "80202", "75201", "28202", "32202",
+    "30301", "70112", "37201", "64106", "29401", "98101"
+]
+
+def haversine_distance(lat1, lon1, lat2, lon2):  # ✅ NEW
+    R = 3958.8
+    dlat = radians(lat2 - lat1)
+    dlon = radians(lon2 - lon1)
+    a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon/2)**2
+    c = 2 * atan2(sqrt(a), sqrt(1 - a))
+    return R * c
 
 def get_vehicle_details(detail_url, fallback_city=None):
     try:
@@ -96,7 +106,7 @@ def scrape_cars(make, model, zip_code, city):
                 "description": description,
                 "mileage": mileage,
                 "color": color,
-                "exterior_color_normalized": color,  # ✅ For structured color filter
+                "exterior_color_normalized": color,
                 "image_url": image,
                 "dealer": {
                     "name": "Certified Dealer",
@@ -108,12 +118,10 @@ def scrape_cars(make, model, zip_code, city):
                 "lon": None
             }
 
-            # ✅ Color filter (always used)
             if not passes_color_filter(vehicle):
                 print(f"[DEBUG] Skipping {title} - color '{color}' rejected")
                 continue
 
-            # ✅ Optional: OpenAI filter
             if USE_OPENAI_FILTER and not is_vehicle_match(description):
                 print(f"[DEBUG] Skipping {title} - OpenAI filter mismatch")
                 continue
@@ -129,8 +137,20 @@ def scrape_cars(make, model, zip_code, city):
 
 def search_vehicles():
     all_listings = []
-    for city, zip_code in SEARCH_ZIPS.items():
+
+    for zip_code in ZIP_LIST:
+        try:
+            lat, lon = geocode_address(zip_code)  # ✅ NEW
+            distance = haversine_distance(CENTER_LAT, CENTER_LON, lat, lon)
+            if distance > SEARCH_RADIUS_MILES:
+                print(f"[SKIP] ZIP {zip_code} is {int(distance)} miles away — outside radius.")
+                continue
+        except Exception as e:
+            print(f"[ERROR] Geocoding ZIP {zip_code} failed: {e}")
+            continue
+
         for make in VEHICLE_FILTERS["make"]:
             for model in VEHICLE_FILTERS["model"]:
-                all_listings += scrape_cars(make, model, zip_code, city)
+                all_listings += scrape_cars(make, model, zip_code, f"ZIP {zip_code}")  # ✅ ZIP label fallback
+
     return all_listings
