@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from config import VEHICLE_FILTERS
+from config import VEHICLE_FILTERS, USE_OPENAI_FILTER
 from filters import passes_color_filter
 from openai_filter import is_vehicle_match
 import time
@@ -96,7 +96,7 @@ def scrape_cars(make, model, zip_code, city):
                 "description": description,
                 "mileage": mileage,
                 "color": color,
-                "exterior_color_normalized": color,  # ✅ Add this line
+                "exterior_color_normalized": color,  # ✅ For structured color filter
                 "image_url": image,
                 "dealer": {
                     "name": "Certified Dealer",
@@ -108,13 +108,13 @@ def scrape_cars(make, model, zip_code, city):
                 "lon": None
             }
 
-            # ✅ Color filter check BEFORE OpenAI
+            # ✅ Color filter (always used)
             if not passes_color_filter(vehicle):
                 print(f"[DEBUG] Skipping {title} - color '{color}' rejected")
                 continue
 
-            # ✅ OpenAI filter
-            if not is_vehicle_match(description):
+            # ✅ Optional: OpenAI filter
+            if USE_OPENAI_FILTER and not is_vehicle_match(description):
                 print(f"[DEBUG] Skipping {title} - OpenAI filter mismatch")
                 continue
 
