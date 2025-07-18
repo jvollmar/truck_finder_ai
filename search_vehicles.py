@@ -96,6 +96,7 @@ def scrape_cars(make, model, zip_code, city):
                 "description": description,
                 "mileage": mileage,
                 "color": color,
+                "exterior_color_normalized": color  # ✅ Add this line
                 "image_url": image,
                 "dealer": {
                     "name": "Certified Dealer",
