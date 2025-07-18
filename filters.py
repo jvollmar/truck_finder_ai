@@ -26,9 +26,8 @@ def apply_filters(listings):
             continue
 
         # OpenAI semantic match check
-        if USE_OPENAI_FILTER:
-            description = car.get("description", "")
-            if USE_OPENAI_FILTER and not is_vehicle_match(car.get("description", "")):
+         if USE_OPENAI_FILTER:
+            if not is_vehicle_match(car.get("description", "")):
                 print(f"Skipping {title} - OpenAI filter mismatch")
                 continue
 
