@@ -3,20 +3,22 @@ from bs4 import BeautifulSoup
 from config import VEHICLE_FILTERS, USE_OPENAI_FILTER, GOOGLE_MAPS_API_KEY
 from filters import passes_color_filter
 from openai_filter import is_vehicle_match
-from geocode import geocode_address  # ✅ NEW: Geocoding zip codes
-from math import radians, sin, cos, sqrt, atan2  # ✅ NEW: For distance check
+from geocode import geocode_address  # ✅ Geocoding zip codes
+from math import radians, sin, cos, sqrt, atan2
 import time
+import json
+import os
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
 }
 
 BASE_URL = "https://www.cars.com"
-CENTER_LAT = 36.0626  # ✅ Fayetteville, AR
+CENTER_LAT = 36.0626  # Fayetteville, AR
 CENTER_LON = -94.1574
 SEARCH_RADIUS_MILES = 850
+ZIP_CACHE_FILE = "zip_cache.json"
 
-# ✅ EXPANDED ZIP list (add more as needed)
 ZIP_LIST = [
     "72701", "60601", "80202", "75201", "28202", "32202",
     "30301", "70112", "37201", "64106", "29401", "98101"
@@ -53,7 +55,6 @@ def get_vehicle_details(detail_url, fallback_city=None):
                     mileage = value
                 elif "exterior color" in label:
                     color = value
-                    # print(f"[DEBUG] Extracted raw color value: '{color}' from label: '{label}'") 
                     if "blue" in color.lower():
                         color = "blue"
                     else:
@@ -73,6 +74,16 @@ def get_vehicle_details(detail_url, fallback_city=None):
     except Exception as e:
         print("Error fetching vehicle detail:", e)
         return "N/A", "N/A", "N/A", "N/A", "Unknown"
+
+def load_zip_cache():
+    if os.path.exists(ZIP_CACHE_FILE):
+        with open(ZIP_CACHE_FILE, "r") as f:
+            return json.load(f)
+    return {}
+
+def save_zip_cache(cache):
+    with open(ZIP_CACHE_FILE, "w") as f:
+        json.dump(cache, f)
 
 def scrape_cars(make, model, zip_code, city_state):
     listings = []
@@ -98,7 +109,6 @@ def scrape_cars(make, model, zip_code, city_state):
             detail_url = BASE_URL + link_tag["href"]
 
             mileage, full_address, phone, description, color = get_vehicle_details(detail_url, fallback_city=city_state)
-            # print("Extracted color:", color)
 
             vehicle = {
                 "title": title,
@@ -116,15 +126,13 @@ def scrape_cars(make, model, zip_code, city_state):
                 },
                 "lat": None,
                 "lon": None,
-                "city_state": city_state  # ✅ NEW field
+                "city_state": city_state
             }
 
             if not passes_color_filter(vehicle):
-                # print(f"[DEBUG] Skipping {title} - color '{color}' rejected")
                 continue
 
             if USE_OPENAI_FILTER and not is_vehicle_match(description):
-                # print(f"[DEBUG] Skipping {title} - OpenAI filter mismatch")
                 continue
 
             listings.append(vehicle)
@@ -138,34 +146,42 @@ def scrape_cars(make, model, zip_code, city_state):
 
 def search_vehicles():
     all_listings = []
+    zip_cache = load_zip_cache()
 
     for zip_code in ZIP_LIST:
         try:
-            lat, lon = geocode_address(zip_code)
-            distance = haversine_distance(CENTER_LAT, CENTER_LON, lat, lon)
-            if distance > SEARCH_RADIUS_MILES:
-                print(f"[SKIP] ZIP {zip_code} is {int(distance)} miles away — outside radius.")
-                continue
-
-            response = requests.get(
-                "https://maps.googleapis.com/maps/api/geocode/json",
-                params={"address": zip_code, "key": GOOGLE_MAPS_API_KEY}
-            )
-            result = response.json()
-            if result["status"] == "OK":
-                components = result["results"][0]["address_components"]
-                city = next((c["long_name"] for c in components if "locality" in c["types"]), "Unknown City")
-                state = next((c["short_name"] for c in components if "administrative_area_level_1" in c["types"]), "XX")
-                city_state = f"{city}, {state}"
+            if zip_code in zip_cache:
+                lat, lon = zip_cache[zip_code]["lat"], zip_cache[zip_code]["lon"]
+                city_state = zip_cache[zip_code]["city_state"]
             else:
-                city_state = f"ZIP {zip_code}"
+                lat, lon = geocode_address(zip_code)
+                distance = haversine_distance(CENTER_LAT, CENTER_LON, lat, lon)
+                if distance > SEARCH_RADIUS_MILES:
+                    print(f"[SKIP] ZIP {zip_code} is {int(distance)} miles away — outside radius.")
+                    continue
+
+                response = requests.get(
+                    "https://maps.googleapis.com/maps/api/geocode/json",
+                    params={"address": zip_code, "key": GOOGLE_MAPS_API_KEY}
+                )
+                result = response.json()
+                if result["status"] == "OK":
+                    components = result["results"][0]["address_components"]
+                    city = next((c["long_name"] for c in components if "locality" in c["types"]), "Unknown City")
+                    state = next((c["short_name"] for c in components if "administrative_area_level_1" in c["types"]), "XX")
+                    city_state = f"{city}, {state}"
+                else:
+                    city_state = f"ZIP {zip_code}"
+
+                zip_cache[zip_code] = {"lat": lat, "lon": lon, "city_state": city_state}
+
+            for make in VEHICLE_FILTERS["make"]:
+                for model in VEHICLE_FILTERS["model"]:
+                    all_listings += scrape_cars(make, model, zip_code, city_state)
 
         except Exception as e:
             print(f"[ERROR] Geocoding ZIP {zip_code} failed: {e}")
             continue
 
-        for make in VEHICLE_FILTERS["make"]:
-            for model in VEHICLE_FILTERS["model"]:
-                all_listings += scrape_cars(make, model, zip_code, city_state)
-
+    save_zip_cache(zip_cache)
     return all_listings
