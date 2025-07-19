@@ -1,4 +1,6 @@
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # Email configuration
 EMAIL_SENDER = os.getenv("EMAIL_SENDER")
