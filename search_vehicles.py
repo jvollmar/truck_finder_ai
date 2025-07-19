@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from config import VEHICLE_FILTERS, USE_OPENAI_FILTER
+from config import VEHICLE_FILTERS, USE_OPENAI_FILTER, GOOGLE_MAPS_API_KEY
 from filters import passes_color_filter
 from openai_filter import is_vehicle_match
 from geocode import geocode_address  # ✅ NEW: Geocoding zip codes
@@ -22,7 +22,7 @@ ZIP_LIST = [
     "30301", "70112", "37201", "64106", "29401", "98101"
 ]
 
-def haversine_distance(lat1, lon1, lat2, lon2):  # ✅ NEW
+def haversine_distance(lat1, lon1, lat2, lon2):
     R = 3958.8
     dlat = radians(lat2 - lat1)
     dlon = radians(lon2 - lon1)
@@ -74,7 +74,7 @@ def get_vehicle_details(detail_url, fallback_city=None):
         print("Error fetching vehicle detail:", e)
         return "N/A", "N/A", "N/A", "N/A", "Unknown"
 
-def scrape_cars(make, model, zip_code, city):
+def scrape_cars(make, model, zip_code, city_state):
     listings = []
     search_url = f"https://www.cars.com/shopping/results/?stock_type=certified&makes[]={make.lower()}&models[]={make.lower()}-{model.lower().replace(' ', '_')}&list_price_max=&maximum_distance=500&zip={zip_code}&year_min={VEHICLE_FILTERS['year_min']}&mileage_max={VEHICLE_FILTERS['mileage_max']}&transmission_slugs=automatic&drivetrain_slugs=4wd&only_with_photos=true"
 
@@ -97,7 +97,7 @@ def scrape_cars(make, model, zip_code, city):
                 continue
             detail_url = BASE_URL + link_tag["href"]
 
-            mileage, full_address, phone, description, color = get_vehicle_details(detail_url, fallback_city=city)
+            mileage, full_address, phone, description, color = get_vehicle_details(detail_url, fallback_city=city_state)
             print("Extracted color:", color)
 
             vehicle = {
@@ -115,7 +115,8 @@ def scrape_cars(make, model, zip_code, city):
                     "website": detail_url
                 },
                 "lat": None,
-                "lon": None
+                "lon": None,
+                "city_state": city_state  # ✅ NEW field
             }
 
             if not passes_color_filter(vehicle):
@@ -140,17 +141,31 @@ def search_vehicles():
 
     for zip_code in ZIP_LIST:
         try:
-            lat, lon = geocode_address(zip_code)  # ✅ NEW
+            lat, lon = geocode_address(zip_code)
             distance = haversine_distance(CENTER_LAT, CENTER_LON, lat, lon)
             if distance > SEARCH_RADIUS_MILES:
                 print(f"[SKIP] ZIP {zip_code} is {int(distance)} miles away — outside radius.")
                 continue
+
+            response = requests.get(
+                "https://maps.googleapis.com/maps/api/geocode/json",
+                params={"address": zip_code, "key": GOOGLE_MAPS_API_KEY}
+            )
+            result = response.json()
+            if result["status"] == "OK":
+                components = result["results"][0]["address_components"]
+                city = next((c["long_name"] for c in components if "locality" in c["types"]), "Unknown City")
+                state = next((c["short_name"] for c in components if "administrative_area_level_1" in c["types"]), "XX")
+                city_state = f"{city}, {state}"
+            else:
+                city_state = f"ZIP {zip_code}"
+
         except Exception as e:
             print(f"[ERROR] Geocoding ZIP {zip_code} failed: {e}")
             continue
 
         for make in VEHICLE_FILTERS["make"]:
             for model in VEHICLE_FILTERS["model"]:
-                all_listings += scrape_cars(make, model, zip_code, f"ZIP {zip_code}")  # ✅ ZIP label fallback
+                all_listings += scrape_cars(make, model, zip_code, city_state)
 
     return all_listings
