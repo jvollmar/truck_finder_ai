@@ -1,4 +1,4 @@
-rom math import radians, sin, cos, sqrt, atan2
+from math import radians, sin, cos, sqrt, atan2
 from config import CENTER_LAT, CENTER_LON, SEARCH_RADIUS_MILES, VEHICLE_FILTERS, USE_OPENAI_FILTER
 from openai_filter import is_vehicle_match
 
