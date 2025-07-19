@@ -26,17 +26,7 @@ def generate_html(listings):
         dealer_address = dealer.get('address', 'N/A')
         dealer_phone = dealer.get('phone', 'N/A')
         dealer_website = dealer.get('website', '#')
-
-        # --- Updated City/State Extraction ---
-        city_state = "N/A"
-        if dealer_address and ',' in dealer_address:
-            parts = [p.strip() for p in dealer_address.split(',')]
-            if len(parts) >= 2:
-                city = parts[-2]
-                state_zip = parts[-1].split()
-                if len(state_zip) >= 1:
-                    state = state_zip[0]
-                    city_state = f"{city}, {state}"
+        city_state = car.get('city_state', 'N/A')  # ✅ NEW
 
         html += f"""
     <div class='card'>
