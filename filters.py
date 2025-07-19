@@ -13,7 +13,7 @@ def within_radius(lat, lon):
 def passes_color_filter(vehicle: dict) -> bool:
     color = vehicle.get("exterior_color_normalized", "").lower()
     result = "blue" in color
-    print(f"[DEBUG] Filtering color: '{color}' -> {'PASS' if result else 'FAIL'}")
+    # print(f"[DEBUG] Filtering color: '{color}' -> {'PASS' if result else 'FAIL'}")
     return result
 
 def apply_filters(listings):
@@ -41,10 +41,10 @@ def apply_filters(listings):
         raw_color = car.get("color", "")
         normalized_color = raw_color.strip().lower()
 
-        print(f"[DEBUG] Filtering color: '{raw_color}' (normalized: '{normalized_color}') for vehicle: {title}")
+        # print(f"[DEBUG] Filtering color: '{raw_color}' (normalized: '{normalized_color}') for vehicle: {title}")
 
         if required_color and required_color not in normalized_color:
-            print(f"Skipping {title} - color '{normalized_color}' does not contain '{required_color}'")
+            # print(f"Skipping {title} - color '{normalized_color}' does not contain '{required_color}'")
             continue
 
         results.append(car)
