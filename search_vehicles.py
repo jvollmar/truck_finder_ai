@@ -53,7 +53,7 @@ def get_vehicle_details(detail_url, fallback_city=None):
                     mileage = value
                 elif "exterior color" in label:
                     color = value
-                    print(f"[DEBUG] Extracted raw color value: '{color}' from label: '{label}'") 
+                    # print(f"[DEBUG] Extracted raw color value: '{color}' from label: '{label}'") 
                     if "blue" in color.lower():
                         color = "blue"
                     else:
@@ -120,7 +120,7 @@ def scrape_cars(make, model, zip_code, city_state):
             }
 
             if not passes_color_filter(vehicle):
-                print(f"[DEBUG] Skipping {title} - color '{color}' rejected")
+                # print(f"[DEBUG] Skipping {title} - color '{color}' rejected")
                 continue
 
             if USE_OPENAI_FILTER and not is_vehicle_match(description):
