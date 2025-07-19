@@ -83,7 +83,7 @@ def load_zip_cache():
 
 def save_zip_cache(cache):
     with open(ZIP_CACHE_FILE, "w") as f:
-        json.dump(cache, f)
+        json.dump(cache, f, indent=2)
 
 def scrape_cars(make, model, zip_code, city_state):
     listings = []
@@ -185,3 +185,4 @@ def search_vehicles():
 
     save_zip_cache(zip_cache)
     return all_listings
+
