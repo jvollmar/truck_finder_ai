@@ -1,5 +1,3 @@
-import re
-
 def generate_html(listings):
     html = """<html>
 <head>
@@ -29,13 +27,16 @@ def generate_html(listings):
         dealer_phone = dealer.get('phone', 'N/A')
         dealer_website = dealer.get('website', '#')
 
-        # Extract city/state from address using regex
+        # --- Updated City/State Extraction ---
         city_state = "N/A"
-        match = re.search(r',\s*([^,]+),\s*([A-Z]{2})\s+\d{5}', dealer_address)
-        if match:
-            city = match.group(1).strip()
-            state = match.group(2).strip()
-            city_state = f"{city}, {state}"
+        if dealer_address and ',' in dealer_address:
+            parts = [p.strip() for p in dealer_address.split(',')]
+            if len(parts) >= 2:
+                city = parts[-2]
+                state_zip = parts[-1].split()
+                if len(state_zip) >= 1:
+                    state = state_zip[0]
+                    city_state = f"{city}, {state}"
 
         html += f"""
     <div class='card'>
@@ -57,4 +58,3 @@ def generate_html(listings):
 
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(html)
-
