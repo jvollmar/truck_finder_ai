@@ -29,14 +29,13 @@ def generate_html(listings):
         dealer_phone = dealer.get('phone', 'N/A')
         dealer_website = dealer.get('website', '#')
 
-        # Extract city/state using regex for format like "123 Main St, Fayetteville, AR 72701"
-        match = re.search(r'([^,]+),\s*([A-Z]{2})\s+\d{5}', dealer_address)
+        # Extract city/state from address using regex
+        city_state = "N/A"
+        match = re.search(r',\s*([^,]+),\s*([A-Z]{2})\s+\d{5}', dealer_address)
         if match:
             city = match.group(1).strip()
             state = match.group(2).strip()
             city_state = f"{city}, {state}"
-        else:
-            city_state = "N/A"
 
         html += f"""
     <div class='card'>
