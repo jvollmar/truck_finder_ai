@@ -184,4 +184,4 @@ def search_vehicles():
             continue
 
     save_zip_cache(zip_cache)
-    return all_listingss
+    return all_listings
