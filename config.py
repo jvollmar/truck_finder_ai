@@ -24,7 +24,7 @@ VEHICLE_FILTERS = {
     "model": ["Denali", "Silverado 1500"],
     "certified": True,
     "year_min": 2017,
-    "mileage_max": 30000,
+    "mileage_max": 20000,
     "drive": "4WD",
     "doors": 4,
     "color_contains": "blue"
