@@ -4,7 +4,7 @@ from config import VEHICLE_FILTERS, USE_OPENAI_FILTER, GOOGLE_MAPS_API_KEY
 from filters import passes_color_filter
 from openai_filter import is_vehicle_match
 from geocode import geocode_address  # ✅ Geocoding zip codes
-from math import radians, sin, cos, sqrt, atan2
+from math import radians, sin, cos, sqrt, atan2   
 import time
 import json
 import os
@@ -184,4 +184,4 @@ def search_vehicles():
             continue
 
     save_zip_cache(zip_cache)
-    return all_listings
+    return all_listingss
