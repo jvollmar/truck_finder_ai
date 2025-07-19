@@ -98,7 +98,7 @@ def scrape_cars(make, model, zip_code, city_state):
             detail_url = BASE_URL + link_tag["href"]
 
             mileage, full_address, phone, description, color = get_vehicle_details(detail_url, fallback_city=city_state)
-            print("Extracted color:", color)
+            # print("Extracted color:", color)
 
             vehicle = {
                 "title": title,
@@ -124,7 +124,7 @@ def scrape_cars(make, model, zip_code, city_state):
                 continue
 
             if USE_OPENAI_FILTER and not is_vehicle_match(description):
-                print(f"[DEBUG] Skipping {title} - OpenAI filter mismatch")
+                # print(f"[DEBUG] Skipping {title} - OpenAI filter mismatch")
                 continue
 
             listings.append(vehicle)
