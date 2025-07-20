@@ -139,13 +139,12 @@ def scrape_cars(make, model, zip_code, city_state, seen_urls):
 
 def search_vehicles():
     all_listings = []
-    seen_urls = set()  # ✅ Add this line 
 
     with open(USZIPS_CSV, newline='') as f:
         reader = csv.DictReader(f)
         for i, row in enumerate(reader, 1):
-            if i > 250:  # 👈 Limit to first 50 ZIPs for testing
-                print("🔚 Reached test limit of 50 ZIPs.")
+            if i > 250:  # Adjust ZIP cap as needed
+                print("🔚 Reached limit of 250 ZIPs.")
                 break
 
             try:
@@ -162,11 +161,20 @@ def search_vehicles():
 
                 for make in VEHICLE_FILTERS["make"]:
                     for model in VEHICLE_FILTERS["model"]:
-                        all_listings += scrape_cars(make, model, zip_code, city_state, seen_urls)
-
+                        all_listings += scrape_cars(make, model, zip_code, city_state)
 
             except Exception as e:
                 print(f"[ERROR] ZIP {row.get('zip')} failed: {e}")
                 continue
 
-    return all_listings
+    # ✅ Deduplicate by (title, dealer name)
+    seen = set()
+    unique_listings = []
+    for car in all_listings:
+        key = (car.get("title", ""), car.get("dealer", {}).get("name", ""))
+        if key not in seen:
+            seen.add(key)
+            unique_listings.append(car)
+
+    print(f"🧹 Deduplicated to {len(unique_listings)} unique listings from {len(all_listings)} scraped.")
+    return unique_listings
