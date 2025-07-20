@@ -10,13 +10,13 @@ EMAIL_RECEIVER = "rmzgrace@yahoo.com"
 # Google Maps API
 GOOGLE_MAPS_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
 
-# Search area
-CENTER_LAT = 36.0626
+# Search center for ZIP radius filtering
+CENTER_LAT = 36.0626  # Fayetteville, AR
 CENTER_LON = -94.1574
-SEARCH_RADIUS_MILES = 850
+SEARCH_RADIUS_MILES = 850  # miles
 
 # Toggle OpenAI filtering
-USE_OPENAI_FILTER = True  # Set to False to skip OpenAI filtering
+USE_OPENAI_FILTER = False  # Set True to enable OpenAI semantic filtering
 
 # Vehicle filtering criteria
 VEHICLE_FILTERS = {
@@ -27,10 +27,10 @@ VEHICLE_FILTERS = {
     "mileage_max": 20000,
     "drive": "4WD",
     "doors": 4,
-    "color_contains": "blue"
+    "color_contains": "blue"  # Used in both OpenAI and direct filters
 }
 
-# For OpenAI prompt - hard requirements
+# For OpenAI filtering prompt
 REQUIRED_FEATURES = [
     "Make: GMC or Chevrolet",
     "Model: Denali or Silverado 1500",
@@ -47,7 +47,6 @@ REQUIRED_FEATURES = [
     "Full-length running boards"
 ]
 
-# For OpenAI prompt - optional suggestions
 PREFERRED_FEATURES = [
     "No GPS system",
     "No DVD system",
@@ -57,9 +56,7 @@ PREFERRED_FEATURES = [
     "Color (already filtered elsewhere)"
 ]
 
-# OpenAI key
+# OpenAI API key
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 print(f"[CONFIG DEBUG] OpenAI key loaded: {bool(OPENAI_API_KEY)}")
-
-USE_OPENAI_FILTER = False  # Toggle to True to enable OpenAI filtering
 
