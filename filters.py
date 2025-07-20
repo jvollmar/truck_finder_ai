@@ -7,8 +7,6 @@ def passes_color_filter(vehicle: dict) -> bool:
 
 def apply_filters(listings):
     results = []
-    required_filters = VEHICLE_FILTERS.get("required", {})
-    preferred_filters = VEHICLE_FILTERS.get("preferred", {})
     required_color = required_filters.get("color_contains", "").lower()
 
     for car in listings:
