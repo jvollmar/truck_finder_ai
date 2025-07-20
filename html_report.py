@@ -74,19 +74,19 @@ def generate_html(listings):
         dealer_website = html.escape(dealer.get('website', '#'))
         city_state = html.escape(car.get('city_state', 'N/A'))
 
-        color_tag = f"<span class='highlight'>{color}</span>" if "blue" in color.lower() else color
+        color_tag = f"<span class='highlight'>{color}</span> 🌊" if "blue" in color.lower() else color
+        image_tag = f"<img src='{image_url}' alt='Truck Image - {title}'>" if image_url else ""
 
         html_content += f"""
     <div class='card'>
-        <h2>{title}</h2>
+        <h2><a href="{dealer_website}" target="_blank">{title}</a></h2>
         <p><strong>Price:</strong> {price}</p>
         <p><strong>Mileage:</strong> {mileage}</p>
         <p><strong>Exterior Color:</strong> {color_tag}</p>
         <p><strong>Description:</strong> {description}</p>
-        {"<img src='" + image_url + "' alt='Truck Image'>" if image_url else ""}
-        <p><strong>Dealer:</strong> {dealer_name}</p>
-        <p><strong>Address:</strong> {dealer_address}</p>
+        {image_tag}
         <p><strong>City/State:</strong> {city_state}</p>
+        <p><strong>Address:</strong> {dealer_address}</p>
         <p><strong>Phone:</strong> {dealer_phone}</p>
         <p><strong>Website:</strong> <a href="{dealer_website}" target="_blank">{dealer_website}</a></p>
     </div>
@@ -95,6 +95,8 @@ def generate_html(listings):
     html_content += """
     <div class="footer">
         <p>ZIP code location data provided by <a href="https://simplemaps.com/data/us-zips" target="_blank">SimpleMaps</a>.</p>
+        <p>Vehicle listings retrieved from <a href="https://cars.com" target="_blank">Cars.com</a>.</p>
+        <p>Filtered by: certified status, exterior color "blue", 2017+ model year, ≤20,000 miles.</p>
     </div>
 </body>
 </html>
