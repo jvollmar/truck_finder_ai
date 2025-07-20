@@ -88,7 +88,7 @@ def scrape_cars(make, model, zip_code, city_state):
         return []
 
     cars = soup.select("div.vehicle-card")
-    for car in cars[:3]:  # You can increase/decrease this limit
+    for car in cars[:10]:  # You can increase/decrease this limit
         try:
             title = car.select_one("h2.title").text.strip()
             price = car.select_one(".primary-price").text.strip()
