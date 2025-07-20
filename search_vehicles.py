@@ -137,13 +137,16 @@ def scrape_cars(make, model, zip_code, city_state):
 def search_vehicles():
     all_listings = []
 
+   def search_vehicles():
+    all_listings = []
+
     with open(USZIPS_CSV, newline='') as f:
         reader = csv.DictReader(f)
         for i, row in enumerate(reader, 1):
-            if i > 50:  # 👈 Only process 50 ZIPs for testing (adjust as needed)
+            if i > 50:  # 👈 Limit to first 50 ZIPs for testing
                 print("🔚 Reached test limit of 50 ZIPs.")
                 break
-        for row in reader:
+
             try:
                 zip_code = row["zip"]
                 lat = float(row["lat"])
