@@ -6,16 +6,16 @@ def format_output(listings):
     for i, v in enumerate(listings, 1):
         d = v["dealer"]
         lines.append(f"""---
-Vehicle #{i}:
+Vehicle #{i}
 Title: {v['title']}
-Price: {v.get('price','N/A')}
-Image: {v.get('image','N/A')}
+Price: {v.get('price', 'N/A')}
+Image: {v.get('image_url', 'N/A')}
 Description: {v['description']}
 
-Dealer:
-• {d.get('name')}
-• {d.get('address')}
-• {d.get('phone')}
-• {d.get('website')}
+Dealer Info:
+• Name: {d.get('name', 'N/A')}
+• Address: {d.get('address', 'N/A')}
+• Phone: {d.get('phone', 'N/A')}
+• Website: {d.get('website', 'N/A')}
 """)
     return "\n".join(lines)
