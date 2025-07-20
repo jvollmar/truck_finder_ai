@@ -137,9 +137,6 @@ def scrape_cars(make, model, zip_code, city_state):
 def search_vehicles():
     all_listings = []
 
-   def search_vehicles():
-    all_listings = []
-
     with open(USZIPS_CSV, newline='') as f:
         reader = csv.DictReader(f)
         for i, row in enumerate(reader, 1):
