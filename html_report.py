@@ -1,41 +1,89 @@
+import html
+from datetime import datetime
+
 def generate_html(listings):
-    html = """<html>
+    now = datetime.now().strftime("%B %d, %Y at %I:%M %p")
+
+    html_content = f"""<html>
 <head>
-    <title>Truck Search Results</title>
+    <title>Certified Truck Search Results</title>
     <style>
-        body { font-family: Arial, sans-serif; padding: 20px; }
-        .card { border: 1px solid #ccc; border-radius: 10px; padding: 15px; margin-bottom: 20px; }
-        img { max-width: 100%; height: auto; border-radius: 8px; }
-        h2 { margin-top: 0; }
-        a { text-decoration: none; color: #0366d6; }
+        body {{
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }}
+        .card {{
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
+        }}
+        img {{
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px 0;
+        }}
+        h1 {{
+            color: #2a2a2a;
+        }}
+        h2 {{
+            margin-top: 0;
+            color: #0b3d91;
+        }}
+        p {{
+            margin: 5px 0;
+        }}
+        a {{
+            text-decoration: none;
+            color: #0366d6;
+        }}
+        .footer {{
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+        }}
+        .highlight {{
+            background: #e6f2ff;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-weight: bold;
+        }}
     </style>
 </head>
 <body>
     <h1>Certified Truck Search Results</h1>
+    <p>Report generated on <strong>{now}</strong></p>
 """
 
     for car in listings:
-        title = car.get('title', 'Unknown')
-        price = car.get('price', 'N/A')
-        mileage = car.get('mileage', 'N/A')
-        color = car.get('color', 'N/A')
-        description = car.get('description', 'No description')
+        title = html.escape(car.get('title', 'Unknown'))
+        price = html.escape(car.get('price', 'N/A'))
+        mileage = html.escape(car.get('mileage', 'N/A'))
+        color = html.escape(car.get('color', 'N/A'))
+        description = html.escape(car.get('description', 'No description'))
         image_url = car.get('image_url', '')
         dealer = car.get('dealer', {})
-        dealer_name = dealer.get('name', 'N/A')
-        dealer_address = dealer.get('address', 'N/A')
-        dealer_phone = dealer.get('phone', 'N/A')
-        dealer_website = dealer.get('website', '#')
-        city_state = car.get('city_state', 'N/A')  # ✅ NEW
+        dealer_name = html.escape(dealer.get('name', 'N/A'))
+        dealer_address = html.escape(dealer.get('address', 'N/A'))
+        dealer_phone = html.escape(dealer.get('phone', 'N/A'))
+        dealer_website = html.escape(dealer.get('website', '#'))
+        city_state = html.escape(car.get('city_state', 'N/A'))
 
-        html += f"""
+        color_tag = f"<span class='highlight'>{color}</span>" if "blue" in color.lower() else color
+
+        html_content += f"""
     <div class='card'>
         <h2>{title}</h2>
         <p><strong>Price:</strong> {price}</p>
         <p><strong>Mileage:</strong> {mileage}</p>
-        <p><strong>Exterior Color:</strong> {color}</p>
+        <p><strong>Exterior Color:</strong> {color_tag}</p>
         <p><strong>Description:</strong> {description}</p>
-        <img src="{image_url}" alt="Truck Image">
+        {"<img src='" + image_url + "' alt='Truck Image'>" if image_url else ""}
         <p><strong>Dealer:</strong> {dealer_name}</p>
         <p><strong>Address:</strong> {dealer_address}</p>
         <p><strong>City/State:</strong> {city_state}</p>
@@ -44,7 +92,13 @@ def generate_html(listings):
     </div>
 """
 
-    html += "</body></html>"
+    html_content += """
+    <div class="footer">
+        <p>ZIP code location data provided by <a href="https://simplemaps.com/data/us-zips" target="_blank">SimpleMaps</a>.</p>
+    </div>
+</body>
+</html>
+"""
 
     with open("index.html", "w", encoding="utf-8") as f:
-        f.write(html)
+        f.write(html_content)
