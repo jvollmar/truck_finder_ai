@@ -1,5 +1,7 @@
 import html
 from datetime import datetime
+import os
+
 
 def generate_html(listings):
     now = datetime.now().strftime("%B %d, %Y at %I:%M %p")
@@ -102,5 +104,6 @@ def generate_html(listings):
 </html>
 """
 
-    with open("index.html", "w", encoding="utf-8") as f:
+    os.makedirs("report", exist_ok=True)
+    with open("report/index.html", "w", encoding="utf-8") as f:
         f.write(html_content)
