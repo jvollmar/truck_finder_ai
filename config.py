@@ -2,7 +2,7 @@ import os
 
 
 # Email configuration
-EMAIL_SENDER = os.getenv("EMAIL_SENDER")
+EMAIL_SENDER = "rmzgrace@yahoo.com"
 EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
 EMAIL_RECEIVER = "rmzgrace@yahoo.com"
 
