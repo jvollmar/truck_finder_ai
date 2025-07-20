@@ -88,7 +88,7 @@ def scrape_cars(make, model, zip_code, city_state):
         return []
 
     cars = soup.select("div.vehicle-card")
-    for car in cars[:10]:  # You can increase/decrease this limit
+    for car in cars[:3]:  # You can increase/decrease this limit
         try:
             title = car.select_one("h2.title").text.strip()
             price = car.select_one(".primary-price").text.strip()
@@ -139,6 +139,10 @@ def search_vehicles():
 
     with open(USZIPS_CSV, newline='') as f:
         reader = csv.DictReader(f)
+        for i, row in enumerate(reader, 1):
+            if i > 50:  # 👈 Only process 50 ZIPs for testing (adjust as needed)
+                print("🔚 Reached test limit of 50 ZIPs.")
+                break
         for row in reader:
             try:
                 zip_code = row["zip"]
