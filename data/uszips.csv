@@ -1,793 +1,793 @@
-zip,lat,lng,city,state_id,population,county_name,timezone
-64137,38.93196,-94.54287,Kansas City,MO,10004,Jackson,America/Chicago
-73116,35.54684,-97.56519,Oklahoma City,OK,10016,Oklahoma,America/Chicago
-66007,39.1405,-94.94548,Basehor,KS,10060,Leavenworth,America/Chicago
-76249,33.27993,-97.3026,Krum,TX,10069,Denton,America/Chicago
-73051,35.03175,-97.24629,Lexington,OK,10079,Cleveland,America/Chicago
-71852,33.99489,-93.85831,Nashville,AR,10088,Howard,America/Chicago
-66618,39.14188,-95.74997,Topeka,KS,10113,Shawnee,America/Chicago
-72173,35.10001,-92.20807,Vilonia,AR,10122,Faulkner,America/Chicago
-74126,36.23502,-96.0331,Tulsa,OK,10144,Osage,America/Chicago
-67410,38.95632,-97.22104,Abilene,KS,10177,Dickinson,America/Chicago
-66606,39.06191,-95.72296,Topeka,KS,10177,Shawnee,America/Chicago
-71832,34.0397,-94.34791,De Queen,AR,10178,Sevier,America/Chicago
-64108,39.08413,-94.58449,Kansas City,MO,10179,Jackson,America/Chicago
-76078,33.0896,-97.46647,Rhome,TX,10200,Wise,America/Chicago
-63348,38.78969,-90.94131,Foristell,MO,10207,St. Charles,America/Chicago
-72740,36.10889,-93.67599,Huntsville,AR,10226,Madison,America/Chicago
-75650,32.51529,-94.55358,Hallsville,TX,10233,Harrison,America/Chicago
-75135,33.06666,-96.22567,Caddo Mills,TX,10265,Hunt,America/Chicago
-64109,39.06646,-94.56709,Kansas City,MO,10274,Jackson,America/Chicago
-64504,39.68605,-94.91264,Saint Joseph,MO,10286,Buchanan,America/Chicago
-73080,35.00725,-97.452,Purcell,OK,10289,McClain,America/Chicago
-62258,38.46014,-89.77287,Mascoutah,IL,10292,St. Clair,America/Chicago
-66012,39.06091,-94.91658,Bonner Springs,KS,10301,Leavenworth,America/Chicago
-74010,35.80945,-96.36101,Bristow,OK,10328,Creek,America/Chicago
-64501,39.76584,-94.84448,Saint Joseph,MO,10354,Buchanan,America/Chicago
-71635,33.1369,-92.00133,Crossett,AR,10368,Ashley,America/Chicago
-74525,34.33441,-96.05563,Atoka,OK,10420,Atoka,America/Chicago
-72753,35.93477,-94.32607,Prairie Grove,AR,10425,Washington,America/Chicago
-66111,39.08529,-94.79621,Kansas City,KS,10449,Wyandotte,America/Chicago
-72114,34.7645,-92.26024,North Little Rock,AR,10451,Pulaski,America/Chicago
-75495,33.43246,-96.55041,Van Alstyne,TX,10451,Grayson,America/Chicago
-64834,37.18714,-94.56865,Carl Junction,MO,10476,Jasper,America/Chicago
-63044,38.77455,-90.42825,Bridgeton,MO,10510,St. Louis,America/Chicago
-75645,32.68375,-94.87317,Gilmer,TX,10511,Upshur,America/Chicago
-62712,39.74883,-89.58344,Springfield,IL,10555,Sangamon,America/Chicago
-75442,33.17717,-96.35035,Farmersville,TX,10567,Collin,America/Chicago
-74132,36.04869,-96.01315,Tulsa,OK,10629,Tulsa,America/Chicago
-64106,39.10526,-94.57013,Kansas City,MO,10666,Jackson,America/Chicago
-72207,34.77493,-92.34271,Little Rock,AR,10735,Pulaski,America/Chicago
-75551,33.11648,-94.20325,Atlanta,TX,10768,Cass,America/Chicago
-62095,38.86307,-90.07545,Wood River,IL,10780,Madison,America/Chicago
-66043,39.24967,-94.90193,Lansing,KS,10821,Leavenworth,America/Chicago
-65233,38.91528,-92.72035,Boonville,MO,10853,Cooper,America/Chicago
-63390,38.80499,-91.0413,Wright City,MO,10856,Warren,America/Chicago
-38058,35.45861,-89.81933,Munford,TN,10900,Tipton,America/Chicago
-66720,37.64631,-95.459,Chanute,KS,10913,Neosho,America/Chicago
-65584,37.82901,-92.13086,Saint Robert,MO,10922,Pulaski,America/Chicago
-64124,39.10718,-94.5391,Kansas City,MO,10924,Jackson,America/Chicago
-66086,39.11578,-95.08043,Tonganoxie,KS,10935,Leavenworth,America/Chicago
-67337,37.05486,-95.5993,Coffeyville,KS,10944,Montgomery,America/Chicago
-63012,38.33532,-90.44832,Barnhart,MO,10977,Jefferson,America/Chicago
-63124,38.63832,-90.38023,Saint Louis,MO,11009,St. Louis,America/Chicago
-72110,35.15514,-92.77273,Morrilton,AR,11016,Conway,America/Chicago
-76273,33.74794,-96.93935,Whitesboro,TX,11019,Grayson,America/Chicago
-65355,38.22137,-93.37144,Warsaw,MO,11029,Benton,America/Chicago
-74873,35.22396,-96.97975,Tecumseh,OK,11033,Pottawatomie,America/Chicago
-72616,36.35047,-93.55736,Berryville,AR,11046,Carroll,America/Chicago
-75570,33.4649,-94.4389,New Boston,TX,11047,Bowie,America/Chicago
-76426,33.16493,-97.83772,Bridgeport,TX,11065,Wise,America/Chicago
-72730,36.03057,-94.26588,Farmington,AR,11068,Washington,America/Chicago
-66701,37.82862,-94.75999,Fort Scott,KS,11075,Bourbon,America/Chicago
-76085,32.84907,-97.70051,Weatherford,TX,11083,Parker,America/Chicago
-72916,35.27236,-94.37256,Fort Smith,AR,11087,Sebastian,America/Chicago
-72112,35.57383,-91.22918,Newport,AR,11092,Jackson,America/Chicago
-74301,36.68157,-95.23687,Vinita,OK,11126,Craig,America/Chicago
-64123,39.11436,-94.52167,Kansas City,MO,11130,Jackson,America/Chicago
-73026,35.23433,-97.2791,Norman,OK,11131,Cleveland,America/Chicago
-73065,35.25008,-97.61209,Newcastle,OK,11136,McClain,America/Chicago
-62010,38.91944,-90.04789,Bethalto,IL,11154,Madison,America/Chicago
-74851,35.42653,-97.08072,Mcloud,OK,11161,Pottawatomie,America/Chicago
-74728,34.15411,-94.81959,Broken Bow,OK,11177,McCurtain,America/Chicago
-67147,37.86062,-97.3058,Valley Center,KS,11193,Sedgwick,America/Chicago
-73111,35.51889,-97.47722,Oklahoma City,OK,11216,Oklahoma,America/Chicago
-65809,37.17071,-93.1936,Springfield,MO,11228,Greene,America/Chicago
-66085,38.80069,-94.64729,Stilwell,KS,11412,Johnson,America/Chicago
-63077,38.32648,-90.98537,Saint Clair,MO,11466,Franklin,America/Chicago
-63645,37.54204,-90.32428,Fredericktown,MO,11514,Madison,America/Chicago
-73045,35.51201,-97.1414,Harrah,OK,11542,Oklahoma,America/Chicago
-75428,33.27132,-95.91799,Commerce,TX,11587,Hunt,America/Chicago
-63113,38.65797,-90.2475,Saint Louis,MO,11610,St. Louis,America/Chicago
-65605,36.88408,-93.69132,Aurora,MO,11611,Barry,America/Chicago
-65026,38.32105,-92.57099,Eldon,MO,11648,Miller,America/Chicago
-75462,33.62166,-95.48362,Paris,TX,11651,Lamar,America/Chicago
-75494,32.90898,-95.26126,Winnsboro,TX,11685,Wood,America/Chicago
-38004,35.41909,-89.76687,Atoka,TN,11696,Tipton,America/Chicago
-64132,38.98551,-94.5396,Kansas City,MO,11775,Jackson,America/Chicago
-76102,32.75799,-97.32858,Fort Worth,TX,11783,Tarrant,America/Chicago
-67357,37.33951,-95.25261,Parsons,KS,11786,Labette,America/Chicago
-72227,34.7782,-92.37498,Little Rock,AR,11800,Pulaski,America/Chicago
-64429,39.73895,-94.2285,Cameron,MO,11815,DeKalb,America/Chicago
-67230,37.68655,-97.17087,Wichita,KS,11822,Sedgwick,America/Chicago
-76054,32.85904,-97.17789,Hurst,TX,11840,Tarrant,America/Chicago
-75223,32.79255,-96.74556,Dallas,TX,11875,Dallas,America/Chicago
-64503,39.74973,-94.84545,Saint Joseph,MO,11921,Buchanan,America/Chicago
-74948,35.46207,-94.56284,Muldrow,OK,11946,Sequoyah,America/Chicago
-63857,36.22402,-90.04612,Kennett,MO,11964,Dunklin,America/Chicago
-74960,35.80995,-94.65027,Stilwell,OK,11964,Adair,America/Chicago
-64075,38.99751,-94.14544,Oak Grove,MO,11979,Jackson,America/Chicago
-73068,35.1384,-97.28264,Noble,OK,12003,Cleveland,America/Chicago
-66206,38.95851,-94.61923,Leawood,KS,12030,Johnson,America/Chicago
-67219,37.76931,-97.31643,Wichita,KS,12093,Sedgwick,America/Chicago
-74023,35.95708,-96.74963,Cushing,OK,12097,Payne,America/Chicago
-64601,39.8044,-93.57334,Chillicothe,MO,12110,Livingston,America/Chicago
-66224,38.86213,-94.62866,Overland Park,KS,12184,Johnson,America/Chicago
-72086,34.80418,-91.90619,Lonoke,AR,12250,Lonoke,America/Chicago
-66214,38.96356,-94.71397,Overland Park,KS,12261,Johnson,America/Chicago
-74953,35.03931,-94.57156,Poteau,OK,12284,Le Flore,America/Chicago
-63670,37.89667,-90.16245,Sainte Genevieve,MO,12294,Ste. Genevieve,America/Chicago
-38060,35.21214,-89.50468,Oakland,TN,12360,Fayette,America/Chicago
-74604,36.69672,-96.98132,Ponca City,OK,12369,Kay,America/Chicago
-66071,38.57367,-94.86575,Paola,KS,12425,Miami,America/Chicago
-74104,36.14627,-95.9542,Tulsa,OK,12434,Tulsa,America/Chicago
-64113,39.01414,-94.5956,Kansas City,MO,12442,Jackson,America/Chicago
-64128,39.06555,-94.53484,Kansas City,MO,12445,Jackson,America/Chicago
-74868,35.26699,-96.64193,Seminole,OK,12451,Seminole,America/Chicago
-66101,39.11871,-94.62592,Kansas City,KS,12463,Wyandotte,America/Chicago
-72150,34.30999,-92.39642,Sheridan,AR,12476,Grant,America/Chicago
-62052,39.11179,-90.32004,Jerseyville,IL,12483,Jersey,America/Chicago
-63051,38.39886,-90.57303,House Springs,MO,12589,Jefferson,America/Chicago
-72543,35.45528,-91.99407,Heber Springs,AR,12642,Cleburne,America/Chicago
-73122,35.5202,-97.61391,Oklahoma City,OK,12689,Oklahoma,America/Chicago
-65708,36.91048,-93.90899,Monett,MO,12690,Barry,America/Chicago
-75644,32.79171,-94.99498,Gilmer,TX,12785,Upshur,America/Chicago
-73078,35.66867,-97.75304,Piedmont,OK,12807,Canadian,America/Chicago
-72921,35.46953,-94.19686,Alma,AR,12827,Crawford,America/Chicago
-66083,38.73518,-94.83397,Spring Hill,KS,12832,Miami,America/Chicago
-66103,39.06045,-94.62707,Kansas City,KS,12841,Wyandotte,America/Chicago
-72396,35.22966,-90.83559,Wynne,AR,12854,Cross,America/Chicago
-64772,37.82712,-94.33355,Nevada,MO,12930,Vernon,America/Chicago
-66112,39.11494,-94.7701,Kansas City,KS,12968,Wyandotte,America/Chicago
-67301,37.21092,-95.75224,Independence,KS,12996,Montgomery,America/Chicago
-73106,35.4823,-97.53662,Oklahoma City,OK,13019,Oklahoma,America/Chicago
-75065,33.11108,-97.01277,Lake Dallas,TX,13046,Denton,America/Chicago
-75244,32.92544,-96.83671,Dallas,TX,13105,Dallas,America/Chicago
-64154,39.27653,-94.62967,Kansas City,MO,13114,Platte,America/Chicago
-76164,32.7808,-97.35411,Fort Worth,TX,13134,Tarrant,America/Chicago
-62206,38.56796,-90.16981,East Saint Louis,IL,13155,St. Clair,America/Chicago
-66002,39.5488,-95.13881,Atchison,KS,13197,Atchison,America/Chicago
-38120,35.12344,-89.85237,Memphis,TN,13249,Shelby,America/Chicago
-63841,36.77198,-89.98169,Dexter,MO,13319,Stoddard,America/Chicago
-74033,35.94711,-96.00636,Glenpool,OK,13371,Tulsa,America/Chicago
-72212,34.78498,-92.4141,Little Rock,AR,13400,Pulaski,America/Chicago
-66219,38.95124,-94.77807,Lenexa,KS,13410,Johnson,America/Chicago
-71953,34.61291,-94.2118,Mena,AR,13412,Polk,America/Chicago
-75686,32.96921,-94.94697,Pittsburg,TX,13427,Camp,America/Chicago
-75647,32.5167,-94.96429,Gladewater,TX,13457,Gregg,America/Chicago
-63134,38.74319,-90.34549,Saint Louis,MO,13460,St. Louis,America/Chicago
-63080,38.20828,-91.08802,Sullivan,MO,13529,Franklin,America/Chicago
-72455,36.3229,-91.04909,Pocahontas,AR,13572,Randolph,America/Chicago
-64735,38.36612,-93.73644,Clinton,MO,13572,Henry,America/Chicago
-67010,37.66099,-96.97388,Augusta,KS,13576,Butler,America/Chicago
-74128,36.1472,-95.85089,Tulsa,OK,13586,Tulsa,America/Chicago
-67209,37.6639,-97.43463,Wichita,KS,13613,Sedgwick,America/Chicago
-65560,37.59609,-91.49943,Salem,MO,13634,Dent,America/Chicago
-72012,35.10199,-91.91789,Beebe,AR,13663,White,America/Chicago
-66205,39.03122,-94.6307,Mission,KS,13728,Johnson,America/Chicago
-65742,37.12543,-93.08001,Rogersville,MO,13747,Greene,America/Chicago
-76022,32.83063,-97.14506,Bedford,TX,13790,Tarrant,America/Chicago
-64505,39.84431,-94.83354,Saint Joseph,MO,13875,Andrew,America/Chicago
-71655,33.62874,-91.7486,Monticello,AR,13892,Drew,America/Chicago
-63132,38.67607,-90.37745,Saint Louis,MO,13953,St. Louis,America/Chicago
-73089,35.2661,-97.79638,Tuttle,OK,13977,Grady,America/Chicago
-71601,34.17409,-91.89811,Pine Bluff,AR,13981,Jefferson,America/Chicago
-72908,35.30595,-94.4099,Fort Smith,AR,14003,Sebastian,America/Chicago
-67060,37.54601,-97.35952,Haysville,KS,14004,Sedgwick,America/Chicago
-38103,35.15308,-90.05518,Memphis,TN,14025,Shelby,America/Chicago
-65806,37.20567,-93.29847,Springfield,MO,14049,Greene,America/Chicago
-64089,39.39007,-94.56483,Smithville,MO,14060,Clay,America/Chicago
-64079,39.36267,-94.79351,Platte City,MO,14092,Platte,America/Chicago
-72714,36.46841,-94.21649,Bella Vista,AR,14108,Benton,America/Chicago
-73118,35.51788,-97.53007,Oklahoma City,OK,14118,Oklahoma,America/Chicago
-74003,36.73107,-96.06675,Bartlesville,OK,14128,Osage,America/Chicago
-64507,39.73324,-94.75735,Saint Joseph,MO,14159,Buchanan,America/Chicago
-72103,34.59133,-92.38316,Mabelvale,AR,14160,Saline,America/Chicago
-74467,35.96681,-95.39181,Wagoner,OK,14166,Wagoner,America/Chicago
-62236,38.43391,-90.21141,Columbia,IL,14175,Monroe,America/Chicago
-72936,35.1896,-94.23069,Greenwood,AR,14182,Sebastian,America/Chicago
-67156,37.25099,-96.96503,Winfield,KS,14183,Cowley,America/Chicago
-63115,38.68211,-90.23994,Saint Louis,MO,14252,St. Louis,America/Chicago
-38107,35.17054,-90.02397,Memphis,TN,14254,Shelby,America/Chicago
-74955,35.50213,-94.75547,Sallisaw,OK,14299,Sequoyah,America/Chicago
-75773,32.67969,-95.44654,Mineola,TX,14311,Wood,America/Chicago
-72117,34.78076,-92.14548,North Little Rock,AR,14339,Pulaski,America/Chicago
-75209,32.8487,-96.8257,Dallas,TX,14359,Dallas,America/Chicago
-71923,34.08424,-93.05551,Arkadelphia,AR,14374,Clark,America/Chicago
-64080,38.7691,-94.25639,Pleasant Hill,MO,14383,Cass,America/Chicago
-74344,36.59604,-94.73845,Grove,OK,14386,Delaware,America/Chicago
-64701,38.62053,-94.3378,Harrisonville,MO,14462,Cass,America/Chicago
-65583,37.82171,-92.2541,Waynesville,MO,14462,Pulaski,America/Chicago
-64057,39.0692,-94.32203,Independence,MO,14509,Jackson,America/Chicago
-62034,38.75639,-89.96897,Glen Carbon,IL,14519,Madison,America/Chicago
-72745,36.2477,-94.10046,Lowell,AR,14521,Benton,America/Chicago
-72210,34.71506,-92.50378,Little Rock,AR,14544,Pulaski,America/Chicago
-65020,38.00517,-92.78193,Camdenton,MO,14635,Camden,America/Chicago
-75418,33.57235,-96.1773,Bonham,TX,14685,Fannin,America/Chicago
-63069,38.48286,-90.7292,Pacific,MO,14760,Franklin,America/Chicago
-67220,37.75191,-97.27909,Wichita,KS,14779,Sedgwick,America/Chicago
-64117,39.16522,-94.52251,Kansas City,MO,14800,Clay,America/Chicago
-71801,33.63306,-93.59833,Hope,AR,14907,Hempstead,America/Chicago
-65265,39.20531,-91.88728,Mexico,MO,15131,Audrain,America/Chicago
-66207,38.95625,-94.64439,Overland Park,KS,15149,Johnson,America/Chicago
-74070,36.3881,-96.07253,Skiatook,OK,15169,Osage,America/Chicago
-74110,36.18856,-95.95377,Tulsa,OK,15185,Tulsa,America/Chicago
-73108,35.45034,-97.56774,Oklahoma City,OK,15239,Oklahoma,America/Chicago
-62294,38.70374,-89.87242,Troy,IL,15246,Madison,America/Chicago
-65473,37.71215,-92.14811,Fort Leonard Wood,MO,15322,Pulaski,America/Chicago
-67005,37.06722,-96.99645,Arkansas City,KS,15336,Cowley,America/Chicago
-62629,39.67858,-89.71978,Chatham,IL,15369,Sangamon,America/Chicago
-63126,38.5496,-90.37868,Saint Louis,MO,15373,St. Louis,America/Chicago
-67235,37.68951,-97.49929,Wichita,KS,15442,Sedgwick,America/Chicago
-74447,35.64975,-96.00628,Okmulgee,OK,15500,Okmulgee,America/Chicago
-67214,37.70661,-97.31755,Wichita,KS,15553,Sedgwick,America/Chicago
-64024,39.32523,-94.22707,Excelsior Springs,MO,15587,Clay,America/Chicago
-75601,32.5086,-94.72414,Longview,TX,15653,Gregg,America/Chicago
-75203,32.74439,-96.80206,Dallas,TX,15710,Dallas,America/Chicago
-75169,32.70335,-95.99754,Wills Point,TX,15744,Van Zandt,America/Chicago
-38019,35.56114,-89.6304,Covington,TN,15747,Tipton,America/Chicago
-76088,32.84554,-97.90345,Weatherford,TX,15748,Parker,America/Chicago
-75233,32.70444,-96.87271,Dallas,TX,15775,Dallas,America/Chicago
-63628,37.9392,-90.52466,Bonne Terre,MO,15864,St. Francois,America/Chicago
-62035,38.96375,-90.23917,Godfrey,IL,15915,Madison,America/Chicago
-71602,34.27463,-92.13302,White Hall,AR,15922,Jefferson,America/Chicago
-67460,38.38431,-97.69719,Mcpherson,KS,15933,McPherson,America/Chicago
-38063,35.74598,-89.63412,Ripley,TN,15947,Lauderdale,America/Chicago
-72830,35.51685,-93.50859,Clarksville,AR,15962,Johnson,America/Chicago
-74106,36.19191,-95.98416,Tulsa,OK,15974,Tulsa,America/Chicago
-65340,39.09149,-93.18041,Marshall,MO,15977,Saline,America/Chicago
-74127,36.17462,-96.04511,Tulsa,OK,15990,Osage,America/Chicago
-63775,37.71051,-89.87919,Perryville,MO,15993,Perry,America/Chicago
-74401,35.72304,-95.45431,Muskogee,OK,16015,Muskogee,America/Chicago
-71753,33.22974,-93.18461,Magnolia,AR,16089,Columbia,America/Chicago
-63383,38.80726,-91.19319,Warrenton,MO,16120,Warren,America/Chicago
-74146,36.09784,-95.85344,Tulsa,OK,16133,Tulsa,America/Chicago
-66067,38.61877,-95.27566,Ottawa,KS,16146,Franklin,America/Chicago
-66226,39.03039,-94.8603,Shawnee,KS,16189,Johnson,America/Chicago
-75103,32.51201,-95.88363,Canton,TX,16222,Van Zandt,America/Chicago
-63074,38.72637,-90.38895,Saint Ann,MO,16237,St. Louis,America/Chicago
-62223,38.53491,-90.06027,Belleville,IL,16269,St. Clair,America/Chicago
-64060,39.37134,-94.36821,Kearney,MO,16291,Clay,America/Chicago
-38139,35.08615,-89.75581,Germantown,TN,16298,Shelby,America/Chicago
-74429,35.94872,-95.63065,Coweta,OK,16351,Wagoner,America/Chicago
-64870,37.18474,-94.48136,Webb City,MO,16360,Jasper,America/Chicago
-73142,35.60937,-97.63895,Oklahoma City,OK,16364,Oklahoma,America/Chicago
-73025,35.73199,-97.5727,Edmond,OK,16401,Logan,America/Chicago
-72364,35.2126,-90.18573,Marion,AR,16434,Crittenden,America/Chicago
-63601,37.8212,-90.5439,Park Hills,MO,16434,St. Francois,America/Chicago
-72335,34.99042,-90.75645,Forrest City,AR,16514,St. Francis,America/Chicago
-62249,38.75469,-89.66436,Highland,IL,16550,Madison,America/Chicago
-62208,38.59641,-90.00528,Fairview Heights,IL,16653,St. Clair,America/Chicago
-67002,37.69575,-97.10725,Andover,KS,16753,Butler,America/Chicago
-74114,36.12696,-95.94661,Tulsa,OK,16756,Tulsa,America/Chicago
-65270,39.41552,-92.39917,Moberly,MO,16762,Randolph,America/Chicago
-76103,32.75282,-97.26627,Fort Worth,TX,16769,Tarrant,America/Chicago
-38112,35.14791,-89.97661,Memphis,TN,16798,Shelby,America/Chicago
-75001,32.96015,-96.83808,Addison,TX,16808,Dallas,America/Chicago
-75474,32.91709,-96.10611,Quinlan,TX,16813,Hunt,America/Chicago
-75057,33.05012,-96.9772,Lewisville,TX,16836,Denton,America/Chicago
-66442,39.09302,-96.78963,Fort Riley,KS,16876,Riley,America/Chicago
-72715,36.46505,-94.30545,Bella Vista,AR,16920,Benton,America/Chicago
-74354,36.88962,-94.88096,Miami,OK,16972,Ottawa,America/Chicago
-64111,39.05707,-94.59393,Kansas City,MO,16974,Jackson,America/Chicago
-64110,39.03445,-94.57265,Kansas City,MO,17019,Jackson,America/Chicago
-75249,32.6449,-96.96257,Dallas,TX,17043,Dallas,America/Chicago
-66503,39.26287,-96.68663,Manhattan,KS,17272,Riley,America/Chicago
-66202,39.02392,-94.66909,Mission,KS,17321,Johnson,America/Chicago
-67206,37.70363,-97.22461,Wichita,KS,17468,Sedgwick,America/Chicago
-65706,37.3224,-92.89421,Marshfield,MO,17479,Webster,America/Chicago
-63049,38.47795,-90.52867,High Ridge,MO,17480,Jefferson,America/Chicago
-67042,37.84868,-96.79809,El Dorado,KS,17486,Butler,America/Chicago
-76118,32.79606,-97.1972,Fort Worth,TX,17486,Tarrant,America/Chicago
-75054,32.60036,-97.03409,Grand Prairie,TX,17517,Dallas,America/Chicago
-64116,39.14875,-94.57444,Kansas City,MO,17535,Clay,America/Chicago
-74361,36.30914,-95.30732,Pryor,OK,17582,Mayes,America/Chicago
-64056,39.11114,-94.32008,Independence,MO,17608,Jackson,America/Chicago
-64127,39.08912,-94.53837,Kansas City,MO,17645,Jackson,America/Chicago
-63050,38.25977,-90.57628,Hillsboro,MO,17681,Jefferson,America/Chicago
-63110,38.62538,-90.26645,Saint Louis,MO,17725,St. Louis,America/Chicago
-71701,33.57837,-92.81309,Camden,AR,17883,Ouachita,America/Chicago
-62298,38.30906,-90.15132,Waterloo,IL,17907,Monroe,America/Chicago
-63042,38.78133,-90.37909,Hazelwood,MO,17953,St. Louis,America/Chicago
-74145,36.09728,-95.88731,Tulsa,OK,17955,Tulsa,America/Chicago
-63131,38.6172,-90.44365,Saint Louis,MO,17993,St. Louis,America/Chicago
-67208,37.70449,-97.27928,Wichita,KS,18078,Sedgwick,America/Chicago
-75201,32.78826,-96.79953,Dallas,TX,18078,Dallas,America/Chicago
-65613,37.63557,-93.39205,Bolivar,MO,18081,Polk,America/Chicago
-73139,35.38457,-97.52572,Oklahoma City,OK,18084,Oklahoma,America/Chicago
-73114,35.57916,-97.51784,Oklahoma City,OK,18235,Oklahoma,America/Chicago
-72405,35.90446,-90.64869,Jonesboro,AR,18238,Craighead,America/Chicago
-76266,33.36818,-97.21513,Sanger,TX,18246,Denton,America/Chicago
-72058,35.24273,-92.36998,Greenbrier,AR,18250,Faulkner,America/Chicago
-76207,33.22174,-97.18505,Denton,TX,18252,Denton,America/Chicago
-75134,32.62308,-96.78007,Lancaster,TX,18305,Dallas,America/Chicago
-72022,34.60859,-92.49651,Bryant,AR,18350,Saline,America/Chicago
-62711,39.76662,-89.73195,Springfield,IL,18351,Sangamon,America/Chicago
-63112,38.66,-90.28331,Saint Louis,MO,18353,St. Louis,America/Chicago
-76247,33.0965,-97.33154,Justin,TX,18360,Denton,America/Chicago
-71909,34.64106,-92.99608,Hot Springs Village,AR,18427,Garland,America/Chicago
-63025,38.4896,-90.61666,Eureka,MO,18483,St. Louis,America/Chicago
-38108,35.1763,-89.96382,Memphis,TN,18501,Shelby,America/Chicago
-76015,32.69204,-97.13341,Arlington,TX,18540,Tarrant,America/Chicago
-75670,32.56456,-94.42326,Marshall,TX,18549,Harrison,America/Chicago
-66204,38.99282,-94.67741,Overland Park,KS,18557,Johnson,America/Chicago
-67211,37.66708,-97.31706,Wichita,KS,18691,Sedgwick,America/Chicago
-63104,38.61078,-90.21276,Saint Louis,MO,18701,St. Louis,America/Chicago
-63138,38.79904,-90.1822,Saint Louis,MO,18736,St. Louis,America/Chicago
-75237,32.66489,-96.87238,Dallas,TX,18744,Dallas,America/Chicago
-74129,36.12669,-95.8701,Tulsa,OK,18764,Tulsa,America/Chicago
-72801,35.28057,-93.14161,Russellville,AR,18823,Pope,America/Chicago
-75215,32.75259,-96.76075,Dallas,TX,18840,Dallas,America/Chicago
-63105,38.64427,-90.32812,Saint Louis,MO,18860,St. Louis,America/Chicago
-72719,36.36837,-94.29551,Centerton,AR,18896,Benton,America/Chicago
-76135,32.83708,-97.46621,Fort Worth,TX,18903,Tarrant,America/Chicago
-74601,36.70436,-97.14604,Ponca City,OK,19011,Kay,America/Chicago
-75235,32.83219,-96.84798,Dallas,TX,19067,Dallas,America/Chicago
-62305,39.92915,-91.34441,Quincy,IL,19077,Adams,America/Chicago
-74107,36.10737,-96.04095,Tulsa,OK,19086,Tulsa,America/Chicago
-63111,38.55845,-90.24993,Saint Louis,MO,19093,St. Louis,America/Chicago
-66203,39.0216,-94.70558,Shawnee,KS,19195,Johnson,America/Chicago
-62220,38.47247,-89.98704,Belleville,IL,19391,St. Clair,America/Chicago
-63135,38.75012,-90.29934,Saint Louis,MO,19446,St. Louis,America/Chicago
-75236,32.6866,-96.93455,Dallas,TX,19522,Dallas,America/Chicago
-63034,38.84795,-90.28692,Florissant,MO,19557,St. Louis,America/Chicago
-76205,33.19074,-97.12894,Denton,TX,19651,Denton,America/Chicago
-63005,38.64306,-90.64982,Chesterfield,MO,19679,St. Louis,America/Chicago
-63137,38.74974,-90.21297,Saint Louis,MO,19690,St. Louis,America/Chicago
-64130,39.03345,-94.54119,Kansas City,MO,19697,Jackson,America/Chicago
-64082,38.86601,-94.4039,Lees Summit,MO,19729,Jackson,America/Chicago
-73129,35.43165,-97.48433,Oklahoma City,OK,19730,Oklahoma,America/Chicago
-74135,36.09725,-95.92315,Tulsa,OK,19737,Tulsa,America/Chicago
-75116,32.66013,-96.91402,Duncanville,TX,19780,Dallas,America/Chicago
-75402,33.06724,-96.08576,Greenville,TX,19848,Hunt,America/Chicago
-64064,38.98222,-94.34284,Lees Summit,MO,19955,Jackson,America/Chicago
-72901,35.3652,-94.4155,Fort Smith,AR,19966,Sebastian,America/Chicago
-66046,38.909,-95.21061,Lawrence,KS,19972,Douglas,America/Chicago
-75137,32.63421,-96.91224,Duncanville,TX,19998,Dallas,America/Chicago
-76120,32.76742,-97.18286,Fort Worth,TX,20031,Tarrant,America/Chicago
-72315,35.90093,-89.9029,Blytheville,AR,20100,Mississippi,America/Chicago
-75454,33.283,-96.56073,Melissa,TX,20137,Collin,America/Chicago
-66209,38.89874,-94.63778,Leawood,KS,20201,Johnson,America/Chicago
-66210,38.92372,-94.70483,Overland Park,KS,20303,Johnson,America/Chicago
-66047,38.88484,-95.35096,Lawrence,KS,20344,Douglas,America/Chicago
-63020,38.10706,-90.5718,De Soto,MO,20357,Jefferson,America/Chicago
-73018,35.0484,-97.93839,Chickasha,OK,20393,Grady,America/Chicago
-73115,35.44232,-97.44153,Oklahoma City,OK,20407,Oklahoma,America/Chicago
-38114,35.09648,-89.98596,Memphis,TN,20440,Shelby,America/Chicago
-63084,38.41749,-91.01438,Union,MO,20511,Franklin,America/Chicago
-64050,39.11424,-94.40641,Independence,MO,20528,Jackson,America/Chicago
-66605,39.01167,-95.63283,Topeka,KS,20592,Shawnee,America/Chicago
-67205,37.75012,-97.42317,Wichita,KS,20600,Sedgwick,America/Chicago
-74019,36.28326,-95.60684,Claremore,OK,20633,Rogers,America/Chicago
-63141,38.65751,-90.45904,Saint Louis,MO,20640,St. Louis,America/Chicago
-63108,38.64485,-90.25337,Saint Louis,MO,20692,St. Louis,America/Chicago
-76104,32.72848,-97.31819,Fort Worth,TX,20694,Tarrant,America/Chicago
-67213,37.66722,-97.36498,Wichita,KS,20702,Sedgwick,America/Chicago
-73036,35.50752,-97.95771,El Reno,OK,20777,Canadian,America/Chicago
-76111,32.7804,-97.30116,Fort Worth,TX,20823,Tarrant,America/Chicago
-73109,35.43279,-97.52452,Oklahoma City,OK,20904,Oklahoma,America/Chicago
-76234,33.27587,-97.51404,Decatur,TX,20912,Wise,America/Chicago
-76115,32.67861,-97.33117,Fort Worth,TX,21044,Tarrant,America/Chicago
-72116,34.80025,-92.24505,North Little Rock,AR,21090,Pulaski,America/Chicago
-73130,35.45879,-97.34586,Oklahoma City,OK,21093,Oklahoma,America/Chicago
-67114,38.07034,-97.28359,Newton,KS,21102,Harvey,America/Chicago
-65738,37.13503,-93.49424,Republic,MO,21117,Greene,America/Chicago
-63401,39.69046,-91.45986,Hannibal,MO,21125,Marion,America/Chicago
-73010,35.09989,-97.67197,Blanchard,OK,21127,Grady,America/Chicago
-75771,32.53542,-95.43006,Lindale,TX,21146,Smith,America/Chicago
-38133,35.21292,-89.79474,Memphis,TN,21153,Shelby,America/Chicago
-72002,34.6646,-92.5362,Alexander,AR,21386,Saline,America/Chicago
-74112,36.14696,-95.90437,Tulsa,OK,21416,Tulsa,America/Chicago
-64063,38.91224,-94.35341,Lees Summit,MO,21430,Jackson,America/Chicago
-67226,37.76898,-97.21915,Wichita,KS,21441,Sedgwick,America/Chicago
-73008,35.51383,-97.64536,Bethany,OK,21469,Oklahoma,America/Chicago
-64029,39.00634,-94.21473,Grain Valley,MO,21643,Jackson,America/Chicago
-63043,38.72962,-90.45659,Maryland Heights,MO,21651,St. Louis,America/Chicago
-66208,38.99936,-94.62998,Prairie Village,KS,21754,Johnson,America/Chicago
-74801,35.31749,-96.96824,Shawnee,OK,21804,Pottawatomie,America/Chicago
-63139,38.61041,-90.29191,Saint Louis,MO,21811,St. Louis,America/Chicago
-38106,35.10067,-90.0375,Memphis,TN,21827,Shelby,America/Chicago
-75401,33.18506,-96.11556,Greenville,TX,21904,Hunt,America/Chicago
-64131,38.95723,-94.57449,Kansas City,MO,21972,Jackson,America/Chicago
-75218,32.84136,-96.70357,Dallas,TX,22028,Dallas,America/Chicago
-65251,38.84902,-91.97911,Fulton,MO,22077,Callaway,America/Chicago
-64506,39.79048,-94.80277,Saint Joseph,MO,22107,Buchanan,America/Chicago
-65810,37.1174,-93.31707,Springfield,MO,22109,Greene,America/Chicago
-63801,36.89698,-89.60672,Sikeston,MO,22121,Scott,America/Chicago
-73135,35.39644,-97.42692,Oklahoma City,OK,22206,Oklahoma,America/Chicago
-72205,34.74948,-92.3524,Little Rock,AR,22275,Pulaski,America/Chicago
-76011,32.7543,-97.08223,Arlington,TX,22297,Tarrant,America/Chicago
-38119,35.07986,-89.84593,Memphis,TN,22332,Shelby,America/Chicago
-75225,32.86511,-96.79109,Dallas,TX,22383,Dallas,America/Chicago
-74804,35.39358,-96.92399,Shawnee,OK,22405,Pottawatomie,America/Chicago
-64157,39.27657,-94.47103,Kansas City,MO,22429,Clay,America/Chicago
-75039,32.88592,-96.94042,Irving,TX,22450,Dallas,America/Chicago
-63090,38.53176,-91.05047,Washington,MO,22471,Franklin,America/Chicago
-67216,37.6089,-97.3143,Wichita,KS,22529,Sedgwick,America/Chicago
-76105,32.72327,-97.26999,Fort Worth,TX,22550,Tarrant,America/Chicago
-73003,35.66952,-97.49693,Edmond,OK,22573,Oklahoma,America/Chicago
-72904,35.4151,-94.38338,Fort Smith,AR,22627,Sebastian,America/Chicago
-72206,34.63042,-92.23833,Little Rock,AR,22640,Pulaski,America/Chicago
-72211,34.74792,-92.41675,Little Rock,AR,22836,Pulaski,America/Chicago
-74134,36.1106,-95.80156,Tulsa,OK,22856,Tulsa,America/Chicago
-66604,39.03875,-95.72623,Topeka,KS,22876,Shawnee,America/Chicago
-76086,32.75345,-97.78909,Weatherford,TX,22900,Parker,America/Chicago
-67204,37.77167,-97.36341,Wichita,KS,22913,Sedgwick,America/Chicago
-38104,35.13253,-90.00435,Memphis,TN,22925,Shelby,America/Chicago
-67218,37.66851,-97.28039,Wichita,KS,22945,Sedgwick,America/Chicago
-64052,39.07355,-94.45082,Independence,MO,22945,Jackson,America/Chicago
-64134,38.9308,-94.48667,Kansas City,MO,22984,Jackson,America/Chicago
-75159,32.60652,-96.53939,Seagoville,TX,22993,Dallas,America/Chicago
-72802,35.31334,-93.06726,Russellville,AR,23104,Pope,America/Chicago
-72104,34.34774,-92.81814,Malvern,AR,23222,Hot Spring,America/Chicago
-75142,32.57004,-96.24637,Kaufman,TX,23301,Kaufman,America/Chicago
-64086,38.91181,-94.29293,Lees Summit,MO,23483,Jackson,America/Chicago
-74021,36.37915,-95.84758,Collinsville,OK,23504,Tulsa,America/Chicago
-72118,34.83872,-92.32694,North Little Rock,AR,23540,Pulaski,America/Chicago
-76006,32.78511,-97.10019,Arlington,TX,23594,Tarrant,America/Chicago
-76148,32.86789,-97.25197,Fort Worth,TX,23608,Tarrant,America/Chicago
-67502,38.12146,-97.92673,Hutchinson,KS,23617,Reno,America/Chicago
-74115,36.1923,-95.90903,Tulsa,OK,23657,Tulsa,America/Chicago
-75094,33.01871,-96.61481,Plano,TX,23669,Collin,America/Chicago
-72761,36.17074,-94.45778,Siloam Springs,AR,23703,Benton,America/Chicago
-75460,33.6627,-95.60296,Paris,TX,23717,Lamar,America/Chicago
-66106,39.06631,-94.70384,Kansas City,KS,23762,Wyandotte,America/Chicago
-38141,35.01599,-89.85472,Memphis,TN,23768,Shelby,America/Chicago
-75253,32.67278,-96.61171,Dallas,TX,23822,Dallas,America/Chicago
-76177,32.96999,-97.30611,Fort Worth,TX,24141,Tarrant,America/Chicago
-72301,35.13363,-90.17883,West Memphis,AR,24182,Crittenden,America/Chicago
-75020,33.77264,-96.60391,Denison,TX,24185,Grayson,America/Chicago
-74037,36.00149,-95.98171,Jenks,OK,24244,Tulsa,America/Chicago
-62650,39.73799,-90.22027,Jacksonville,IL,24318,Morgan,America/Chicago
-76082,32.97098,-97.71783,Springtown,TX,24338,Parker,America/Chicago
-75409,33.35223,-96.52808,Anna,TX,24381,Collin,America/Chicago
-64114,38.9581,-94.59715,Kansas City,MO,24464,Jackson,America/Chicago
-63121,38.70739,-90.30023,Saint Louis,MO,24571,St. Louis,America/Chicago
-67501,37.97989,-97.9309,Hutchinson,KS,24589,Reno,America/Chicago
-76008,32.68182,-97.62738,Aledo,TX,24699,Parker,America/Chicago
-75240,32.93194,-96.78924,Dallas,TX,24718,Dallas,America/Chicago
-75254,32.94571,-96.80127,Dallas,TX,24737,Dallas,America/Chicago
-66762,37.39443,-94.71092,Pittsburg,KS,24814,Crawford,America/Chicago
-64138,38.96852,-94.47088,Kansas City,MO,24830,Jackson,America/Chicago
-66221,38.84786,-94.71437,Overland Park,KS,24835,Johnson,America/Chicago
-65775,36.6995,-91.85999,West Plains,MO,24950,Howell,America/Chicago
-66216,39.01405,-94.74136,Shawnee,KS,24955,Johnson,America/Chicago
-75219,32.81087,-96.81315,Dallas,TX,25001,Dallas,America/Chicago
-66223,38.86176,-94.66831,Overland Park,KS,25050,Johnson,America/Chicago
-73044,35.86664,-97.43476,Guthrie,OK,25268,Logan,America/Chicago
-64081,38.90971,-94.40953,Lees Summit,MO,25293,Jackson,America/Chicago
-38122,35.1571,-89.92247,Memphis,TN,25310,Shelby,America/Chicago
-73701,36.42323,-97.78833,Enid,OK,25313,Garfield,America/Chicago
-73020,35.45588,-97.2619,Choctaw,OK,25351,Oklahoma,America/Chicago
-38053,35.33583,-89.95,Millington,TN,25352,Shelby,America/Chicago
-64850,36.86008,-94.3975,Neosho,MO,25355,Newton,America/Chicago
-38024,36.03743,-89.38511,Dyersburg,TN,25357,Dyer,America/Chicago
-38138,35.08477,-89.7993,Germantown,TN,25368,Shelby,America/Chicago
-75205,32.83657,-96.79617,Dallas,TX,25537,Dallas,America/Chicago
-64083,38.80082,-94.4483,Raymore,MO,25541,Cass,America/Chicago
-63118,38.59237,-90.22534,Saint Louis,MO,25645,St. Louis,America/Chicago
-72113,34.85926,-92.39875,Maumelle,AR,25648,Pulaski,America/Chicago
-66441,38.98199,-96.80289,Junction City,KS,25654,Geary,America/Chicago
-64030,38.87996,-94.52312,Grandview,MO,25673,Jackson,America/Chicago
-72223,34.79251,-92.49091,Little Rock,AR,25706,Pulaski,America/Chicago
-64836,37.18886,-94.28898,Carthage,MO,25727,Jasper,America/Chicago
-63109,38.58483,-90.29563,Saint Louis,MO,25743,St. Louis,America/Chicago
-75146,32.57608,-96.75137,Lancaster,TX,25804,Dallas,America/Chicago
-76126,32.64374,-97.51767,Fort Worth,TX,25920,Tarrant,America/Chicago
-66030,38.81519,-94.94114,Gardner,KS,25964,Johnson,America/Chicago
-72501,35.79167,-91.65399,Batesville,AR,25988,Independence,America/Chicago
-73107,35.48201,-97.5744,Oklahoma City,OK,25995,Oklahoma,America/Chicago
-76034,32.89121,-97.1488,Colleyville,TX,25995,Tarrant,America/Chicago
-76109,32.70115,-97.38378,Fort Worth,TX,26000,Tarrant,America/Chicago
-75482,33.16929,-95.60946,Sulphur Springs,TX,26086,Hopkins,America/Chicago
-75160,32.76466,-96.29835,Terrell,TX,26145,Kaufman,America/Chicago
-75090,33.6054,-96.54657,Sherman,TX,26273,Grayson,America/Chicago
-66215,38.95649,-94.74304,Lenexa,KS,26291,Johnson,America/Chicago
-72713,36.30036,-94.28372,Bentonville,AR,26293,Benton,America/Chicago
-72903,35.35241,-94.36042,Fort Smith,AR,26318,Sebastian,America/Chicago
-38117,35.11504,-89.90551,Memphis,TN,26327,Shelby,America/Chicago
-76132,32.66743,-97.41827,Fort Worth,TX,26432,Tarrant,America/Chicago
-74701,34.00974,-96.3769,Durant,OK,26548,Bryan,America/Chicago
-76114,32.77365,-97.40417,Fort Worth,TX,26665,Tarrant,America/Chicago
-75022,33.02554,-97.11871,Flower Mound,TX,26691,Denton,America/Chicago
-74075,36.17151,-97.0774,Stillwater,OK,26693,Payne,America/Chicago
-75230,32.90202,-96.79226,Dallas,TX,26695,Dallas,America/Chicago
-66104,39.15043,-94.68861,Kansas City,KS,26820,Wyandotte,America/Chicago
-73127,35.47785,-97.64836,Oklahoma City,OK,26830,Oklahoma,America/Chicago
-75455,33.21725,-94.98022,Mount Pleasant,TX,26863,Titus,America/Chicago
-76018,32.66074,-97.08967,Arlington,TX,26887,Tarrant,America/Chicago
-75180,32.71937,-96.61841,Balch Springs,TX,27006,Dallas,America/Chicago
-75088,32.89368,-96.53929,Rowlett,TX,27128,Dallas,America/Chicago
-76208,33.20917,-97.05786,Denton,TX,27186,Denton,America/Chicago
-75503,33.51345,-94.13038,Texarkana,TX,27207,Bowie,America/Chicago
-74105,36.0975,-95.9641,Tulsa,OK,27249,Tulsa,America/Chicago
-66801,38.41105,-96.2221,Emporia,KS,27348,Lyon,America/Chicago
-75092,33.64869,-96.70011,Sherman,TX,27372,Grayson,America/Chicago
-63755,37.44351,-89.64193,Jackson,MO,27378,Cape Girardeau,America/Chicago
-63379,38.99817,-90.99037,Troy,MO,27409,Lincoln,America/Chicago
-64093,38.79057,-93.73206,Warrensburg,MO,27509,Johnson,America/Chicago
-74006,36.71507,-95.89391,Bartlesville,OK,27550,Washington,America/Chicago
-73064,35.37377,-97.75275,Mustang,OK,27620,Canadian,America/Chicago
-66109,39.16367,-94.8283,Kansas City,KS,27715,Wyandotte,America/Chicago
-67207,37.66567,-97.22923,Wichita,KS,27721,Sedgwick,America/Chicago
-73132,35.54984,-97.64074,Oklahoma City,OK,27768,Oklahoma,America/Chicago
-76209,33.2315,-97.11,Denton,TX,27859,Denton,America/Chicago
-63367,38.77805,-90.79536,Lake Saint Louis,MO,27893,St. Charles,America/Chicago
-72015,34.49298,-92.58974,Benton,AR,27902,Saline,America/Chicago
-63028,38.14545,-90.39423,Festus,MO,27913,Jefferson,America/Chicago
-73533,34.49484,-97.84774,Duncan,OK,27935,Stephens,America/Chicago
-75212,32.78203,-96.87853,Dallas,TX,28010,Dallas,America/Chicago
-75181,32.72696,-96.555,Mesquite,TX,28018,Dallas,America/Chicago
-76012,32.75459,-97.13901,Arlington,TX,28043,Tarrant,America/Chicago
-65616,36.67133,-93.24887,Branson,MO,28295,Taney,America/Chicago
-73069,35.25028,-97.4633,Norman,OK,28314,Cleveland,America/Chicago
-74137,36.02038,-95.92932,Tulsa,OK,28398,Tulsa,America/Chicago
-64014,39.00893,-94.25533,Blue Springs,MO,28434,Jackson,America/Chicago
-75252,32.99696,-96.78983,Dallas,TX,28500,Collin,America/Chicago
-62226,38.53634,-90.00057,Belleville,IL,28543,St. Clair,America/Chicago
-73162,35.58095,-97.6415,Oklahoma City,OK,28610,Oklahoma,America/Chicago
-74501,34.98501,-95.78597,Mcalester,OK,28687,Pittsburg,America/Chicago
-64151,39.21494,-94.63115,Kansas City,MO,28706,Platte,America/Chicago
-63052,38.38983,-90.4358,Imperial,MO,28741,Jefferson,America/Chicago
-64155,39.28031,-94.56801,Kansas City,MO,28754,Clay,America/Chicago
-63640,37.75446,-90.36525,Farmington,MO,28800,St. Francois,America/Chicago
-62703,39.76276,-89.63106,Springfield,IL,28820,Sangamon,America/Chicago
-74017,36.39359,-95.57986,Claremore,OK,28901,Rogers,America/Chicago
-72653,36.34292,-92.38603,Mountain Home,AR,28906,Baxter,America/Chicago
-75407,33.1512,-96.48808,Princeton,TX,28931,Collin,America/Chicago
-64012,38.78906,-94.55204,Belton,MO,28980,Cass,America/Chicago
-66044,39.03187,-95.20991,Lawrence,KS,29052,Douglas,America/Chicago
-63130,38.66491,-90.32495,Saint Louis,MO,29074,St. Louis,America/Chicago
-71730,33.20303,-92.63458,El Dorado,AR,29187,Union,America/Chicago
-74403,35.67427,-95.305,Muskogee,OK,29199,Muskogee,America/Chicago
-76134,32.64331,-97.33103,Fort Worth,TX,29207,Tarrant,America/Chicago
-76240,33.65654,-97.17766,Gainesville,TX,29271,Cooke,America/Chicago
-71603,34.12881,-92.08492,Pine Bluff,AR,29274,Jefferson,America/Chicago
-62221,38.51187,-89.89922,Belleville,IL,29281,St. Clair,America/Chicago
-75208,32.75409,-96.83943,Dallas,TX,29310,Dallas,America/Chicago
-75082,32.99208,-96.66536,Richardson,TX,29458,Collin,America/Chicago
-72704,36.10475,-94.29539,Fayetteville,AR,29475,Washington,America/Chicago
-75048,32.9704,-96.58139,Sachse,TX,29600,Dallas,America/Chicago
-65536,37.68942,-92.64974,Lebanon,MO,29680,Laclede,America/Chicago
-71901,34.52682,-92.97247,Hot Springs National Park,AR,29719,Garland,America/Chicago
-72404,35.77656,-90.78356,Jonesboro,AR,29722,Craighead,America/Chicago
-73703,36.44022,-97.9634,Enid,OK,29722,Garfield,America/Chicago
-65101,38.49143,-92.15009,Jefferson City,MO,29777,Cole,America/Chicago
-76201,33.22122,-97.14715,Denton,TX,29832,Denton,America/Chicago
-66213,38.89885,-94.70517,Overland Park,KS,30024,Johnson,America/Chicago
-72019,34.63498,-92.69926,Benton,AR,30030,Saline,America/Chicago
-62002,38.93988,-90.12829,Alton,IL,30036,Madison,America/Chicago
-66102,39.11246,-94.68842,Kansas City,KS,30062,Wyandotte,America/Chicago
-63128,38.49369,-90.38306,Saint Louis,MO,30106,St. Louis,America/Chicago
-67037,37.56646,-97.22095,Derby,KS,30108,Sedgwick,America/Chicago
-72601,36.23669,-93.09181,Harrison,AR,30180,Boone,America/Chicago
-75009,33.3384,-96.75185,Celina,TX,30257,Collin,America/Chicago
-73119,35.4215,-97.56896,Oklahoma City,OK,30307,Oklahoma,America/Chicago
-73112,35.51823,-97.5745,Oklahoma City,OK,30422,Oklahoma,America/Chicago
-38135,35.23876,-89.8497,Memphis,TN,30490,Shelby,America/Chicago
-76182,32.88257,-97.20969,North Richland Hills,TX,30771,Tarrant,America/Chicago
-67203,37.70402,-97.36497,Wichita,KS,30869,Sedgwick,America/Chicago
-63146,38.70135,-90.47634,Saint Louis,MO,30917,St. Louis,America/Chicago
-62301,39.93139,-91.38741,Quincy,IL,30987,Adams,America/Chicago
-74464,35.94419,-94.97365,Tahlequah,OK,30990,Cherokee,America/Chicago
-74063,36.15201,-96.19206,Sand Springs,OK,31007,Tulsa,America/Chicago
-76107,32.74176,-97.38202,Fort Worth,TX,31112,Tarrant,America/Chicago
-76040,32.82133,-97.10488,Euless,TX,31172,Tarrant,America/Chicago
-76016,32.68907,-97.18868,Arlington,TX,31191,Tarrant,America/Chicago
-72204,34.71739,-92.3582,Little Rock,AR,31219,Pulaski,America/Chicago
-62702,39.82377,-89.64286,Springfield,IL,31251,Sangamon,America/Chicago
-64152,39.21278,-94.72271,Kansas City,MO,31300,Platte,America/Chicago
-76092,32.95562,-97.14879,Southlake,TX,31344,Tarrant,America/Chicago
-66049,38.97773,-95.34729,Lawrence,KS,31351,Douglas,America/Chicago
-76053,32.81683,-97.17898,Hurst,TX,31377,Tarrant,America/Chicago
-76052,32.98205,-97.38037,Haslet,TX,31569,Tarrant,America/Chicago
-74820,34.80691,-96.71348,Ada,OK,31679,Pontotoc,America/Chicago
-74136,36.06188,-95.9419,Tulsa,OK,31682,Tulsa,America/Chicago
-75010,33.03058,-96.90148,Carrollton,TX,31687,Denton,America/Chicago
-76140,32.62012,-97.27036,Fort Worth,TX,31693,Tarrant,America/Chicago
-75604,32.51374,-94.82919,Longview,TX,31714,Gregg,America/Chicago
-64015,39.02099,-94.3006,Blue Springs,MO,31814,Jackson,America/Chicago
-62234,38.68214,-89.9815,Collinsville,IL,31832,Madison,America/Chicago
-74074,36.07832,-97.06452,Stillwater,OK,31934,Payne,America/Chicago
-74066,35.99379,-96.1676,Sapulpa,OK,31953,Creek,America/Chicago
-75041,32.88101,-96.65149,Garland,TX,31981,Dallas,America/Chicago
-76117,32.80374,-97.26766,Haltom City,TX,32086,Tarrant,America/Chicago
-76110,32.70678,-97.33843,Fort Worth,TX,32089,Tarrant,America/Chicago
-73159,35.38563,-97.5794,Oklahoma City,OK,32172,Oklahoma,America/Chicago
-74008,35.92614,-95.87575,Bixby,OK,32433,Tulsa,America/Chicago
-65401,37.90691,-91.76374,Rolla,MO,32476,Phelps,America/Chicago
-67217,37.61535,-97.36239,Wichita,KS,32529,Sedgwick,America/Chicago
-66614,39.01362,-95.84115,Topeka,KS,32586,Shawnee,America/Chicago
-64119,39.21137,-94.5186,Kansas City,MO,32615,Clay,America/Chicago
-73110,35.44808,-97.3945,Oklahoma City,OK,32693,Oklahoma,America/Chicago
-63125,38.51867,-90.29269,Saint Louis,MO,32701,St. Louis,America/Chicago
-75036,33.13339,-96.91453,Frisco,TX,32726,Denton,America/Chicago
-66212,38.9563,-94.68154,Overland Park,KS,32804,Johnson,America/Chicago
-76020,32.90102,-97.56483,Azle,TX,32866,Parker,America/Chicago
-75232,32.65878,-96.83968,Dallas,TX,32967,Dallas,America/Chicago
-76014,32.69201,-97.08814,Arlington,TX,32987,Tarrant,America/Chicago
-76002,32.62233,-97.09265,Arlington,TX,32990,Tarrant,America/Chicago
-75234,32.92423,-96.88904,Dallas,TX,32998,Dallas,America/Chicago
-75038,32.87231,-96.97946,Irving,TX,33097,Dallas,America/Chicago
-74011,35.98154,-95.81007,Broken Arrow,OK,33191,Tulsa,America/Chicago
-72209,34.6805,-92.33974,Little Rock,AR,33200,Pulaski,America/Chicago
-76087,32.66995,-97.79065,Weatherford,TX,33353,Parker,America/Chicago
-72120,34.89776,-92.24431,Sherwood,AR,33393,Pulaski,America/Chicago
-75238,32.87855,-96.70785,Dallas,TX,33439,Dallas,America/Chicago
-75204,32.80216,-96.78885,Dallas,TX,33552,Dallas,America/Chicago
-75241,32.667,-96.75903,Dallas,TX,33598,Dallas,America/Chicago
-63114,38.70218,-90.36224,Saint Louis,MO,33703,St. Louis,America/Chicago
-75229,32.8939,-96.86517,Dallas,TX,33924,Dallas,America/Chicago
-72956,35.46895,-94.3489,Van Buren,AR,34102,Crawford,America/Chicago
-65721,36.9805,-93.21045,Ozark,MO,34112,Christian,America/Chicago
-76036,32.57366,-97.41434,Crowley,TX,34145,Tarrant,America/Chicago
-63010,38.42964,-90.3932,Arnold,MO,34405,Jefferson,America/Chicago
-63119,38.58868,-90.35104,Saint Louis,MO,34574,St. Louis,America/Chicago
-75605,32.58385,-94.71554,Longview,TX,34584,Gregg,America/Chicago
-73120,35.58049,-97.57248,Oklahoma City,OK,34651,Oklahoma,America/Chicago
-75501,33.37413,-94.13168,Texarkana,TX,34656,Bowie,America/Chicago
-63901,36.77168,-90.45012,Poplar Bluff,MO,34920,Butler,America/Chicago
-75214,32.82899,-96.74348,Dallas,TX,35006,Dallas,America/Chicago
-72032,35.07393,-92.36451,Conway,AR,35120,Faulkner,America/Chicago
-65714,37.03801,-93.31976,Nixa,MO,35243,Christian,America/Chicago
-65301,38.69922,-93.22104,Sedalia,MO,35347,Pettis,America/Chicago
-75089,32.93195,-96.54435,Rowlett,TX,35400,Dallas,America/Chicago
-76021,32.8523,-97.13128,Bedford,TX,35437,Tarrant,America/Chicago
-75224,32.71117,-96.83953,Dallas,TX,35452,Dallas,America/Chicago
-64133,39.01406,-94.45689,Kansas City,MO,35470,Jackson,America/Chicago
-71854,33.44445,-93.90504,Texarkana,AR,35487,Miller,America/Chicago
-72143,35.2279,-91.73613,Searcy,AR,35523,White,America/Chicago
-62269,38.59844,-89.91294,O'Fallon,IL,35536,St. Clair,America/Chicago
-66048,39.27891,-94.98527,Leavenworth,KS,35551,Leavenworth,America/Chicago
-76013,32.72027,-97.15652,Arlington,TX,35910,Tarrant,America/Chicago
-72703,36.1155,-94.04897,Fayetteville,AR,35964,Washington,America/Chicago
-75081,32.94969,-96.70899,Richardson,TX,36065,Dallas,America/Chicago
-64055,39.05061,-94.39848,Independence,MO,36092,Jackson,America/Chicago
-62025,38.83004,-89.93298,Edwardsville,IL,36156,Madison,America/Chicago
-73401,34.21045,-97.11434,Ardmore,OK,36228,Carter,America/Chicago
-63011,38.60337,-90.55847,Ballwin,MO,36274,St. Louis,America/Chicago
-76106,32.81417,-97.35209,Fort Worth,TX,36374,Tarrant,America/Chicago
-64801,37.11056,-94.4974,Joplin,MO,36398,Jasper,America/Chicago
-72023,34.95909,-92.05925,Cabot,AR,36813,Lonoke,America/Chicago
-38115,35.05499,-89.86362,Memphis,TN,36878,Shelby,America/Chicago
-64804,37.01955,-94.51137,Joplin,MO,36995,Newton,America/Chicago
-64068,39.25924,-94.39042,Liberty,MO,37466,Clay,America/Chicago
-75248,32.96957,-96.79542,Dallas,TX,37644,Dallas,America/Chicago
-75231,32.87695,-96.74967,Dallas,TX,37695,Dallas,America/Chicago
-75032,32.85756,-96.42858,Rockwall,TX,37895,Rockwall,America/Chicago
-76180,32.83994,-97.22468,North Richland Hills,TX,37900,Tarrant,America/Chicago
-75042,32.91401,-96.67466,Garland,TX,38040,Dallas,America/Chicago
-75075,33.02163,-96.74043,Plano,TX,38041,Collin,America/Chicago
-72712,36.39837,-94.22196,Bentonville,AR,38072,Benton,America/Chicago
-76001,32.63076,-97.15408,Arlington,TX,38177,Tarrant,America/Chicago
-38018,35.13781,-89.76647,Cordova,TN,38357,Shelby,America/Chicago
-72076,34.91072,-92.14303,Jacksonville,AR,38647,Pulaski,America/Chicago
-75206,32.83161,-96.77032,Dallas,TX,38795,Dallas,America/Chicago
-63701,37.33522,-89.58043,Cape Girardeau,MO,38809,Cape Girardeau,America/Chicago
-38118,35.03655,-89.93021,Memphis,TN,39162,Shelby,America/Chicago
-75069,33.16805,-96.59671,Mckinney,TX,39332,Collin,America/Chicago
-38127,35.23795,-90.01753,Memphis,TN,39553,Shelby,America/Chicago
-62704,39.77358,-89.68503,Springfield,IL,39597,Sangamon,America/Chicago
-75220,32.86692,-96.87571,Dallas,TX,39809,Dallas,America/Chicago
-75051,32.72635,-96.99375,Grand Prairie,TX,40263,Dallas,America/Chicago
-65804,37.14822,-93.25294,Springfield,MO,40271,Greene,America/Chicago
-62040,38.71592,-90.10078,Granite City,IL,40365,Madison,America/Chicago
-76248,32.92988,-97.22972,Keller,TX,40389,Tarrant,America/Chicago
-65109,38.57365,-92.27791,Jefferson City,MO,40390,Cole,America/Chicago
-72450,36.0784,-90.51695,Paragould,AR,40464,Greene,America/Chicago
-76226,33.10775,-97.17196,Argyle,TX,40516,Denton,America/Chicago
-76039,32.8592,-97.08422,Euless,TX,40664,Tarrant,America/Chicago
-75077,33.07921,-97.06401,Lewisville,TX,40883,Denton,America/Chicago
-72756,36.32214,-93.9922,Rogers,AR,41278,Benton,America/Chicago
-63136,38.74418,-90.25979,Saint Louis,MO,41314,St. Louis,America/Chicago
-38116,35.03213,-90.01001,Memphis,TN,41393,Shelby,America/Chicago
-63122,38.57853,-90.42133,Saint Louis,MO,41724,St. Louis,America/Chicago
-73170,35.32743,-97.55068,Oklahoma City,OK,41746,Cleveland,America/Chicago
-75087,32.94581,-96.44136,Rockwall,TX,41786,Rockwall,America/Chicago
-72401,35.86835,-90.66193,Jonesboro,AR,42065,Craighead,America/Chicago
-64118,39.21301,-94.57497,Kansas City,MO,42213,Clay,America/Chicago
-63033,38.7958,-90.27786,Florissant,MO,42258,St. Louis,America/Chicago
-63116,38.57999,-90.26501,Saint Louis,MO,42470,St. Louis,America/Chicago
-38134,35.17674,-89.85992,Memphis,TN,42500,Shelby,America/Chicago
-76123,32.62298,-97.40262,Fort Worth,TX,42777,Tarrant,America/Chicago
-38125,35.02537,-89.78936,Memphis,TN,42793,Shelby,America/Chicago
-74014,36.05538,-95.66819,Broken Arrow,OK,43072,Wagoner,America/Chicago
-63017,38.65143,-90.53722,Chesterfield,MO,43074,St. Louis,America/Chicago
-73071,35.23728,-97.4131,Norman,OK,43105,Cleveland,America/Chicago
-65803,37.28464,-93.29036,Springfield,MO,43159,Greene,America/Chicago
-66502,39.14146,-96.52906,Manhattan,KS,43247,Riley,America/Chicago
-67212,37.70247,-97.43658,Wichita,KS,43278,Sedgwick,America/Chicago
-38111,35.11014,-89.94429,Memphis,TN,43308,Shelby,America/Chicago
-63304,38.70583,-90.68666,Saint Charles,MO,43389,St. Charles,America/Chicago
-76262,33.01137,-97.22101,Roanoke,TX,43589,Denton,America/Chicago
-38109,35.0341,-90.13533,Memphis,TN,43764,Shelby,America/Chicago
-38002,35.28854,-89.70926,Arlington,TN,43868,Shelby,America/Chicago
-38128,35.22623,-89.92612,Memphis,TN,44027,Shelby,America/Chicago
-75189,32.94821,-96.30941,Royse City,TX,44348,Rockwall,America/Chicago
-76112,32.74831,-97.21828,Fort Worth,TX,44379,Tarrant,America/Chicago
-73012,35.66815,-97.59315,Edmond,OK,44385,Oklahoma,America/Chicago
-38016,35.17956,-89.76046,Cordova,TN,44390,Shelby,America/Chicago
-75050,32.77428,-97.0037,Grand Prairie,TX,44402,Dallas,America/Chicago
-75019,32.96183,-96.984,Coppell,TX,44707,Dallas,America/Chicago
-76108,32.77943,-97.51811,Fort Worth,TX,44762,Tarrant,America/Chicago
-75024,33.07712,-96.80826,Plano,TX,45051,Collin,America/Chicago
-63026,38.50195,-90.45995,Fenton,MO,45267,St. Louis,America/Chicago
-75063,32.90797,-96.9961,Irving,TX,45486,Dallas,America/Chicago
-63368,38.7516,-90.72895,O'Fallon,MO,45862,St. Charles,America/Chicago
-65802,37.21048,-93.35167,Springfield,MO,46005,Greene,America/Chicago
-75093,33.03521,-96.80943,Plano,TX,46491,Collin,America/Chicago
-63303,38.74013,-90.54266,Saint Charles,MO,46627,St. Charles,America/Chicago
-76210,33.14985,-97.0962,Denton,TX,46790,Denton,America/Chicago
-75044,32.96299,-96.6531,Garland,TX,46847,Dallas,America/Chicago
-71913,34.44677,-93.09981,Hot Springs National Park,AR,46853,Garland,America/Chicago
-75078,33.24526,-96.80791,Prosper,TX,46857,Collin,America/Chicago
-76017,32.66223,-97.16237,Arlington,TX,47020,Tarrant,America/Chicago
-75060,32.79774,-96.95295,Irving,TX,47170,Dallas,America/Chicago
-72762,36.18747,-94.22794,Springdale,AR,47402,Washington,America/Chicago
-65202,39.01721,-92.29822,Columbia,MO,47543,Boone,America/Chicago
-75006,32.96165,-96.89717,Carrollton,TX,47648,Dallas,America/Chicago
-72758,36.29898,-94.14099,Rogers,AR,47781,Benton,America/Chicago
-73034,35.69877,-97.42665,Edmond,OK,47868,Oklahoma,America/Chicago
-75013,33.11463,-96.69413,Allen,TX,48557,Collin,America/Chicago
-75028,33.03382,-97.0629,Flower Mound,TX,48636,Denton,America/Chicago
-74133,36.04113,-95.87955,Tulsa,OK,48686,Tulsa,America/Chicago
-75023,33.05657,-96.73286,Plano,TX,48878,Collin,America/Chicago
-72701,35.9873,-94.08179,Fayetteville,AR,48964,Washington,America/Chicago
-72034,35.05405,-92.47945,Conway,AR,49420,Faulkner,America/Chicago
-75104,32.58295,-96.96712,Cedar Hill,TX,49425,Dallas,America/Chicago
-76116,32.72128,-97.44766,Fort Worth,TX,49685,Tarrant,America/Chicago
-65201,38.89595,-92.24365,Columbia,MO,49811,Boone,America/Chicago
-63123,38.54949,-90.32739,Saint Louis,MO,49826,St. Louis,America/Chicago
-74055,36.27735,-95.81998,Owasso,OK,49895,Tulsa,America/Chicago
-75154,32.52319,-96.80885,Red Oak,TX,50178,Ellis,America/Chicago
-63031,38.81392,-90.35224,Florissant,MO,50258,St. Louis,America/Chicago
-67401,38.83554,-97.64621,Salina,KS,50272,Saline,America/Chicago
-75033,33.18471,-96.84404,Frisco,TX,50292,Denton,America/Chicago
-63385,38.79732,-90.85649,Wentzville,MO,50420,St. Charles,America/Chicago
-73072,35.21106,-97.50518,Norman,OK,50500,Cleveland,America/Chicago
-76051,32.94192,-97.07888,Grapevine,TX,50514,Tarrant,America/Chicago
-75034,33.12084,-96.83778,Frisco,TX,51059,Collin,America/Chicago
-63129,38.45654,-90.32202,Saint Louis,MO,51356,St. Louis,America/Chicago
-63301,38.86159,-90.47207,Saint Charles,MO,51625,St. Charles,America/Chicago
-75287,33.00015,-96.84075,Dallas,TX,52727,Collin,America/Chicago
-75080,32.97382,-96.7416,Richardson,TX,52746,Dallas,America/Chicago
-75062,32.847,-96.95813,Irving,TX,52756,Dallas,America/Chicago
-76119,32.69026,-97.26176,Fort Worth,TX,53062,Tarrant,America/Chicago
-75074,33.03298,-96.67304,Plano,TX,53146,Collin,America/Chicago
-76131,32.88227,-97.34895,Fort Worth,TX,53194,Tarrant,America/Chicago
-75025,33.09057,-96.74061,Plano,TX,53352,Collin,America/Chicago
-76133,32.6538,-97.37746,Fort Worth,TX,53825,Tarrant,America/Chicago
-63366,38.85918,-90.71964,O'Fallon,MO,54449,St. Charles,America/Chicago
-75216,32.71158,-96.78256,Dallas,TX,54556,Dallas,America/Chicago
-75007,33.00498,-96.8959,Carrollton,TX,55050,Denton,America/Chicago
-76227,33.27465,-96.99075,Aubrey,TX,55437,Denton,America/Chicago
-76010,32.72271,-97.08065,Arlington,TX,55610,Tarrant,America/Chicago
-75061,32.82607,-96.96563,Irving,TX,55839,Dallas,America/Chicago
-75115,32.59831,-96.86433,Desoto,TX,55997,Dallas,America/Chicago
-75072,33.1875,-96.70099,Mckinney,TX,55997,Collin,America/Chicago
-63021,38.5689,-90.54564,Ballwin,MO,56297,St. Louis,America/Chicago
-38017,35.06722,-89.65347,Collierville,TN,56427,Shelby,America/Chicago
-65807,37.166,-93.32483,Springfield,MO,56680,Greene,America/Chicago
-75227,32.77044,-96.68831,Dallas,TX,57087,Dallas,America/Chicago
-72764,36.17746,-94.051,Springdale,AR,57468,Washington,America/Chicago
-73013,35.62149,-97.49614,Edmond,OK,58368,Oklahoma,America/Chicago
-75149,32.76994,-96.6151,Mesquite,TX,58849,Dallas,America/Chicago
-76137,32.85864,-97.29137,Fort Worth,TX,59384,Tarrant,America/Chicago
-65203,38.89497,-92.39928,Columbia,MO,59663,Boone,America/Chicago
-75070,33.15587,-96.69742,Mckinney,TX,59859,Collin,America/Chicago
-73160,35.33574,-97.47651,Oklahoma City,OK,62205,Cleveland,America/Chicago
-75150,32.81545,-96.6308,Mesquite,TX,63023,Dallas,America/Chicago
-75043,32.8571,-96.57986,Garland,TX,63733,Dallas,America/Chicago
-74012,36.05381,-95.80509,Broken Arrow,OK,63899,Tulsa,America/Chicago
-75243,32.91232,-96.73633,Dallas,TX,63907,Dallas,America/Chicago
-75040,32.92797,-96.62006,Garland,TX,64205,Dallas,America/Chicago
-66061,38.89633,-94.88029,Olathe,KS,67510,Johnson,America/Chicago
-75098,33.01432,-96.53531,Wylie,TX,67513,Collin,America/Chicago
-75056,33.07541,-96.90978,The Colony,TX,67978,Denton,America/Chicago
-75067,33.01416,-97.00268,Lewisville,TX,68451,Denton,America/Chicago
-75228,32.82456,-96.6805,Dallas,TX,69288,Dallas,America/Chicago
-75071,33.24558,-96.62951,Mckinney,TX,69396,Collin,America/Chicago
-75068,33.17713,-96.95228,Little Elm,TX,70562,Denton,America/Chicago
-75211,32.73649,-96.90214,Dallas,TX,72389,Dallas,America/Chicago
-75002,33.08946,-96.60639,Allen,TX,73295,Collin,America/Chicago
-63376,38.80022,-90.61636,Saint Peters,MO,74876,St. Charles,America/Chicago
-76244,32.93101,-97.28076,Keller,TX,75149,Tarrant,America/Chicago
-76179,32.91397,-97.43947,Fort Worth,TX,76468,Tarrant,America/Chicago
-75126,32.74361,-96.45289,Forney,TX,77116,Kaufman,America/Chicago
-66062,38.83677,-94.78455,Olathe,KS,77794,Johnson,America/Chicago
-76028,32.52603,-97.30491,Burleson,TX,78699,Johnson,America/Chicago
-76063,32.56913,-97.14376,Mansfield,TX,81758,Tarrant,America/Chicago
-75217,32.71291,-96.68243,Dallas,TX,84578,Dallas,America/Chicago
-75035,33.15814,-96.7734,Frisco,TX,86135,Collin,America/Chicago
-73099,35.52583,-97.76343,Yukon,OK,86749,Canadian,America/Chicago
-75052,32.66455,-97.02809,Grand Prairie,TX,95485,Dallas,America/Chicago
+zip,lat,lng,city,state_id
+64137,38.93196,-94.54287,Kansas City,MO
+73116,35.54684,-97.56519,Oklahoma City,OK
+66007,39.1405,-94.94548,Basehor,KS
+76249,33.27993,-97.3026,Krum,TX
+73051,35.03175,-97.24629,Lexington,OK
+71852,33.99489,-93.85831,Nashville,AR
+66618,39.14188,-95.74997,Topeka,KS
+72173,35.10001,-92.20807,Vilonia,AR
+74126,36.23502,-96.0331,Tulsa,OK
+67410,38.95632,-97.22104,Abilene,KS
+66606,39.06191,-95.72296,Topeka,KS
+71832,34.0397,-94.34791,De Queen,AR
+64108,39.08413,-94.58449,Kansas City,MO
+76078,33.0896,-97.46647,Rhome,TX
+63348,38.78969,-90.94131,Foristell,MO
+72740,36.10889,-93.67599,Huntsville,AR
+75650,32.51529,-94.55358,Hallsville,TX
+75135,33.06666,-96.22567,Caddo Mills,TX
+64109,39.06646,-94.56709,Kansas City,MO
+64504,39.68605,-94.91264,Saint Joseph,MO
+73080,35.00725,-97.452,Purcell,OK
+62258,38.46014,-89.77287,Mascoutah,IL
+66012,39.06091,-94.91658,Bonner Springs,KS
+74010,35.80945,-96.36101,Bristow,OK
+64501,39.76584,-94.84448,Saint Joseph,MO
+71635,33.1369,-92.00133,Crossett,AR
+74525,34.33441,-96.05563,Atoka,OK
+72753,35.93477,-94.32607,Prairie Grove,AR
+66111,39.08529,-94.79621,Kansas City,KS
+72114,34.7645,-92.26024,North Little Rock,AR
+75495,33.43246,-96.55041,Van Alstyne,TX
+64834,37.18714,-94.56865,Carl Junction,MO
+63044,38.77455,-90.42825,Bridgeton,MO
+75645,32.68375,-94.87317,Gilmer,TX
+62712,39.74883,-89.58344,Springfield,IL
+75442,33.17717,-96.35035,Farmersville,TX
+74132,36.04869,-96.01315,Tulsa,OK
+64106,39.10526,-94.57013,Kansas City,MO
+72207,34.77493,-92.34271,Little Rock,AR
+75551,33.11648,-94.20325,Atlanta,TX
+62095,38.86307,-90.07545,Wood River,IL
+66043,39.24967,-94.90193,Lansing,KS
+65233,38.91528,-92.72035,Boonville,MO
+63390,38.80499,-91.0413,Wright City,MO
+38058,35.45861,-89.81933,Munford,TN
+66720,37.64631,-95.459,Chanute,KS
+65584,37.82901,-92.13086,Saint Robert,MO
+64124,39.10718,-94.5391,Kansas City,MO
+66086,39.11578,-95.08043,Tonganoxie,KS
+67337,37.05486,-95.5993,Coffeyville,KS
+63012,38.33532,-90.44832,Barnhart,MO
+63124,38.63832,-90.38023,Saint Louis,MO
+72110,35.15514,-92.77273,Morrilton,AR
+76273,33.74794,-96.93935,Whitesboro,TX
+65355,38.22137,-93.37144,Warsaw,MO
+74873,35.22396,-96.97975,Tecumseh,OK
+72616,36.35047,-93.55736,Berryville,AR
+75570,33.4649,-94.4389,New Boston,TX
+76426,33.16493,-97.83772,Bridgeport,TX
+72730,36.03057,-94.26588,Farmington,AR
+66701,37.82862,-94.75999,Fort Scott,KS
+76085,32.84907,-97.70051,Weatherford,TX
+72916,35.27236,-94.37256,Fort Smith,AR
+72112,35.57383,-91.22918,Newport,AR
+74301,36.68157,-95.23687,Vinita,OK
+64123,39.11436,-94.52167,Kansas City,MO
+73026,35.23433,-97.2791,Norman,OK
+73065,35.25008,-97.61209,Newcastle,OK
+62010,38.91944,-90.04789,Bethalto,IL
+74851,35.42653,-97.08072,Mcloud,OK
+74728,34.15411,-94.81959,Broken Bow,OK
+67147,37.86062,-97.3058,Valley Center,KS
+73111,35.51889,-97.47722,Oklahoma City,OK
+65809,37.17071,-93.1936,Springfield,MO
+66085,38.80069,-94.64729,Stilwell,KS
+63077,38.32648,-90.98537,Saint Clair,MO
+63645,37.54204,-90.32428,Fredericktown,MO
+73045,35.51201,-97.1414,Harrah,OK
+75428,33.27132,-95.91799,Commerce,TX
+63113,38.65797,-90.2475,Saint Louis,MO
+65605,36.88408,-93.69132,Aurora,MO
+65026,38.32105,-92.57099,Eldon,MO
+75462,33.62166,-95.48362,Paris,TX
+75494,32.90898,-95.26126,Winnsboro,TX
+38004,35.41909,-89.76687,Atoka,TN
+64132,38.98551,-94.5396,Kansas City,MO
+76102,32.75799,-97.32858,Fort Worth,TX
+67357,37.33951,-95.25261,Parsons,KS
+72227,34.7782,-92.37498,Little Rock,AR
+64429,39.73895,-94.2285,Cameron,MO
+67230,37.68655,-97.17087,Wichita,KS
+76054,32.85904,-97.17789,Hurst,TX
+75223,32.79255,-96.74556,Dallas,TX
+64503,39.74973,-94.84545,Saint Joseph,MO
+74948,35.46207,-94.56284,Muldrow,OK
+63857,36.22402,-90.04612,Kennett,MO
+74960,35.80995,-94.65027,Stilwell,OK
+64075,38.99751,-94.14544,Oak Grove,MO
+73068,35.1384,-97.28264,Noble,OK
+66206,38.95851,-94.61923,Leawood,KS
+67219,37.76931,-97.31643,Wichita,KS
+74023,35.95708,-96.74963,Cushing,OK
+64601,39.8044,-93.57334,Chillicothe,MO
+66224,38.86213,-94.62866,Overland Park,KS
+72086,34.80418,-91.90619,Lonoke,AR
+66214,38.96356,-94.71397,Overland Park,KS
+74953,35.03931,-94.57156,Poteau,OK
+63670,37.89667,-90.16245,Sainte Genevieve,MO
+38060,35.21214,-89.50468,Oakland,TN
+74604,36.69672,-96.98132,Ponca City,OK
+66071,38.57367,-94.86575,Paola,KS
+74104,36.14627,-95.9542,Tulsa,OK
+64113,39.01414,-94.5956,Kansas City,MO
+64128,39.06555,-94.53484,Kansas City,MO
+74868,35.26699,-96.64193,Seminole,OK
+66101,39.11871,-94.62592,Kansas City,KS
+72150,34.30999,-92.39642,Sheridan,AR
+62052,39.11179,-90.32004,Jerseyville,IL
+63051,38.39886,-90.57303,House Springs,MO
+72543,35.45528,-91.99407,Heber Springs,AR
+73122,35.5202,-97.61391,Oklahoma City,OK
+65708,36.91048,-93.90899,Monett,MO
+75644,32.79171,-94.99498,Gilmer,TX
+73078,35.66867,-97.75304,Piedmont,OK
+72921,35.46953,-94.19686,Alma,AR
+66083,38.73518,-94.83397,Spring Hill,KS
+66103,39.06045,-94.62707,Kansas City,KS
+72396,35.22966,-90.83559,Wynne,AR
+64772,37.82712,-94.33355,Nevada,MO
+66112,39.11494,-94.7701,Kansas City,KS
+67301,37.21092,-95.75224,Independence,KS
+73106,35.4823,-97.53662,Oklahoma City,OK
+75065,33.11108,-97.01277,Lake Dallas,TX
+75244,32.92544,-96.83671,Dallas,TX
+64154,39.27653,-94.62967,Kansas City,MO
+76164,32.7808,-97.35411,Fort Worth,TX
+62206,38.56796,-90.16981,East Saint Louis,IL
+66002,39.5488,-95.13881,Atchison,KS
+38120,35.12344,-89.85237,Memphis,TN
+63841,36.77198,-89.98169,Dexter,MO
+74033,35.94711,-96.00636,Glenpool,OK
+72212,34.78498,-92.4141,Little Rock,AR
+66219,38.95124,-94.77807,Lenexa,KS
+71953,34.61291,-94.2118,Mena,AR
+75686,32.96921,-94.94697,Pittsburg,TX
+75647,32.5167,-94.96429,Gladewater,TX
+63134,38.74319,-90.34549,Saint Louis,MO
+63080,38.20828,-91.08802,Sullivan,MO
+72455,36.3229,-91.04909,Pocahontas,AR
+64735,38.36612,-93.73644,Clinton,MO
+67010,37.66099,-96.97388,Augusta,KS
+74128,36.1472,-95.85089,Tulsa,OK
+67209,37.6639,-97.43463,Wichita,KS
+65560,37.59609,-91.49943,Salem,MO
+72012,35.10199,-91.91789,Beebe,AR
+66205,39.03122,-94.6307,Mission,KS
+65742,37.12543,-93.08001,Rogersville,MO
+76022,32.83063,-97.14506,Bedford,TX
+64505,39.84431,-94.83354,Saint Joseph,MO
+71655,33.62874,-91.7486,Monticello,AR
+63132,38.67607,-90.37745,Saint Louis,MO
+73089,35.2661,-97.79638,Tuttle,OK
+71601,34.17409,-91.89811,Pine Bluff,AR
+72908,35.30595,-94.4099,Fort Smith,AR
+67060,37.54601,-97.35952,Haysville,KS
+38103,35.15308,-90.05518,Memphis,TN
+65806,37.20567,-93.29847,Springfield,MO
+64089,39.39007,-94.56483,Smithville,MO
+64079,39.36267,-94.79351,Platte City,MO
+72714,36.46841,-94.21649,Bella Vista,AR
+73118,35.51788,-97.53007,Oklahoma City,OK
+74003,36.73107,-96.06675,Bartlesville,OK
+64507,39.73324,-94.75735,Saint Joseph,MO
+72103,34.59133,-92.38316,Mabelvale,AR
+74467,35.96681,-95.39181,Wagoner,OK
+62236,38.43391,-90.21141,Columbia,IL
+72936,35.1896,-94.23069,Greenwood,AR
+67156,37.25099,-96.96503,Winfield,KS
+63115,38.68211,-90.23994,Saint Louis,MO
+38107,35.17054,-90.02397,Memphis,TN
+74955,35.50213,-94.75547,Sallisaw,OK
+75773,32.67969,-95.44654,Mineola,TX
+72117,34.78076,-92.14548,North Little Rock,AR
+75209,32.8487,-96.8257,Dallas,TX
+71923,34.08424,-93.05551,Arkadelphia,AR
+64080,38.7691,-94.25639,Pleasant Hill,MO
+74344,36.59604,-94.73845,Grove,OK
+64701,38.62053,-94.3378,Harrisonville,MO
+65583,37.82171,-92.2541,Waynesville,MO
+64057,39.0692,-94.32203,Independence,MO
+62034,38.75639,-89.96897,Glen Carbon,IL
+72745,36.2477,-94.10046,Lowell,AR
+72210,34.71506,-92.50378,Little Rock,AR
+65020,38.00517,-92.78193,Camdenton,MO
+75418,33.57235,-96.1773,Bonham,TX
+63069,38.48286,-90.7292,Pacific,MO
+67220,37.75191,-97.27909,Wichita,KS
+64117,39.16522,-94.52251,Kansas City,MO
+71801,33.63306,-93.59833,Hope,AR
+65265,39.20531,-91.88728,Mexico,MO
+66207,38.95625,-94.64439,Overland Park,KS
+74070,36.3881,-96.07253,Skiatook,OK
+74110,36.18856,-95.95377,Tulsa,OK
+73108,35.45034,-97.56774,Oklahoma City,OK
+62294,38.70374,-89.87242,Troy,IL
+65473,37.71215,-92.14811,Fort Leonard Wood,MO
+67005,37.06722,-96.99645,Arkansas City,KS
+62629,39.67858,-89.71978,Chatham,IL
+63126,38.5496,-90.37868,Saint Louis,MO
+67235,37.68951,-97.49929,Wichita,KS
+74447,35.64975,-96.00628,Okmulgee,OK
+67214,37.70661,-97.31755,Wichita,KS
+64024,39.32523,-94.22707,Excelsior Springs,MO
+75601,32.5086,-94.72414,Longview,TX
+75203,32.74439,-96.80206,Dallas,TX
+75169,32.70335,-95.99754,Wills Point,TX
+38019,35.56114,-89.6304,Covington,TN
+76088,32.84554,-97.90345,Weatherford,TX
+75233,32.70444,-96.87271,Dallas,TX
+63628,37.9392,-90.52466,Bonne Terre,MO
+62035,38.96375,-90.23917,Godfrey,IL
+71602,34.27463,-92.13302,White Hall,AR
+67460,38.38431,-97.69719,Mcpherson,KS
+38063,35.74598,-89.63412,Ripley,TN
+72830,35.51685,-93.50859,Clarksville,AR
+74106,36.19191,-95.98416,Tulsa,OK
+65340,39.09149,-93.18041,Marshall,MO
+74127,36.17462,-96.04511,Tulsa,OK
+63775,37.71051,-89.87919,Perryville,MO
+74401,35.72304,-95.45431,Muskogee,OK
+71753,33.22974,-93.18461,Magnolia,AR
+63383,38.80726,-91.19319,Warrenton,MO
+74146,36.09784,-95.85344,Tulsa,OK
+66067,38.61877,-95.27566,Ottawa,KS
+66226,39.03039,-94.8603,Shawnee,KS
+75103,32.51201,-95.88363,Canton,TX
+63074,38.72637,-90.38895,Saint Ann,MO
+62223,38.53491,-90.06027,Belleville,IL
+64060,39.37134,-94.36821,Kearney,MO
+38139,35.08615,-89.75581,Germantown,TN
+74429,35.94872,-95.63065,Coweta,OK
+64870,37.18474,-94.48136,Webb City,MO
+73142,35.60937,-97.63895,Oklahoma City,OK
+73025,35.73199,-97.5727,Edmond,OK
+72364,35.2126,-90.18573,Marion,AR
+63601,37.8212,-90.5439,Park Hills,MO
+72335,34.99042,-90.75645,Forrest City,AR
+62249,38.75469,-89.66436,Highland,IL
+62208,38.59641,-90.00528,Fairview Heights,IL
+67002,37.69575,-97.10725,Andover,KS
+74114,36.12696,-95.94661,Tulsa,OK
+65270,39.41552,-92.39917,Moberly,MO
+76103,32.75282,-97.26627,Fort Worth,TX
+38112,35.14791,-89.97661,Memphis,TN
+75001,32.96015,-96.83808,Addison,TX
+75474,32.91709,-96.10611,Quinlan,TX
+75057,33.05012,-96.9772,Lewisville,TX
+66442,39.09302,-96.78963,Fort Riley,KS
+72715,36.46505,-94.30545,Bella Vista,AR
+74354,36.88962,-94.88096,Miami,OK
+64111,39.05707,-94.59393,Kansas City,MO
+64110,39.03445,-94.57265,Kansas City,MO
+75249,32.6449,-96.96257,Dallas,TX
+66503,39.26287,-96.68663,Manhattan,KS
+66202,39.02392,-94.66909,Mission,KS
+67206,37.70363,-97.22461,Wichita,KS
+65706,37.3224,-92.89421,Marshfield,MO
+63049,38.47795,-90.52867,High Ridge,MO
+67042,37.84868,-96.79809,El Dorado,KS
+76118,32.79606,-97.1972,Fort Worth,TX
+75054,32.60036,-97.03409,Grand Prairie,TX
+64116,39.14875,-94.57444,Kansas City,MO
+74361,36.30914,-95.30732,Pryor,OK
+64056,39.11114,-94.32008,Independence,MO
+64127,39.08912,-94.53837,Kansas City,MO
+63050,38.25977,-90.57628,Hillsboro,MO
+63110,38.62538,-90.26645,Saint Louis,MO
+71701,33.57837,-92.81309,Camden,AR
+62298,38.30906,-90.15132,Waterloo,IL
+63042,38.78133,-90.37909,Hazelwood,MO
+74145,36.09728,-95.88731,Tulsa,OK
+63131,38.6172,-90.44365,Saint Louis,MO
+67208,37.70449,-97.27928,Wichita,KS
+75201,32.78826,-96.79953,Dallas,TX
+65613,37.63557,-93.39205,Bolivar,MO
+73139,35.38457,-97.52572,Oklahoma City,OK
+73114,35.57916,-97.51784,Oklahoma City,OK
+72405,35.90446,-90.64869,Jonesboro,AR
+76266,33.36818,-97.21513,Sanger,TX
+72058,35.24273,-92.36998,Greenbrier,AR
+76207,33.22174,-97.18505,Denton,TX
+75134,32.62308,-96.78007,Lancaster,TX
+72022,34.60859,-92.49651,Bryant,AR
+62711,39.76662,-89.73195,Springfield,IL
+63112,38.66,-90.28331,Saint Louis,MO
+76247,33.0965,-97.33154,Justin,TX
+71909,34.64106,-92.99608,Hot Springs Village,AR
+63025,38.4896,-90.61666,Eureka,MO
+38108,35.1763,-89.96382,Memphis,TN
+76015,32.69204,-97.13341,Arlington,TX
+75670,32.56456,-94.42326,Marshall,TX
+66204,38.99282,-94.67741,Overland Park,KS
+67211,37.66708,-97.31706,Wichita,KS
+63104,38.61078,-90.21276,Saint Louis,MO
+63138,38.79904,-90.1822,Saint Louis,MO
+75237,32.66489,-96.87238,Dallas,TX
+74129,36.12669,-95.8701,Tulsa,OK
+72801,35.28057,-93.14161,Russellville,AR
+75215,32.75259,-96.76075,Dallas,TX
+63105,38.64427,-90.32812,Saint Louis,MO
+72719,36.36837,-94.29551,Centerton,AR
+76135,32.83708,-97.46621,Fort Worth,TX
+74601,36.70436,-97.14604,Ponca City,OK
+75235,32.83219,-96.84798,Dallas,TX
+62305,39.92915,-91.34441,Quincy,IL
+74107,36.10737,-96.04095,Tulsa,OK
+63111,38.55845,-90.24993,Saint Louis,MO
+66203,39.0216,-94.70558,Shawnee,KS
+62220,38.47247,-89.98704,Belleville,IL
+63135,38.75012,-90.29934,Saint Louis,MO
+75236,32.6866,-96.93455,Dallas,TX
+63034,38.84795,-90.28692,Florissant,MO
+76205,33.19074,-97.12894,Denton,TX
+63005,38.64306,-90.64982,Chesterfield,MO
+63137,38.74974,-90.21297,Saint Louis,MO
+64130,39.03345,-94.54119,Kansas City,MO
+64082,38.86601,-94.4039,Lees Summit,MO
+73129,35.43165,-97.48433,Oklahoma City,OK
+74135,36.09725,-95.92315,Tulsa,OK
+75116,32.66013,-96.91402,Duncanville,TX
+75402,33.06724,-96.08576,Greenville,TX
+64064,38.98222,-94.34284,Lees Summit,MO
+72901,35.3652,-94.4155,Fort Smith,AR
+66046,38.909,-95.21061,Lawrence,KS
+75137,32.63421,-96.91224,Duncanville,TX
+76120,32.76742,-97.18286,Fort Worth,TX
+72315,35.90093,-89.9029,Blytheville,AR
+75454,33.283,-96.56073,Melissa,TX
+66209,38.89874,-94.63778,Leawood,KS
+66210,38.92372,-94.70483,Overland Park,KS
+66047,38.88484,-95.35096,Lawrence,KS
+63020,38.10706,-90.5718,De Soto,MO
+73018,35.0484,-97.93839,Chickasha,OK
+73115,35.44232,-97.44153,Oklahoma City,OK
+38114,35.09648,-89.98596,Memphis,TN
+63084,38.41749,-91.01438,Union,MO
+64050,39.11424,-94.40641,Independence,MO
+66605,39.01167,-95.63283,Topeka,KS
+67205,37.75012,-97.42317,Wichita,KS
+74019,36.28326,-95.60684,Claremore,OK
+63141,38.65751,-90.45904,Saint Louis,MO
+63108,38.64485,-90.25337,Saint Louis,MO
+76104,32.72848,-97.31819,Fort Worth,TX
+67213,37.66722,-97.36498,Wichita,KS
+73036,35.50752,-97.95771,El Reno,OK
+76111,32.7804,-97.30116,Fort Worth,TX
+73109,35.43279,-97.52452,Oklahoma City,OK
+76234,33.27587,-97.51404,Decatur,TX
+76115,32.67861,-97.33117,Fort Worth,TX
+72116,34.80025,-92.24505,North Little Rock,AR
+73130,35.45879,-97.34586,Oklahoma City,OK
+67114,38.07034,-97.28359,Newton,KS
+65738,37.13503,-93.49424,Republic,MO
+63401,39.69046,-91.45986,Hannibal,MO
+73010,35.09989,-97.67197,Blanchard,OK
+75771,32.53542,-95.43006,Lindale,TX
+38133,35.21292,-89.79474,Memphis,TN
+72002,34.6646,-92.5362,Alexander,AR
+74112,36.14696,-95.90437,Tulsa,OK
+64063,38.91224,-94.35341,Lees Summit,MO
+67226,37.76898,-97.21915,Wichita,KS
+73008,35.51383,-97.64536,Bethany,OK
+64029,39.00634,-94.21473,Grain Valley,MO
+63043,38.72962,-90.45659,Maryland Heights,MO
+66208,38.99936,-94.62998,Prairie Village,KS
+74801,35.31749,-96.96824,Shawnee,OK
+63139,38.61041,-90.29191,Saint Louis,MO
+38106,35.10067,-90.0375,Memphis,TN
+75401,33.18506,-96.11556,Greenville,TX
+64131,38.95723,-94.57449,Kansas City,MO
+75218,32.84136,-96.70357,Dallas,TX
+65251,38.84902,-91.97911,Fulton,MO
+64506,39.79048,-94.80277,Saint Joseph,MO
+65810,37.1174,-93.31707,Springfield,MO
+63801,36.89698,-89.60672,Sikeston,MO
+73135,35.39644,-97.42692,Oklahoma City,OK
+72205,34.74948,-92.3524,Little Rock,AR
+76011,32.7543,-97.08223,Arlington,TX
+38119,35.07986,-89.84593,Memphis,TN
+75225,32.86511,-96.79109,Dallas,TX
+74804,35.39358,-96.92399,Shawnee,OK
+64157,39.27657,-94.47103,Kansas City,MO
+75039,32.88592,-96.94042,Irving,TX
+63090,38.53176,-91.05047,Washington,MO
+67216,37.6089,-97.3143,Wichita,KS
+76105,32.72327,-97.26999,Fort Worth,TX
+73003,35.66952,-97.49693,Edmond,OK
+72904,35.4151,-94.38338,Fort Smith,AR
+72206,34.63042,-92.23833,Little Rock,AR
+72211,34.74792,-92.41675,Little Rock,AR
+74134,36.1106,-95.80156,Tulsa,OK
+66604,39.03875,-95.72623,Topeka,KS
+76086,32.75345,-97.78909,Weatherford,TX
+67204,37.77167,-97.36341,Wichita,KS
+38104,35.13253,-90.00435,Memphis,TN
+67218,37.66851,-97.28039,Wichita,KS
+64052,39.07355,-94.45082,Independence,MO
+64134,38.9308,-94.48667,Kansas City,MO
+75159,32.60652,-96.53939,Seagoville,TX
+72802,35.31334,-93.06726,Russellville,AR
+72104,34.34774,-92.81814,Malvern,AR
+75142,32.57004,-96.24637,Kaufman,TX
+64086,38.91181,-94.29293,Lees Summit,MO
+74021,36.37915,-95.84758,Collinsville,OK
+72118,34.83872,-92.32694,North Little Rock,AR
+76006,32.78511,-97.10019,Arlington,TX
+76148,32.86789,-97.25197,Fort Worth,TX
+67502,38.12146,-97.92673,Hutchinson,KS
+74115,36.1923,-95.90903,Tulsa,OK
+75094,33.01871,-96.61481,Plano,TX
+72761,36.17074,-94.45778,Siloam Springs,AR
+75460,33.6627,-95.60296,Paris,TX
+66106,39.06631,-94.70384,Kansas City,KS
+38141,35.01599,-89.85472,Memphis,TN
+75253,32.67278,-96.61171,Dallas,TX
+76177,32.96999,-97.30611,Fort Worth,TX
+72301,35.13363,-90.17883,West Memphis,AR
+75020,33.77264,-96.60391,Denison,TX
+74037,36.00149,-95.98171,Jenks,OK
+62650,39.73799,-90.22027,Jacksonville,IL
+76082,32.97098,-97.71783,Springtown,TX
+75409,33.35223,-96.52808,Anna,TX
+64114,38.9581,-94.59715,Kansas City,MO
+63121,38.70739,-90.30023,Saint Louis,MO
+67501,37.97989,-97.9309,Hutchinson,KS
+76008,32.68182,-97.62738,Aledo,TX
+75240,32.93194,-96.78924,Dallas,TX
+75254,32.94571,-96.80127,Dallas,TX
+66762,37.39443,-94.71092,Pittsburg,KS
+64138,38.96852,-94.47088,Kansas City,MO
+66221,38.84786,-94.71437,Overland Park,KS
+65775,36.6995,-91.85999,West Plains,MO
+66216,39.01405,-94.74136,Shawnee,KS
+75219,32.81087,-96.81315,Dallas,TX
+66223,38.86176,-94.66831,Overland Park,KS
+73044,35.86664,-97.43476,Guthrie,OK
+64081,38.90971,-94.40953,Lees Summit,MO
+38122,35.1571,-89.92247,Memphis,TN
+73701,36.42323,-97.78833,Enid,OK
+73020,35.45588,-97.2619,Choctaw,OK
+38053,35.33583,-89.95,Millington,TN
+64850,36.86008,-94.3975,Neosho,MO
+38024,36.03743,-89.38511,Dyersburg,TN
+38138,35.08477,-89.7993,Germantown,TN
+75205,32.83657,-96.79617,Dallas,TX
+64083,38.80082,-94.4483,Raymore,MO
+63118,38.59237,-90.22534,Saint Louis,MO
+72113,34.85926,-92.39875,Maumelle,AR
+66441,38.98199,-96.80289,Junction City,KS
+64030,38.87996,-94.52312,Grandview,MO
+72223,34.79251,-92.49091,Little Rock,AR
+64836,37.18886,-94.28898,Carthage,MO
+63109,38.58483,-90.29563,Saint Louis,MO
+75146,32.57608,-96.75137,Lancaster,TX
+76126,32.64374,-97.51767,Fort Worth,TX
+66030,38.81519,-94.94114,Gardner,KS
+72501,35.79167,-91.65399,Batesville,AR
+73107,35.48201,-97.5744,Oklahoma City,OK
+76034,32.89121,-97.1488,Colleyville,TX
+76109,32.70115,-97.38378,Fort Worth,TX
+75482,33.16929,-95.60946,Sulphur Springs,TX
+75160,32.76466,-96.29835,Terrell,TX
+75090,33.6054,-96.54657,Sherman,TX
+66215,38.95649,-94.74304,Lenexa,KS
+72713,36.30036,-94.28372,Bentonville,AR
+72903,35.35241,-94.36042,Fort Smith,AR
+38117,35.11504,-89.90551,Memphis,TN
+76132,32.66743,-97.41827,Fort Worth,TX
+74701,34.00974,-96.3769,Durant,OK
+76114,32.77365,-97.40417,Fort Worth,TX
+75022,33.02554,-97.11871,Flower Mound,TX
+74075,36.17151,-97.0774,Stillwater,OK
+75230,32.90202,-96.79226,Dallas,TX
+66104,39.15043,-94.68861,Kansas City,KS
+73127,35.47785,-97.64836,Oklahoma City,OK
+75455,33.21725,-94.98022,Mount Pleasant,TX
+76018,32.66074,-97.08967,Arlington,TX
+75180,32.71937,-96.61841,Balch Springs,TX
+75088,32.89368,-96.53929,Rowlett,TX
+76208,33.20917,-97.05786,Denton,TX
+75503,33.51345,-94.13038,Texarkana,TX
+74105,36.0975,-95.9641,Tulsa,OK
+66801,38.41105,-96.2221,Emporia,KS
+75092,33.64869,-96.70011,Sherman,TX
+63755,37.44351,-89.64193,Jackson,MO
+63379,38.99817,-90.99037,Troy,MO
+64093,38.79057,-93.73206,Warrensburg,MO
+74006,36.71507,-95.89391,Bartlesville,OK
+73064,35.37377,-97.75275,Mustang,OK
+66109,39.16367,-94.8283,Kansas City,KS
+67207,37.66567,-97.22923,Wichita,KS
+73132,35.54984,-97.64074,Oklahoma City,OK
+76209,33.2315,-97.11,Denton,TX
+63367,38.77805,-90.79536,Lake Saint Louis,MO
+72015,34.49298,-92.58974,Benton,AR
+63028,38.14545,-90.39423,Festus,MO
+73533,34.49484,-97.84774,Duncan,OK
+75212,32.78203,-96.87853,Dallas,TX
+75181,32.72696,-96.555,Mesquite,TX
+76012,32.75459,-97.13901,Arlington,TX
+65616,36.67133,-93.24887,Branson,MO
+73069,35.25028,-97.4633,Norman,OK
+74137,36.02038,-95.92932,Tulsa,OK
+64014,39.00893,-94.25533,Blue Springs,MO
+75252,32.99696,-96.78983,Dallas,TX
+62226,38.53634,-90.00057,Belleville,IL
+73162,35.58095,-97.6415,Oklahoma City,OK
+74501,34.98501,-95.78597,Mcalester,OK
+64151,39.21494,-94.63115,Kansas City,MO
+63052,38.38983,-90.4358,Imperial,MO
+64155,39.28031,-94.56801,Kansas City,MO
+63640,37.75446,-90.36525,Farmington,MO
+62703,39.76276,-89.63106,Springfield,IL
+74017,36.39359,-95.57986,Claremore,OK
+72653,36.34292,-92.38603,Mountain Home,AR
+75407,33.1512,-96.48808,Princeton,TX
+64012,38.78906,-94.55204,Belton,MO
+66044,39.03187,-95.20991,Lawrence,KS
+63130,38.66491,-90.32495,Saint Louis,MO
+71730,33.20303,-92.63458,El Dorado,AR
+74403,35.67427,-95.305,Muskogee,OK
+76134,32.64331,-97.33103,Fort Worth,TX
+76240,33.65654,-97.17766,Gainesville,TX
+71603,34.12881,-92.08492,Pine Bluff,AR
+62221,38.51187,-89.89922,Belleville,IL
+75208,32.75409,-96.83943,Dallas,TX
+75082,32.99208,-96.66536,Richardson,TX
+72704,36.10475,-94.29539,Fayetteville,AR
+75048,32.9704,-96.58139,Sachse,TX
+65536,37.68942,-92.64974,Lebanon,MO
+71901,34.52682,-92.97247,Hot Springs National Park,AR
+72404,35.77656,-90.78356,Jonesboro,AR
+73703,36.44022,-97.9634,Enid,OK
+65101,38.49143,-92.15009,Jefferson City,MO
+76201,33.22122,-97.14715,Denton,TX
+66213,38.89885,-94.70517,Overland Park,KS
+72019,34.63498,-92.69926,Benton,AR
+62002,38.93988,-90.12829,Alton,IL
+66102,39.11246,-94.68842,Kansas City,KS
+63128,38.49369,-90.38306,Saint Louis,MO
+67037,37.56646,-97.22095,Derby,KS
+72601,36.23669,-93.09181,Harrison,AR
+75009,33.3384,-96.75185,Celina,TX
+73119,35.4215,-97.56896,Oklahoma City,OK
+73112,35.51823,-97.5745,Oklahoma City,OK
+38135,35.23876,-89.8497,Memphis,TN
+76182,32.88257,-97.20969,North Richland Hills,TX
+67203,37.70402,-97.36497,Wichita,KS
+63146,38.70135,-90.47634,Saint Louis,MO
+62301,39.93139,-91.38741,Quincy,IL
+74464,35.94419,-94.97365,Tahlequah,OK
+74063,36.15201,-96.19206,Sand Springs,OK
+76107,32.74176,-97.38202,Fort Worth,TX
+76040,32.82133,-97.10488,Euless,TX
+76016,32.68907,-97.18868,Arlington,TX
+72204,34.71739,-92.3582,Little Rock,AR
+62702,39.82377,-89.64286,Springfield,IL
+64152,39.21278,-94.72271,Kansas City,MO
+76092,32.95562,-97.14879,Southlake,TX
+66049,38.97773,-95.34729,Lawrence,KS
+76053,32.81683,-97.17898,Hurst,TX
+76052,32.98205,-97.38037,Haslet,TX
+74820,34.80691,-96.71348,Ada,OK
+74136,36.06188,-95.9419,Tulsa,OK
+75010,33.03058,-96.90148,Carrollton,TX
+76140,32.62012,-97.27036,Fort Worth,TX
+75604,32.51374,-94.82919,Longview,TX
+64015,39.02099,-94.3006,Blue Springs,MO
+62234,38.68214,-89.9815,Collinsville,IL
+74074,36.07832,-97.06452,Stillwater,OK
+74066,35.99379,-96.1676,Sapulpa,OK
+75041,32.88101,-96.65149,Garland,TX
+76117,32.80374,-97.26766,Haltom City,TX
+76110,32.70678,-97.33843,Fort Worth,TX
+73159,35.38563,-97.5794,Oklahoma City,OK
+74008,35.92614,-95.87575,Bixby,OK
+65401,37.90691,-91.76374,Rolla,MO
+67217,37.61535,-97.36239,Wichita,KS
+66614,39.01362,-95.84115,Topeka,KS
+64119,39.21137,-94.5186,Kansas City,MO
+73110,35.44808,-97.3945,Oklahoma City,OK
+63125,38.51867,-90.29269,Saint Louis,MO
+75036,33.13339,-96.91453,Frisco,TX
+66212,38.9563,-94.68154,Overland Park,KS
+76020,32.90102,-97.56483,Azle,TX
+75232,32.65878,-96.83968,Dallas,TX
+76014,32.69201,-97.08814,Arlington,TX
+76002,32.62233,-97.09265,Arlington,TX
+75234,32.92423,-96.88904,Dallas,TX
+75038,32.87231,-96.97946,Irving,TX
+74011,35.98154,-95.81007,Broken Arrow,OK
+72209,34.6805,-92.33974,Little Rock,AR
+76087,32.66995,-97.79065,Weatherford,TX
+72120,34.89776,-92.24431,Sherwood,AR
+75238,32.87855,-96.70785,Dallas,TX
+75204,32.80216,-96.78885,Dallas,TX
+75241,32.667,-96.75903,Dallas,TX
+63114,38.70218,-90.36224,Saint Louis,MO
+75229,32.8939,-96.86517,Dallas,TX
+72956,35.46895,-94.3489,Van Buren,AR
+65721,36.9805,-93.21045,Ozark,MO
+76036,32.57366,-97.41434,Crowley,TX
+63010,38.42964,-90.3932,Arnold,MO
+63119,38.58868,-90.35104,Saint Louis,MO
+75605,32.58385,-94.71554,Longview,TX
+73120,35.58049,-97.57248,Oklahoma City,OK
+75501,33.37413,-94.13168,Texarkana,TX
+63901,36.77168,-90.45012,Poplar Bluff,MO
+75214,32.82899,-96.74348,Dallas,TX
+72032,35.07393,-92.36451,Conway,AR
+65714,37.03801,-93.31976,Nixa,MO
+65301,38.69922,-93.22104,Sedalia,MO
+75089,32.93195,-96.54435,Rowlett,TX
+76021,32.8523,-97.13128,Bedford,TX
+75224,32.71117,-96.83953,Dallas,TX
+64133,39.01406,-94.45689,Kansas City,MO
+71854,33.44445,-93.90504,Texarkana,AR
+72143,35.2279,-91.73613,Searcy,AR
+62269,38.59844,-89.91294,O'Fallon,IL
+66048,39.27891,-94.98527,Leavenworth,KS
+76013,32.72027,-97.15652,Arlington,TX
+72703,36.1155,-94.04897,Fayetteville,AR
+75081,32.94969,-96.70899,Richardson,TX
+64055,39.05061,-94.39848,Independence,MO
+62025,38.83004,-89.93298,Edwardsville,IL
+73401,34.21045,-97.11434,Ardmore,OK
+63011,38.60337,-90.55847,Ballwin,MO
+76106,32.81417,-97.35209,Fort Worth,TX
+64801,37.11056,-94.4974,Joplin,MO
+72023,34.95909,-92.05925,Cabot,AR
+38115,35.05499,-89.86362,Memphis,TN
+64804,37.01955,-94.51137,Joplin,MO
+64068,39.25924,-94.39042,Liberty,MO
+75248,32.96957,-96.79542,Dallas,TX
+75231,32.87695,-96.74967,Dallas,TX
+75032,32.85756,-96.42858,Rockwall,TX
+76180,32.83994,-97.22468,North Richland Hills,TX
+75042,32.91401,-96.67466,Garland,TX
+75075,33.02163,-96.74043,Plano,TX
+72712,36.39837,-94.22196,Bentonville,AR
+76001,32.63076,-97.15408,Arlington,TX
+38018,35.13781,-89.76647,Cordova,TN
+72076,34.91072,-92.14303,Jacksonville,AR
+75206,32.83161,-96.77032,Dallas,TX
+63701,37.33522,-89.58043,Cape Girardeau,MO
+38118,35.03655,-89.93021,Memphis,TN
+75069,33.16805,-96.59671,Mckinney,TX
+38127,35.23795,-90.01753,Memphis,TN
+62704,39.77358,-89.68503,Springfield,IL
+75220,32.86692,-96.87571,Dallas,TX
+75051,32.72635,-96.99375,Grand Prairie,TX
+65804,37.14822,-93.25294,Springfield,MO
+62040,38.71592,-90.10078,Granite City,IL
+76248,32.92988,-97.22972,Keller,TX
+65109,38.57365,-92.27791,Jefferson City,MO
+72450,36.0784,-90.51695,Paragould,AR
+76226,33.10775,-97.17196,Argyle,TX
+76039,32.8592,-97.08422,Euless,TX
+75077,33.07921,-97.06401,Lewisville,TX
+72756,36.32214,-93.9922,Rogers,AR
+63136,38.74418,-90.25979,Saint Louis,MO
+38116,35.03213,-90.01001,Memphis,TN
+63122,38.57853,-90.42133,Saint Louis,MO
+73170,35.32743,-97.55068,Oklahoma City,OK
+75087,32.94581,-96.44136,Rockwall,TX
+72401,35.86835,-90.66193,Jonesboro,AR
+64118,39.21301,-94.57497,Kansas City,MO
+63033,38.7958,-90.27786,Florissant,MO
+63116,38.57999,-90.26501,Saint Louis,MO
+38134,35.17674,-89.85992,Memphis,TN
+76123,32.62298,-97.40262,Fort Worth,TX
+38125,35.02537,-89.78936,Memphis,TN
+74014,36.05538,-95.66819,Broken Arrow,OK
+63017,38.65143,-90.53722,Chesterfield,MO
+73071,35.23728,-97.4131,Norman,OK
+65803,37.28464,-93.29036,Springfield,MO
+66502,39.14146,-96.52906,Manhattan,KS
+67212,37.70247,-97.43658,Wichita,KS
+38111,35.11014,-89.94429,Memphis,TN
+63304,38.70583,-90.68666,Saint Charles,MO
+76262,33.01137,-97.22101,Roanoke,TX
+38109,35.0341,-90.13533,Memphis,TN
+38002,35.28854,-89.70926,Arlington,TN
+38128,35.22623,-89.92612,Memphis,TN
+75189,32.94821,-96.30941,Royse City,TX
+76112,32.74831,-97.21828,Fort Worth,TX
+73012,35.66815,-97.59315,Edmond,OK
+38016,35.17956,-89.76046,Cordova,TN
+75050,32.77428,-97.0037,Grand Prairie,TX
+75019,32.96183,-96.984,Coppell,TX
+76108,32.77943,-97.51811,Fort Worth,TX
+75024,33.07712,-96.80826,Plano,TX
+63026,38.50195,-90.45995,Fenton,MO
+75063,32.90797,-96.9961,Irving,TX
+63368,38.7516,-90.72895,O'Fallon,MO
+65802,37.21048,-93.35167,Springfield,MO
+75093,33.03521,-96.80943,Plano,TX
+63303,38.74013,-90.54266,Saint Charles,MO
+76210,33.14985,-97.0962,Denton,TX
+75044,32.96299,-96.6531,Garland,TX
+71913,34.44677,-93.09981,Hot Springs National Park,AR
+75078,33.24526,-96.80791,Prosper,TX
+76017,32.66223,-97.16237,Arlington,TX
+75060,32.79774,-96.95295,Irving,TX
+72762,36.18747,-94.22794,Springdale,AR
+65202,39.01721,-92.29822,Columbia,MO
+75006,32.96165,-96.89717,Carrollton,TX
+72758,36.29898,-94.14099,Rogers,AR
+73034,35.69877,-97.42665,Edmond,OK
+75013,33.11463,-96.69413,Allen,TX
+75028,33.03382,-97.0629,Flower Mound,TX
+74133,36.04113,-95.87955,Tulsa,OK
+75023,33.05657,-96.73286,Plano,TX
+72701,35.9873,-94.08179,Fayetteville,AR
+72034,35.05405,-92.47945,Conway,AR
+75104,32.58295,-96.96712,Cedar Hill,TX
+76116,32.72128,-97.44766,Fort Worth,TX
+65201,38.89595,-92.24365,Columbia,MO
+63123,38.54949,-90.32739,Saint Louis,MO
+74055,36.27735,-95.81998,Owasso,OK
+75154,32.52319,-96.80885,Red Oak,TX
+63031,38.81392,-90.35224,Florissant,MO
+67401,38.83554,-97.64621,Salina,KS
+75033,33.18471,-96.84404,Frisco,TX
+63385,38.79732,-90.85649,Wentzville,MO
+73072,35.21106,-97.50518,Norman,OK
+76051,32.94192,-97.07888,Grapevine,TX
+75034,33.12084,-96.83778,Frisco,TX
+63129,38.45654,-90.32202,Saint Louis,MO
+63301,38.86159,-90.47207,Saint Charles,MO
+75287,33.00015,-96.84075,Dallas,TX
+75080,32.97382,-96.7416,Richardson,TX
+75062,32.847,-96.95813,Irving,TX
+76119,32.69026,-97.26176,Fort Worth,TX
+75074,33.03298,-96.67304,Plano,TX
+76131,32.88227,-97.34895,Fort Worth,TX
+75025,33.09057,-96.74061,Plano,TX
+76133,32.6538,-97.37746,Fort Worth,TX
+63366,38.85918,-90.71964,O'Fallon,MO
+75216,32.71158,-96.78256,Dallas,TX
+75007,33.00498,-96.8959,Carrollton,TX
+76227,33.27465,-96.99075,Aubrey,TX
+76010,32.72271,-97.08065,Arlington,TX
+75061,32.82607,-96.96563,Irving,TX
+75115,32.59831,-96.86433,Desoto,TX
+75072,33.1875,-96.70099,Mckinney,TX
+63021,38.5689,-90.54564,Ballwin,MO
+38017,35.06722,-89.65347,Collierville,TN
+65807,37.166,-93.32483,Springfield,MO
+75227,32.77044,-96.68831,Dallas,TX
+72764,36.17746,-94.051,Springdale,AR
+73013,35.62149,-97.49614,Edmond,OK
+75149,32.76994,-96.6151,Mesquite,TX
+76137,32.85864,-97.29137,Fort Worth,TX
+65203,38.89497,-92.39928,Columbia,MO
+75070,33.15587,-96.69742,Mckinney,TX
+73160,35.33574,-97.47651,Oklahoma City,OK
+75150,32.81545,-96.6308,Mesquite,TX
+75043,32.8571,-96.57986,Garland,TX
+74012,36.05381,-95.80509,Broken Arrow,OK
+75243,32.91232,-96.73633,Dallas,TX
+75040,32.92797,-96.62006,Garland,TX
+66061,38.89633,-94.88029,Olathe,KS
+75098,33.01432,-96.53531,Wylie,TX
+75056,33.07541,-96.90978,The Colony,TX
+75067,33.01416,-97.00268,Lewisville,TX
+75228,32.82456,-96.6805,Dallas,TX
+75071,33.24558,-96.62951,Mckinney,TX
+75068,33.17713,-96.95228,Little Elm,TX
+75211,32.73649,-96.90214,Dallas,TX
+75002,33.08946,-96.60639,Allen,TX
+63376,38.80022,-90.61636,Saint Peters,MO
+76244,32.93101,-97.28076,Keller,TX
+76179,32.91397,-97.43947,Fort Worth,TX
+75126,32.74361,-96.45289,Forney,TX
+66062,38.83677,-94.78455,Olathe,KS
+76028,32.52603,-97.30491,Burleson,TX
+76063,32.56913,-97.14376,Mansfield,TX
+75217,32.71291,-96.68243,Dallas,TX
+75035,33.15814,-96.7734,Frisco,TX
+73099,35.52583,-97.76343,Yukon,OK
+75052,32.66455,-97.02809,Grand Prairie,TX
