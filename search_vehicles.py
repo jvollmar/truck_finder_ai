@@ -66,7 +66,7 @@ def get_vehicle_details(detail_url, fallback_city=None):
         print("Error fetching vehicle detail:", e)
         return "N/A", "N/A", "N/A", "N/A", "Unknown"
 
-def scrape_cars(make, model, zip_code, city_state):
+def scrape_cars(make, model, zip_code, city_state, seen_urls):
     listings = []
     search_url = (
         f"https://www.cars.com/shopping/results/?stock_type=certified"
@@ -97,6 +97,9 @@ def scrape_cars(make, model, zip_code, city_state):
             if not link_tag:
                 continue
             detail_url = BASE_URL + link_tag["href"]
+            if detail_url in seen_urls:
+                continue  # 🚫 Skip duplicates
+            seen_urls.add(detail_url)
 
             mileage, full_address, phone, description, color = get_vehicle_details(detail_url, fallback_city=city_state)
 
@@ -136,6 +139,7 @@ def scrape_cars(make, model, zip_code, city_state):
 
 def search_vehicles():
     all_listings = []
+    seen_urls = set()  # ✅ Add this line 
 
     with open(USZIPS_CSV, newline='') as f:
         reader = csv.DictReader(f)
@@ -158,7 +162,7 @@ def search_vehicles():
 
                 for make in VEHICLE_FILTERS["make"]:
                     for model in VEHICLE_FILTERS["model"]:
-                        all_listings += scrape_cars(make, model, zip_code, city_state)
+                        all_listings += scrape_cars(make, model, zip_code, city_state, seen_urls)
 
 
             except Exception as e:
