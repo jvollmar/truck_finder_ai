@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 from config import VEHICLE_FILTERS, USE_OPENAI_FILTER
 from filters import passes_color_filter
 from openai_filter import is_vehicle_match
-from geocode import geocode_address
 from math import radians, sin, cos, sqrt, atan2
 import time
 import csv
@@ -16,13 +15,13 @@ BASE_URL = "https://www.cars.com"
 CENTER_LAT = 36.0626  # Fayetteville, AR
 CENTER_LON = -94.1574
 SEARCH_RADIUS_MILES = 850
-USZIPS_CSV = "uszips.csv"
+USZIPS_CSV = "data/uszips.csv"  # ✅ path to ZIP radius file
 
 def haversine_distance(lat1, lon1, lat2, lon2):
     R = 3958.8
     dlat = radians(lat2 - lat1)
     dlon = radians(lon2 - lon1)
-    a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon/2)**2
+    a = sin(dlat / 2) ** 2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon / 2) ** 2
     c = 2 * atan2(sqrt(a), sqrt(1 - a))
     return R * c
 
@@ -48,11 +47,9 @@ def get_vehicle_details(detail_url, fallback_city=None):
                 if "mileage" in label:
                     mileage = value
                 elif "exterior color" in label:
-                    color = value
-                    if "blue" in color.lower():
+                    color = value.lower()
+                    if "blue" in color:
                         color = "blue"
-                    else:
-                        color = color.lower()
 
         addr_tag = soup.find("div", class_="seller-info__address")
         full_address = addr_tag.text.strip() if addr_tag else f"N/A ({fallback_city})"
@@ -71,7 +68,16 @@ def get_vehicle_details(detail_url, fallback_city=None):
 
 def scrape_cars(make, model, zip_code, city_state):
     listings = []
-    search_url = f"https://www.cars.com/shopping/results/?stock_type=certified&makes[]={make.lower()}&models[]={make.lower()}-{model.lower().replace(' ', '_')}&list_price_max=&maximum_distance=500&zip={zip_code}&year_min={VEHICLE_FILTERS['year_min']}&mileage_max={VEHICLE_FILTERS['mileage_max']}&transmission_slugs=automatic&drivetrain_slugs=4wd&only_with_photos=true"
+    search_url = (
+        f"https://www.cars.com/shopping/results/?stock_type=certified"
+        f"&makes[]={make.lower()}"
+        f"&models[]={make.lower()}-{model.lower().replace(' ', '_')}"
+        f"&list_price_max=&maximum_distance=500"
+        f"&zip={zip_code}"
+        f"&year_min={VEHICLE_FILTERS['year_min']}"
+        f"&mileage_max={VEHICLE_FILTERS['mileage_max']}"
+        f"&transmission_slugs=automatic&drivetrain_slugs=4wd&only_with_photos=true"
+    )
 
     try:
         resp = requests.get(search_url, headers=HEADERS, timeout=10)
@@ -82,7 +88,7 @@ def scrape_cars(make, model, zip_code, city_state):
         return []
 
     cars = soup.select("div.vehicle-card")
-    for car in cars[:10]:
+    for car in cars[:10]:  # You can increase/decrease this limit
         try:
             title = car.select_one("h2.title").text.strip()
             price = car.select_one(".primary-price").text.strip()
@@ -124,7 +130,7 @@ def scrape_cars(make, model, zip_code, city_state):
         except Exception as e:
             print("Error parsing a car:", e)
 
-        time.sleep(1)
+        time.sleep(1)  # polite scraping delay
 
     return listings
 
@@ -155,5 +161,3 @@ def search_vehicles():
                 continue
 
     return all_listings
-
-
