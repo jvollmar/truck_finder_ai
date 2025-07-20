@@ -160,10 +160,6 @@ def search_vehicles():
                     for model in VEHICLE_FILTERS["model"]:
                         all_listings += scrape_cars(make, model, zip_code, city_state)
 
-                MAX_TOTAL_VEHICLES = 120
-                if len(all_listings) >= MAX_TOTAL_VEHICLES:
-                    print(f"🛑 Reached max vehicle limit of {MAX_TOTAL_VEHICLES}")
-                    return all_listings[:MAX_TOTAL_VEHICLES]
 
             except Exception as e:
                 print(f"[ERROR] ZIP {row.get('zip')} failed: {e}")
