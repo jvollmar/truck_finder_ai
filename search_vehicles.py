@@ -14,7 +14,7 @@ HEADERS = {
 BASE_URL = "https://www.cars.com"
 CENTER_LAT = 36.0626  # Fayetteville, AR
 CENTER_LON = -94.1574
-SEARCH_RADIUS_MILES = 850
+SEARCH_RADIUS_MILES = 350
 USZIPS_CSV = "data/uszips.csv"  # ✅ path to ZIP radius file
 
 def haversine_distance(lat1, lon1, lat2, lon2):
