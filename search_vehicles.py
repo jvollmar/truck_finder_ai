@@ -66,7 +66,7 @@ def get_vehicle_details(detail_url, fallback_city=None):
         print("Error fetching vehicle detail:", e)
         return "N/A", "N/A", "N/A", "N/A", "Unknown"
 
-def scrape_cars(make, model, zip_code, city_state, seen_urls):
+def scrape_cars(make, model, zip_code, city_state):
     listings = []
     search_url = (
         f"https://www.cars.com/shopping/results/?stock_type=certified"
