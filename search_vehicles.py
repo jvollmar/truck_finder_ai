@@ -140,7 +140,7 @@ def search_vehicles():
     with open(USZIPS_CSV, newline='') as f:
         reader = csv.DictReader(f)
         for i, row in enumerate(reader, 1):
-            if i > 50:  # 👈 Limit to first 50 ZIPs for testing
+            if i > 120:  # 👈 Limit to first 50 ZIPs for testing
                 print("🔚 Reached test limit of 50 ZIPs.")
                 break
 
