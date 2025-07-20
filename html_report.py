@@ -62,7 +62,7 @@ def generate_html(listings):
     <p>Report generated on <strong>{now}</strong></p>
 """
 
-    for car in listings:
+    for i, car in enumerate(listings, 1):
         title = html.escape(car.get('title', 'Unknown'))
         price = html.escape(car.get('price', 'N/A'))
         mileage = html.escape(car.get('mileage', 'N/A'))
@@ -81,7 +81,7 @@ def generate_html(listings):
 
         html_content += f"""
     <div class='card'>
-        <h2><a href="{dealer_website}" target="_blank">{title}</a></h2>
+        <h2>#{i}: <a href="{dealer_website}" target="_blank">{title}</a></h2>
         <p><strong>Price:</strong> {price}</p>
         <p><strong>Mileage:</strong> {mileage}</p>
         <p><strong>Exterior Color:</strong> {color_tag}</p>
