@@ -192,5 +192,5 @@ for vehicle in all_listings:
 
     # Optional: print the deduplication key for debugging
     print(f"[DEDUPED] Keeping: '{title}' @ '{dealer_name_raw}'")
-    print(f"🧹 Deduplicated to {len(unique_listings)} unique listings from {len(all_listings)} scraped.")
-    return unique_listings
+print(f"🧹 Deduplicated to {len(unique_listings)} unique listings from {len(all_listings)} scraped.")
+return unique_listings
