@@ -167,30 +167,30 @@ def search_vehicles():
                 print(f"[ERROR] ZIP {row.get('zip')} failed: {e}")
                 continue
 
-import re
-
-def normalize_dealer_name(name):
-    name = name.lower()
-    name = re.sub(r'[\.,]', '', name)  # remove punctuation
-    name = re.sub(r'\b(of|inc|llc|ltd|group|motors|auto|chevrolet|gmc)\b', '', name)  # remove common suffixes
-    name = re.sub(r'\s+', ' ', name)  # normalize whitespace
-    return name.strip()
-
-seen_keys = set()
-unique_listings = []
-
-for vehicle in all_listings:
-    title = vehicle.get("title", "").strip().lower()
-    dealer_name_raw = vehicle.get("dealer", {}).get("name", "")
-    dealer_name = normalize_dealer_name(dealer_name_raw)
-
-    dedupe_key = (title, dealer_name)
-    if dedupe_key in seen_keys:
-        continue
-    seen_keys.add(dedupe_key)
-    unique_listings.append(vehicle)
-
-    # Optional: print the deduplication key for debugging
-    print(f"[DEDUPED] Keeping: '{title}' @ '{dealer_name_raw}'")
-print(f"🧹 Deduplicated to {len(unique_listings)} unique listings from {len(all_listings)} scraped.")
-return unique_listings
+    import re
+    
+    def normalize_dealer_name(name):
+        name = name.lower()
+        name = re.sub(r'[\.,]', '', name)  # remove punctuation
+        name = re.sub(r'\b(of|inc|llc|ltd|group|motors|auto|chevrolet|gmc)\b', '', name)  # remove common suffixes
+        name = re.sub(r'\s+', ' ', name)  # normalize whitespace
+        return name.strip()
+    
+    seen_keys = set()
+    unique_listings = []
+    
+    for vehicle in all_listings:
+        title = vehicle.get("title", "").strip().lower()
+        dealer_name_raw = vehicle.get("dealer", {}).get("name", "")
+        dealer_name = normalize_dealer_name(dealer_name_raw)
+    
+        dedupe_key = (title, dealer_name)
+        if dedupe_key in seen_keys:
+            continue
+        seen_keys.add(dedupe_key)
+        unique_listings.append(vehicle)
+    
+        # Optional: print the deduplication key for debugging
+        print(f"[DEDUPED] Keeping: '{title}' @ '{dealer_name_raw}'")
+    print(f"🧹 Deduplicated to {len(unique_listings)} unique listings from {len(all_listings)} scraped.")
+    return unique_listings
