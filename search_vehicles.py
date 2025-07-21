@@ -97,9 +97,9 @@ def scrape_cars(make, model, zip_code, city_state):
             if not link_tag:
                 continue
             detail_url = BASE_URL + link_tag["href"]
-            if detail_url in seen_urls:
-                continue  # 🚫 Skip duplicates
-            seen_urls.add(detail_url)
+            # if detail_url in seen_urls:
+                # continue  # 🚫 Skip duplicates
+            # seen_urls.add(detail_url)
 
             mileage, full_address, phone, description, color = get_vehicle_details(detail_url, fallback_city=city_state)
 
