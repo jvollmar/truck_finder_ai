@@ -22,5 +22,5 @@ def apply_filters(listings):
 
         results.append(car)
 
-   print(f"\n✅ Passed all filters: {len(results)} of {len(listings)} vehicles\n")
+    print(f"\n✅ Passed all filters: {len(results)} of {len(listings)} vehicles\n")
     return results
